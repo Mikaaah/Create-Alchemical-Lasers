@@ -27,7 +27,7 @@ public class LaserRenderer extends KineticBlockEntityRenderer<LaserBlockEntity> 
             pose.popPose();
         }
         if (!be.isBeamActive()) return;
-        int color = 0xff000000 | AlchemicalLaser.lensColor(be.lens());
+        int color = 0xff000000 | be.beamColor();
         // Reuse Minecraft's animated beacon core, halo and native beacon texture.
         pose.pushPose();
         pose.translate(1, -.325, 0);

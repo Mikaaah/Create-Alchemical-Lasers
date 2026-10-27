@@ -45,3 +45,10 @@ for path in (r/'data/alchemicallaser/recipe').glob('*.json'):
     recipe=json.loads(path.read_text())
     if recipe['type']=='alchemicallaser:laser_processing':assert recipe['lens'] in expected,path
 print('Five-lens registry assets and starter recipe references passed.')
+
+for path in (r/'data/alchemicallaser/recipe').glob('*.json'):
+    recipe=json.loads(path.read_text())
+    assert recipe['neoforge:conditions'] == [{'type':'alchemicallaser:default_recipes','crafting':recipe['type']!='alchemicallaser:laser_processing'}],path
+schema=json.loads((r/'data/alchemicallaser/kubejs/recipe_schema/laser_processing.json').read_text())
+assert all(any(upper in key.get('function_names',[]) for key in schema['keys']) for upper in ['LENS','COLOR','CONSUME','INPUT','OUTPUT'])
+print('Bundled recipe conditions and native KubeJS schema passed.')

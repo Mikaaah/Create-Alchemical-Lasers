@@ -19,5 +19,11 @@
   "result": {
     "id": "alchemicallaser:convergence_lens",
     "count": 1
-  }
+  },
+  "neoforge:conditions": [
+    {
+      "type": "alchemicallaser:default_recipes",
+      "crafting": true
+    }
+  ]
 }

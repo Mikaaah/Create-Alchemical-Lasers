@@ -383,4 +383,134 @@ public class LaserGameTests {
         h.succeed();
     }
 
+
+    private static void installCatalystFixtures(GameTestHelper h) {
+        var manager = h.getLevel().getRecipeManager();
+        if (manager.byKey(AlchemicalLaser.id("test_consumable")).isPresent()) return;
+        var all = new java.util.ArrayList<net.minecraft.world.item.crafting.RecipeHolder<?>>(manager.getRecipes());
+        String[] definitions = {
+            "{\"type\":\"alchemicallaser:laser_processing\",\"ingredient\":{\"item\":\"minecraft:clay_ball\"},\"lens\":\"minecraft:coal\",\"color\":\"#35DA80\",\"consume\":true,\"result\":{\"id\":\"minecraft:brick\"},\"duration\":20}",
+            "{\"type\":\"alchemicallaser:laser_processing\",\"ingredient\":{\"item\":\"minecraft:sand\"},\"lens\":\"minecraft:diamond\",\"color\":\"2244FF\",\"consume\":false,\"result\":{\"id\":\"minecraft:emerald\"},\"duration\":20}",
+            "{\"type\":\"create:sequenced_assembly\",\"ingredient\":{\"item\":\"minecraft:copper_ingot\"},\"transitional_item\":{\"id\":\"minecraft:clock\"},\"loops\":2,\"results\":[{\"id\":\"minecraft:iron_nugget\"}],\"sequence\":[{\"type\":\"alchemicallaser:laser_processing\",\"ingredient\":{\"item\":\"minecraft:clock\"},\"lens\":\"minecraft:coal\",\"color\":\"35DA80\",\"consume\":true,\"result\":{\"id\":\"minecraft:clock\"},\"duration\":20},{\"type\":\"alchemicallaser:laser_processing\",\"ingredient\":{\"item\":\"minecraft:clock\"},\"lens\":\"minecraft:diamond\",\"color\":\"2244FF\",\"consume\":false,\"result\":{\"id\":\"minecraft:clock\"},\"duration\":20}]}"
+        };
+        String[] names = {"test_consumable", "test_reusable", "test_assembly"};
+        var ops = h.getLevel().registryAccess().createSerializationContext(com.mojang.serialization.JsonOps.INSTANCE);
+        for (int i = 0; i < definitions.length; i++) {
+            var recipe = net.minecraft.world.item.crafting.Recipe.CODEC.parse(ops, com.google.gson.JsonParser.parseString(definitions[i])).getOrThrow();
+            all.add(new net.minecraft.world.item.crafting.RecipeHolder<>(AlchemicalLaser.id(names[i]), recipe));
+        }
+        manager.replaceRecipes(all);
+    }
+    private static LaserBlockEntity catalystSetup(GameTestHelper h, Item input, int count, Item catalyst, int catalysts) {
+        installCatalystFixtures(h);
+        var be = setup(h, "growth", 1);
+        be.exchangeLens(new ItemStack(catalyst, catalysts));
+        var depot = (DepotBlockEntity) h.getBlockEntity(DEPOT);
+        depot.getBehaviour(com.simibubi.create.content.logistics.depot.DepotBehaviour.TYPE).setCenteredHeldItem(
+            new com.simibubi.create.content.kinetics.belt.transport.TransportedItemStack(new ItemStack(input,count)));
+        return be;
+    }
+    @GameTest(template="empty",timeoutTicks=150)
+    public static void consumableBulkIsLimitedByAvailableCatalysts(GameTestHelper h) {
+        var be = catalystSetup(h, Items.CLAY_BALL, 8, Items.COAL, 3);
+        h.runAfterDelay(90, () -> {
+            h.assertTrue(countDepot(h,Items.BRICK)==3 && countDepot(h,Items.CLAY_BALL)==5, "Expected 3 bricks and 5 untouched clay balls");
+            h.assertTrue(be.lens().isEmpty(), "Exactly three coal should be consumed");
+            h.assertTrue(be.beamColor()==0x35da80, "Recipe color was not selected"); h.succeed();
+        });
+    }
+    @GameTest(template="empty",timeoutTicks=150)
+    public static void reusableOrdinaryItemProcessesFullStack(GameTestHelper h) {
+        var be = catalystSetup(h, Items.SAND, 64, Items.DIAMOND, 1);
+        h.runAfterDelay(90, () -> {
+            h.assertTrue(countDepot(h,Items.EMERALD)==64, "Reusable ordinary catalyst did not process full stack");
+            h.assertTrue(be.lens().is(Items.DIAMOND) && be.lens().getCount()==1, "Reusable diamond was consumed");
+            h.assertTrue(be.beamColor()==0x2244ff, "Reusable recipe beam color incorrect"); h.succeed();
+        });
+    }
+    @GameTest(template="empty",timeoutTicks=160)
+    public static void interruptedConsumableCycleDoesNotConsume(GameTestHelper h) {
+        var be = catalystSetup(h, Items.CLAY_BALL, 8, Items.COAL, 4);
+        h.runAfterDelay(18, () -> h.setBlock(MOTOR,Blocks.AIR));
+        h.runAfterDelay(90, () -> {
+            h.assertTrue(countDepot(h,Items.CLAY_BALL)==8 && countDepot(h,Items.BRICK)==0, "Interrupted input changed");
+            h.assertTrue(be.lens().getCount()==4, "Interrupted catalyst was consumed"); h.succeed();
+        });
+    }
+    @GameTest(template="empty",timeoutTicks=160)
+    public static void hopperFeedsCatalystsFromTop(GameTestHelper h) {
+        var be = catalystSetup(h, Items.CLAY_BALL, 4, Items.COAL, 1);
+        be.exchangeLens(ItemStack.EMPTY);
+        h.setBlock(EMITTER.above(), Blocks.HOPPER.defaultBlockState());
+        var hopper = (net.minecraft.world.level.block.entity.HopperBlockEntity) h.getBlockEntity(EMITTER.above());
+        hopper.setItem(0,new ItemStack(Items.COAL,4));
+        h.runAfterDelay(110, () -> {
+            h.assertTrue(countDepot(h,Items.BRICK)==4 && countDepot(h,Items.CLAY_BALL)==0, "Top hopper did not supply processing catalysts");
+            h.assertTrue(be.lens().isEmpty() && hopper.isEmpty(), "Hopper catalyst conservation failed"); h.succeed();
+        });
+    }
+    @GameTest(template="empty",timeoutTicks=150)
+    public static void consumedCatalystsSharedBetweenDroppedStacks(GameTestHelper h) {
+        var be = catalystSetup(h, Items.CLAY_BALL, 0, Items.COAL, 5);
+        h.setBlock(DEPOT,Blocks.STONE);
+        var p = h.absolutePos(DEPOT);
+        for (int count : new int[]{3,4}) {
+            var entity = new net.minecraft.world.entity.item.ItemEntity(h.getLevel(),p.getX()+.5,p.getY()+1.05,p.getZ()+.5,new ItemStack(Items.CLAY_BALL,count));
+            entity.setDeltaMovement(0,0,0); h.getLevel().addFreshEntity(entity);
+        }
+        h.runAfterDelay(100, () -> {
+            var items = h.getLevel().getEntitiesOfClass(net.minecraft.world.entity.item.ItemEntity.class,new net.minecraft.world.phys.AABB(p).inflate(2));
+            int brick=0, clay=0;
+            for (var entity:items) { if(entity.getItem().is(Items.BRICK))brick+=entity.getItem().getCount(); if(entity.getItem().is(Items.CLAY_BALL))clay+=entity.getItem().getCount(); }
+            h.assertTrue(brick==5 && clay==2 && be.lens().isEmpty(), "Dropped stacks overspent or lost catalysts/input: "+brick+"/"+clay);h.succeed();
+        });
+    }
+    @GameTest(template="empty",timeoutTicks=400)
+    public static void assemblyAlternatesCatalystsAndPreservesProgress(GameTestHelper h) {
+        var be = catalystSetup(h, Items.COPPER_INGOT, 2, Items.COAL, 4);
+        final int[] step = {0};
+        h.onEachTick(() -> {
+            var stack = ((DepotBlockEntity)h.getBlockEntity(DEPOT)).getBehaviour(com.simibubi.create.content.logistics.depot.DepotBehaviour.TYPE).getHeldItemStack();
+            var progress = stack.get(com.simibubi.create.AllDataComponents.SEQUENCED_ASSEMBLY);
+            if (progress != null && progress.step() > step[0]) {
+                h.assertTrue(progress.step()==step[0]+1 && stack.getCount()==2, "Assembly skipped a step or lost stack quantity");
+                step[0] = progress.step();
+                be.exchangeLens(new ItemStack(step[0]%2==1 ? Items.DIAMOND : Items.COAL, step[0]%2==1 ? 1 : 2));
+            }
+            if (countDepot(h,Items.IRON_NUGGET)==2) {
+                h.assertTrue(step[0]==3 && be.lens().is(Items.DIAMOND), "Assembly did not perform both complete loops");h.succeed();
+            }
+        });
+    }
+    @GameTest(template="empty",timeoutTicks=100)
+    public static void recipeColorConsumeAndNetworkCodecRoundtrip(GameTestHelper h) {
+        installCatalystFixtures(h);
+        var r = (nl.mikaaah.alchemicallaser.recipe.LaserRecipe)h.getLevel().getRecipeManager().byKey(AlchemicalLaser.id("test_consumable")).orElseThrow().value();
+        var raw = io.netty.buffer.Unpooled.buffer();
+        var buf = new net.minecraft.network.RegistryFriendlyByteBuf(raw,h.getLevel().registryAccess());
+        try {
+            var serializer = new nl.mikaaah.alchemicallaser.recipe.LaserRecipe.Serializer();
+            serializer.streamCodec().encode(buf,r); var copy = serializer.streamCodec().decode(buf);
+            h.assertTrue(copy.consume() && copy.beamColor(new ItemStack(Items.COAL))==0x35da80 && copy.lens().equals(net.minecraft.resources.ResourceLocation.withDefaultNamespace("coal")), "Network roundtrip lost catalyst fields");
+            var ops = h.getLevel().registryAccess().createSerializationContext(com.mojang.serialization.JsonOps.INSTANCE);
+            var json = nl.mikaaah.alchemicallaser.recipe.LaserRecipe.CODEC.codec().encodeStart(ops,r).getOrThrow().getAsJsonObject();
+            json.addProperty("color","not-a-color");
+            h.assertTrue(nl.mikaaah.alchemicallaser.recipe.LaserRecipe.CODEC.codec().parse(ops,json).error().isPresent(), "Malformed color accepted");
+        } finally { raw.release(); }
+        h.succeed();
+    }
+
+    @GameTest(template="empty",timeoutTicks=160)
+    public static void nativeKubeJsBuildersAndNestedSteps(GameTestHelper h) {
+        if (!net.neoforged.fml.ModList.get().isLoaded("kubejs")) { h.succeed(); return; }
+        var manager = h.getLevel().getRecipeManager();
+        var typed = (nl.mikaaah.alchemicallaser.recipe.LaserRecipe) manager.byKey(net.minecraft.resources.ResourceLocation.parse("tnk:kjs_consumable")).orElseThrow().value();
+        h.assertTrue(typed.consume() && typed.lens().equals(net.minecraft.resources.ResourceLocation.parse("minecraft:coal")) && typed.beamColor(new ItemStack(Items.COAL))==0xff8033, "Typed KubeJS builder lost fields");
+        var assembly = (com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipe) manager.byKey(net.minecraft.resources.ResourceLocation.parse("tnk:kjs_assembly")).orElseThrow().value();
+        h.assertTrue(assembly.getSequence().size()==3 && assembly.getLoops()==2 && assembly.getSequence().getFirst().getRecipe() instanceof nl.mikaaah.alchemicallaser.recipe.LaserRecipe, "Nested laser did not decode in KubeJS assembly");
+        var be = catalystSetup(h,Items.SAND,4,Items.COAL,2);
+        h.runAfterDelay(100, () -> {
+            h.assertTrue(countDepot(h,Items.GLASS)==2 && countDepot(h,Items.SAND)==2 && be.lens().isEmpty(), "KubeJS consumable recipe did not execute");h.succeed();
+        });
+    }
 }

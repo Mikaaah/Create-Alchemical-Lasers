@@ -25,49 +25,10 @@ Input and output items can belong to any installed mod. Output stacks accept Min
 
 Recipes are selected in recipe-ID order if several match. `/reload` updates recipes; an interrupted cycle never consumes input before completion.
 
-## KubeJS
+## KubeJS and sequenced assembly
 
-Use the generic custom recipe API; no KubeJS addon is required:
+See [KUBEJS.md](KUBEJS.md) for native builders, consumables, top hoppers, config switches and a full sequenced assembly example.
 
-```js
-ServerEvents.recipes(event => {
-  event.remove({ id: 'alchemicallaser:sand_to_glass' })
-  event.custom({
-    type: 'alchemicallaser:laser_processing',
-    ingredient: { item: 'minecraft:amethyst_shard' },
-    input_count: 2,
-    lens: 'alchemicallaser:splitting_lens',
-    result: { id: 'minecraft:quartz', count: 3 },
-    duration: 160,
-    minimum_rpm: 32
-  }).id('kubejs:laser_quartz')
-})
-```
+The JSON recipe additionally accepts `"color": "#FF8033"` and `"consume": true`. `lens` can be any registered item ID. Color defaults to the installed lens's data-map color; consume defaults to false for backward compatibility. Bulk operations are capped by catalyst availability for consuming recipes. The slot now holds ordinary item stacks as well as reusable lenses.
 
-Place scripts in `kubejs/server_scripts/`. The generic JSON path is implemented; compatibility with a particular KubeJS build must be checked in that installation.
-
-## Custom lenses
-
-Lens appearance and audio pitch use a synced NeoForge item data map at `data/alchemicallaser/data_maps/item/laser_lenses.json`. Override existing lens entries or give another registered item lens behavior:
-
-```json
-{
-  "values": {
-    "minecraft:emerald": { "color": 5767026, "pitch": 1.1 }
-  }
-}
-```
-
-`color` is a decimal RGB value from 0 to 16777215; `pitch` is 0.5–2.0. A recipe can then require `"lens": "minecraft:emerald"`. The item remains reusable, with one stored in the emitter. Existing lens item textures are unchanged by a beam-color override.
-
-## Built-in lenses (0.3.0)
-
-| Lens ID | Starter transformation | Minimum RPM |
-|---|---|---|
-| `alchemicallaser:growth_lens` | Wheat seeds → wheat | 16 |
-| `alchemicallaser:convergence_lens` | 4 amethyst shards → amethyst block | 32 |
-| `alchemicallaser:splitting_lens` | Amethyst block → 4 amethyst shards | 32 |
-| `alchemicallaser:power_lens` | Obsidian → crying obsidian | 64 |
-| `alchemicallaser:eclipse_lens` | Sculk → echo shard | 128 |
-
-These are reusable recipe catalysts. They do not apply hardcoded world-growth, multi-beam or damage effects. Use these lens IDs with the same recipe type and optional fields described above.
+Laser recipes implement Create's processing/assembly interfaces and may be embedded directly in a `create:sequenced_assembly` sequence. Assembly steps require `input_count: 1` and no secondary output.

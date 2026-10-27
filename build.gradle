@@ -2,7 +2,7 @@ plugins {
     id 'java-library'
     id 'net.neoforged.moddev' version '2.0.148'
 }
-version = '0.3.0'
+version = '0.4.0'
 group = 'nl.mikaaah.alchemicallaser'
 base { archivesName = 'create-alchemical-lasers' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -21,6 +21,7 @@ neoForge {
     runs {
         client { client() }
         server { server(); programArgument '--nogui' }
+        configTestServer { type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', 'alchemicallaser_config' }
         gameTestServer { type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', 'alchemicallaser' }
     }
     mods { alchemicallaser { sourceSet sourceSets.main } }

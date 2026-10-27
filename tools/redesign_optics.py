@@ -15,6 +15,8 @@ COLORS = {'growth': 0x86c65b, 'convergence': 0xf0b65d, 'splitting': 0x65d6d1,
           'power': 0xe77e47, 'eclipse': 0xa286dc}
 
 def js(path, data):
+    if path.parent.name == 'recipe' and 'type' in data:
+        data['neoforge:conditions'] = [{'type': 'alchemicallaser:default_recipes', 'crafting': data['type'] != 'alchemicallaser:laser_processing'}]
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2) + '\n')
 

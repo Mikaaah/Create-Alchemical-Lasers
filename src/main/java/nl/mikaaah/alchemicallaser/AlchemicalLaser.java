@@ -29,6 +29,9 @@ public final class AlchemicalLaser {
     public static final DeferredRegister<BlockEntityType<?>> ENTITIES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, ID);
     public static final DeferredRegister<RecipeType<?>> TYPES = DeferredRegister.create(Registries.RECIPE_TYPE, ID);
     public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS = DeferredRegister.create(Registries.RECIPE_SERIALIZER, ID);
+    public static final DeferredRegister<com.mojang.serialization.MapCodec<? extends net.neoforged.neoforge.common.conditions.ICondition>> CONDITIONS =
+        DeferredRegister.create(net.neoforged.neoforge.registries.NeoForgeRegistries.Keys.CONDITION_CODECS, ID);
+    static { CONDITIONS.register("default_recipes", () -> nl.mikaaah.alchemicallaser.recipe.DefaultRecipeCondition.CODEC); }
     public static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(Registries.SOUND_EVENT, ID);
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ID);
     public static final DeferredBlock<LaserBlock> EMITTER = BLOCKS.register("laser_emitter", () -> new LaserBlock(
@@ -54,6 +57,8 @@ public final class AlchemicalLaser {
         BLOCKS.register(bus); ITEMS.register(bus); ENTITIES.register(bus); TYPES.register(bus);
         SERIALIZERS.register(bus); SOUNDS.register(bus); TABS.register(bus);
         container.registerConfig(ModConfig.Type.SERVER, LaserConfig.SPEC);
+        container.registerConfig(ModConfig.Type.COMMON, DefaultRecipeConfig.SPEC);
+        CONDITIONS.register(bus);
         bus.addListener(this::capabilities);
         bus.addListener((net.neoforged.neoforge.registries.datamaps.RegisterDataMapTypesEvent event) -> event.register(LensDefinition.TYPE));
     }

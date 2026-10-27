@@ -4,7 +4,7 @@ Kinetic laser processing for **Minecraft 1.21.1 • NeoForge • Create 6.0.10**
 
 A single emitter bulk-processes items on Mechanical Belts, Depots and the ground. A caged industrial optical head hangs below a solid brass housing, powered through its horizontal side shaft. Five reusable lenses select recipes and color a native beacon beam. Includes pixel-art optical cartridges, spatial audio and Create Ponder tutorials.
 
-![Industrial laser model and five optical lenses](docs/images/optics-0.3.0.png)
+![Industrial laser model and five optical lenses](docs/images/optics-0.4.0.png)
 
 ## How it works
 
@@ -49,10 +49,14 @@ These are standalone examples. Modpacks can replace them with their own progress
 
 Minecraft 1.21.1, Java 21, NeoForge 21.1.219 or newer, and Create 6.0.10 (6.0.x). Use Create's required matching dependencies. JEI, EMI and KubeJS are optional.
 
-Current release: **0.3.0**. See [release notes](CHANGELOG.md) for the verification status and remaining manual checks.
+Current release: **0.4.0**. See [release notes](CHANGELOG.md) for the verification status and remaining manual checks.
 
 The specialist lenses are recipe selectors. Their starter recipes demonstrate growth, consolidation, splitting, energizing and sculk processing; datapacks and KubeJS can replace them. The obsidian Power recipe requires 64 RPM and the Eclipse example requires 128 RPM.
 
 **Updating from 0.2.0 or 0.2.1:** connect power to either horizontal shaft end. The top no longer accepts a shaft or large cog drive. Belt/Depot height and the lantern position stay the same; the five named lenses retain their item IDs.
 
-**Updating to 0.3.0:** Red, Blue, Purple and White lenses have been removed. Replace them with Power, Convergence, Splitting and Eclipse respectively; the earlier starter transformations now use those lenses. Removed lens items cannot be recovered after loading an old world.
+**Updating to 0.4.0:** Red, Blue, Purple and White lenses have been removed. Replace them with Power, Convergence, Splitting and Eclipse respectively; the earlier starter transformations now use those lenses. Removed lens items cannot be recovered after loading an old world.
+
+## Consumables, KubeJS and assemblies
+
+Version 0.4.0 supports per-recipe catalyst items, hex colors, optional consumption, top hopper feeding, native KubeJS recipe builders and Create sequenced assembly. See [complete scripting examples](docs/KUBEJS.md). Bundled processing and crafting recipes can be disabled independently in `config/alchemicallaser-common.toml`.

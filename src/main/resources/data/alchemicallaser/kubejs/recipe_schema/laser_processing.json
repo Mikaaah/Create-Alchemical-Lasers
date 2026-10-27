@@ -1,0 +1,105 @@
+{
+  "keys": [
+    {
+      "name": "lens",
+      "role": "input",
+      "type": "id",
+      "function_names": [
+        "LENS",
+        "lens"
+      ],
+      "default_optional": true
+    },
+    {
+      "name": "ingredient",
+      "role": "input",
+      "type": "ingredient",
+      "function_names": [
+        "INPUT",
+        "input"
+      ],
+      "default_optional": true
+    },
+    {
+      "name": "result",
+      "role": "output",
+      "type": "item_stack",
+      "function_names": [
+        "OUTPUT",
+        "output"
+      ],
+      "default_optional": true
+    },
+    {
+      "name": "color",
+      "role": "other",
+      "type": "string",
+      "function_names": [
+        "COLOR",
+        "color"
+      ],
+      "optional": "#FFFFFF"
+    },
+    {
+      "name": "consume",
+      "role": "other",
+      "type": "boolean",
+      "function_names": [
+        "CONSUME",
+        "consume"
+      ],
+      "optional": false
+    },
+    {
+      "name": "input_count",
+      "role": "other",
+      "type": "int",
+      "optional": 1
+    },
+    {
+      "name": "duration",
+      "role": "other",
+      "type": "int",
+      "optional": 100
+    },
+    {
+      "name": "minimum_rpm",
+      "role": "other",
+      "type": "int",
+      "optional": 16
+    },
+    {
+      "name": "secondary_chance",
+      "role": "other",
+      "type": "float",
+      "optional": 1
+    },
+    {
+      "name": "copy_components",
+      "role": "other",
+      "type": "boolean",
+      "optional": false
+    },
+    {
+      "name": "secondary",
+      "role": "output",
+      "type": "optional_item_stack",
+      "excluded": true,
+      "default_optional": true
+    }
+  ],
+  "constructors": [
+    {
+      "keys": []
+    },
+    {
+      "keys": [
+        "lens",
+        "color",
+        "consume",
+        "ingredient",
+        "result"
+      ]
+    }
+  ]
+}

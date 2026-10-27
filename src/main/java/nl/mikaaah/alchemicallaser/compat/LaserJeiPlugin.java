@@ -42,7 +42,7 @@ public class LaserJeiPlugin implements IModPlugin {
         @Override public void setRecipe(IRecipeLayoutBuilder builder,LaserRecipe recipe,IFocusGroup focuses) {
             List<ItemStack> inputs=java.util.Arrays.stream(recipe.ingredient().getItems()).map(s -> s.copyWithCount(recipe.inputCount())).toList();
             builder.addSlot(RecipeIngredientRole.INPUT,10,26).addItemStacks(inputs);
-            builder.addSlot(RecipeIngredientRole.CATALYST,57,4).addItemStack(new ItemStack(BuiltInRegistries.ITEM.get(recipe.lens())));
+            builder.addSlot(recipe.consume() ? RecipeIngredientRole.INPUT : RecipeIngredientRole.CATALYST,57,4).addItemStack(new ItemStack(BuiltInRegistries.ITEM.get(recipe.lens())));
             builder.addSlot(RecipeIngredientRole.OUTPUT,104,26).addItemStack(recipe.result());
             recipe.secondary().ifPresent(s -> builder.addSlot(RecipeIngredientRole.OUTPUT,132,26).addItemStack(s)
                 .addTooltipCallback((view,tooltip) -> tooltip.add(Component.translatable("recipe.alchemicallaser.chance", Math.round(recipe.secondaryChance()*100)))));

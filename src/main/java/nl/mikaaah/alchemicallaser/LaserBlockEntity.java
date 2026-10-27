@@ -22,14 +22,40 @@ import net.neoforged.neoforge.items.ItemStackHandler;
 import nl.mikaaah.alchemicallaser.recipe.LaserRecipe;
 
 public class LaserBlockEntity extends KineticBlockEntity {
+    private ItemStack inventoryIdentity = ItemStack.EMPTY;
     public final ItemStackHandler lensInventory = new ItemStackHandler(1) {
-        @Override public int getSlotLimit(int slot) { return 1; }
-        @Override public boolean isItemValid(int slot, ItemStack stack) { return !AlchemicalLaser.lensName(stack).equals("none"); }
+        @Override public int getSlotLimit(int slot) { return 64; }
+        @Override public boolean isItemValid(int slot, ItemStack stack) { return !stack.isEmpty(); }
         @Override protected void onContentsChanged(int slot) {
-            cachedInput = ItemStack.EMPTY; cached = null; resetCycle();
+            boolean changedItem = !ItemStack.isSameItemSameComponents(inventoryIdentity, lens());
+            inventoryIdentity = lens().copyWithCount(1);
+            if (!committing && changedItem) { cachedInput = ItemStack.EMPTY; cached = null; resetCycle(); }
             if (level != null && !level.isClientSide) { setChanged(); sendData(); }
         }
     };
+    private boolean committing;
+    private int activeColor = 0x666b70;
+    private net.minecraft.world.item.crafting.Recipe<?> cachedRoot;
+    public int beamColor() { return activeColor; }
+    private void selectColor(LaserRecipe recipe) {
+        int color = recipe.beamColor(lens());
+        if (activeColor != color) { activeColor = color; sendData(); }
+    }
+    private int operationLimit(LaserRecipe recipe) { return recipe.consume() ? lens().getCount() : Integer.MAX_VALUE; }
+    private void consumeCatalyst(LaserRecipe recipe, int consumedInput) {
+        if (!recipe.consume()) return;
+        committing = true;
+        try {
+            ItemStack remainder = lens().getCraftingRemainingItem();
+            int operations = consumedInput / recipe.inputCount();
+            lensInventory.extractItem(0, operations, false);
+            for (int i = 0; i < operations && !remainder.isEmpty(); i++) {
+                ItemStack left = lensInventory.insertItem(0, remainder.copy(), false);
+                if (!left.isEmpty()) Block.popResource(level, worldPosition, left);
+            }
+        }
+        finally { committing = false; }
+    }
     public enum Phase { IDLE, READY, CHARGING, PROCESSING, COMPLETING }
     public Phase phase = Phase.IDLE;
     public float progress;
@@ -44,9 +70,10 @@ public class LaserBlockEntity extends KineticBlockEntity {
     private static final class LooseCycle {
         final RecipeHolder<LaserRecipe> recipe;
         final ItemStack input;
+        final net.minecraft.world.item.crafting.Recipe<?> root;
         int charge;
         float progress;
-        LooseCycle(RecipeHolder<LaserRecipe> recipe, ItemStack input) { this.recipe = recipe; this.input = input.copy(); }
+        LooseCycle(RecipeHolder<LaserRecipe> recipe, ItemStack input, net.minecraft.world.item.crafting.Recipe<?> root) { this.recipe = recipe; this.input = input.copy(); this.root = root; }
     }
     public LaserBlockEntity(BlockPos pos, BlockState state) { super(AlchemicalLaser.LASER_ENTITY.get(), pos, state); }
     @Override public void addBehaviours(List<BlockEntityBehaviour> behaviours) {
@@ -72,12 +99,23 @@ public class LaserBlockEntity extends KineticBlockEntity {
     }
     private RecipeHolder<LaserRecipe> recipe(ItemStack input) {
         boolean sameInput = ItemStack.isSameItemSameComponents(input, cachedInput) && input.getCount() == cachedInput.getCount();
-        if (sameInput && cached != null && level.getRecipeManager().byKey(cached.id()).orElse(null) == cached
+        if (sameInput && cached != null && level.getRecipeManager().byKey(cached.id()).map(RecipeHolder::value).orElse(null) == cachedRoot
             && cached.value().matchesInput(input, lens())) return cached;
         if (sameInput && cached == null && level.getGameTime() < nextLookup) return null;
         cachedInput = input.copy(); nextLookup = level.getGameTime() + 20;
+        var assembly = com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipe.getRecipe(level,
+            new net.minecraft.world.item.crafting.SingleRecipeInput(input.copy()), AlchemicalLaser.LASER_RECIPE.get(), LaserRecipe.class,
+            r -> r.value().supportsAssembly() && r.value().matchesInput(input, lens()));
+        if (assembly.isPresent()) {
+            cached = new RecipeHolder<>(assembly.get().id(), assembly.get().value().assemblyCopy());
+            cachedRoot = level.getRecipeManager().byKey(cached.id()).map(RecipeHolder::value).orElse(null);
+            return cached;
+        }
+        // An intermediate from another step must never be stolen by an ordinary laser recipe.
+        if (input.has(com.simibubi.create.AllDataComponents.SEQUENCED_ASSEMBLY)) { cached = null; return null; }
         cached = level.getRecipeManager().getAllRecipesFor(AlchemicalLaser.LASER_RECIPE.get()).stream()
             .filter(r -> r.value().matchesInput(input, lens())).sorted(Comparator.comparing(r -> r.id().toString())).findFirst().orElse(null);
+        cachedRoot = cached == null ? null : cached.value();
         return cached;
     }
     private ProcessingResult process(TransportedItemStack stack, TransportedItemStackHandlerBehaviour handler) {
@@ -87,6 +125,7 @@ public class LaserBlockEntity extends KineticBlockEntity {
         var found = recipe(stack.stack);
         if (target != null && previousRecipe != found) resetCycle();
         if (lens().isEmpty() || found == null) { resetCycle(); return ProcessingResult.PASS; }
+        selectColor(found.value());
         if (!looseCycles.isEmpty()) resetCycle();
         if (target != null && target != stack) resetCycle();
         if (target == null || !ItemStack.matches(cycleInput, stack.stack)) {
@@ -109,7 +148,7 @@ public class LaserBlockEntity extends KineticBlockEntity {
         if (level.getGameTime() % 8 == 0) sendData();
         if (progress < found.value().duration()) return ProcessingResult.HOLD;
         // Commit every complete recipe quantity in the held stack, in one cycle.
-        var batch = found.value().rollBatch(stack.stack, level.random);
+        var batch = found.value().rollBatch(stack.stack, level.random, operationLimit(found.value()));
         List<TransportedItemStack> results = new ArrayList<>();
         for (ItemStack out : batch.outputs()) {
             while (!out.isEmpty()) {
@@ -121,6 +160,7 @@ public class LaserBlockEntity extends KineticBlockEntity {
         remainder.locked = false;
         if (remainder.stack.isEmpty()) handler.handleProcessingOnItem(stack, TransportedResult.convertTo(results));
         else handler.handleProcessingOnItem(stack, TransportedResult.convertToAndLeaveHeld(results, remainder));
+        consumeCatalyst(found.value(), batch.consumed());
         sound("complete", .4f, lensPitch()); setPhase(Phase.COMPLETING);
         level.blockEvent(worldPosition, getBlockState().getBlock(), 1, 0);
         target = null; cycleInput = ItemStack.EMPTY; progress = 0; charge = 0;
@@ -164,17 +204,18 @@ public class LaserBlockEntity extends KineticBlockEntity {
             var input = item.getItem();
             var found = recipe(input);
             if (found == null || Math.abs(getSpeed()) < found.value().minimumRpm()) continue;
+            selectColor(found.value());
             UUID id = item.getUUID(); present.add(id);
             LooseCycle cycle = looseCycles.get(id);
-            if (cycle == null || cycle.recipe != found || !ItemStack.matches(cycle.input, input)) {
-                cycle = new LooseCycle(found, input); looseCycles.put(id, cycle);
+            if (cycle == null || !cycle.recipe.id().equals(found.id()) || cycle.root != level.getRecipeManager().byKey(found.id()).map(RecipeHolder::value).orElse(null) || !ItemStack.matches(cycle.input, input)) {
+                cycle = new LooseCycle(found, input, level.getRecipeManager().byKey(found.id()).map(RecipeHolder::value).orElse(null)); looseCycles.put(id, cycle);
             }
             if (cycle.charge < LaserConfig.CHARGE_TICKS.get()) {
                 cycle.charge++; charging = true; continue;
             }
             cycle.progress += Math.min(Math.abs(getSpeed()), LaserConfig.MAX_RPM.get()) / 32f;
             if (cycle.progress < found.value().duration()) { processing = true; continue; }
-            var batch = found.value().rollBatch(input, level.random);
+            var batch = found.value().rollBatch(input, level.random, operationLimit(found.value()));
             List<ItemEntity> outputs = new ArrayList<>();
             boolean spawned = true;
             for (ItemStack out : batch.outputs()) {
@@ -186,6 +227,7 @@ public class LaserBlockEntity extends KineticBlockEntity {
             if (!spawned) { outputs.forEach(ItemEntity::discard); continue; }
             if (batch.consumed() == input.getCount()) item.discard();
             else item.setItem(input.copyWithCount(input.getCount() - batch.consumed()));
+            consumeCatalyst(found.value(), batch.consumed());
             looseCycles.remove(id); completed = true;
         }
         looseCycles.keySet().retainAll(present);
@@ -204,12 +246,12 @@ public class LaserBlockEntity extends KineticBlockEntity {
     @Override protected void write(CompoundTag tag, HolderLookup.Provider registries, boolean clientPacket) {
         super.write(tag, registries, clientPacket);
         tag.put("Lens", lensInventory.serializeNBT(registries));
-        if (clientPacket) { tag.putInt("Phase", phase.ordinal()); tag.putFloat("Progress", progress); }
+        if (clientPacket) { tag.putInt("Phase", phase.ordinal()); tag.putFloat("Progress", progress); tag.putInt("BeamColor", activeColor); }
     }
     @Override protected void read(CompoundTag tag, HolderLookup.Provider registries, boolean clientPacket) {
         super.read(tag, registries, clientPacket);
         lensInventory.deserializeNBT(registries, tag.getCompound("Lens"));
-        if (clientPacket) { phase = Phase.values()[Math.clamp(tag.getInt("Phase"), 0, Phase.values().length - 1)]; progress = tag.getFloat("Progress"); }
+        if (clientPacket) { phase = Phase.values()[Math.clamp(tag.getInt("Phase"), 0, Phase.values().length - 1)]; progress = tag.getFloat("Progress"); activeColor = tag.getInt("BeamColor"); }
     }
     @Override public void destroy() {
         if (level != null && !level.isClientSide && !lens().isEmpty()) {

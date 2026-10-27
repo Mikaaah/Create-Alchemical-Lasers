@@ -10,5 +10,11 @@
     "count": 1
   },
   "duration": 240,
-  "minimum_rpm": 64
+  "minimum_rpm": 64,
+  "neoforge:conditions": [
+    {
+      "type": "alchemicallaser:default_recipes",
+      "crafting": false
+    }
+  ]
 }

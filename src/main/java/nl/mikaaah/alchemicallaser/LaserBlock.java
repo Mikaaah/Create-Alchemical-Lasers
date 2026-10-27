@@ -27,7 +27,7 @@ public class LaserBlock extends HorizontalKineticBlock implements IBE<LaserBlock
     }
     @Override protected ItemInteractionResult useItemOn(ItemStack held, BlockState state, Level level, BlockPos pos,
             Player player, InteractionHand hand, BlockHitResult hit) {
-        if (!AlchemicalLaser.lensName(held).equals("none")) {
+        if (!held.isEmpty() && !held.is(com.simibubi.create.AllItems.WRENCH.get())) {
             if (!player.mayBuild()) return ItemInteractionResult.FAIL;
             if (!level.isClientSide && level.getBlockEntity(pos) instanceof LaserBlockEntity be) {
                 ItemStack old = be.exchangeLens(held.copyWithCount(1));

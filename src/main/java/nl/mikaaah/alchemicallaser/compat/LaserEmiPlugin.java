@@ -24,14 +24,16 @@ public class LaserEmiPlugin implements EmiPlugin {
         final LaserRecipe recipe;
         Display(ResourceLocation id,LaserRecipe recipe) {
             super(CATEGORY,id,164,78);this.recipe=recipe;
-            inputs=List.of(EmiIngredient.of(recipe.ingredient(),recipe.inputCount()));
-            catalysts=List.of(EmiStack.of(new ItemStack(BuiltInRegistries.ITEM.get(recipe.lens()))));
+            var catalyst = EmiStack.of(new ItemStack(BuiltInRegistries.ITEM.get(recipe.lens())));
+            inputs=recipe.consume() ? List.of(EmiIngredient.of(recipe.ingredient(),recipe.inputCount()), catalyst)
+                : List.of(EmiIngredient.of(recipe.ingredient(),recipe.inputCount()));
+            catalysts=recipe.consume() ? List.of() : List.of(catalyst);
             var out=new ArrayList<EmiStack>();out.add(EmiStack.of(recipe.result()));
             recipe.secondary().ifPresent(s -> out.add(EmiStack.of(s).setChance(recipe.secondaryChance())));outputs=out;
         }
         @Override public void addWidgets(WidgetHolder widgets) {
             widgets.addSlot(inputs.get(0),10,26);
-            widgets.addSlot(catalysts.get(0),57,4);
+            widgets.addSlot(recipe.consume() ? inputs.get(1) : catalysts.get(0),57,4);
             widgets.addTexture(EmiTexture.EMPTY_ARROW,56,29);
             widgets.addSlot(outputs.get(0),104,26).recipeContext(this);
             if(outputs.size()>1) widgets.addSlot(outputs.get(1),132,26).recipeContext(this);

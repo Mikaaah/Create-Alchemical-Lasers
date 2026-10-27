@@ -22,7 +22,7 @@ public final class LaserEffects {
         boolean completing = be.phase == LaserBlockEntity.Phase.COMPLETING;
         if (!be.isBeamActive() && !charging && !completing) return;
         if (level.getGameTime() % (completing ? 2 : 3) != 0) return;
-        int rgb = AlchemicalLaser.lensColor(be.lens());
+        int rgb = be.beamColor();
         var dust = new DustParticleOptions(new Vector3f((rgb>>16&255)/255f, (rgb>>8&255)/255f, (rgb&255)/255f), .65f);
         double x = pos.getX()+.5, y = pos.getY(), z = pos.getZ()+.5;
         if (charging) {
@@ -39,7 +39,7 @@ public final class LaserEffects {
         }
     }
     public static void complete(LaserBlockEntity be) {
-        var level=be.getLevel();var p=be.getBlockPos();int rgb=AlchemicalLaser.lensColor(be.lens());
+        var level=be.getLevel();var p=be.getBlockPos();int rgb=be.beamColor();
         var dust=new DustParticleOptions(new Vector3f((rgb>>16&255)/255f,(rgb>>8&255)/255f,(rgb&255)/255f),.9f);
         for(int i=0;i<8;i++) {
             double a=i*Math.PI/4,dx=Math.cos(a),dz=Math.sin(a);

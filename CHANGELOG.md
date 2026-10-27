@@ -1,3 +1,15 @@
+# 0.4.0
+
+- Added native KubeJS builders with LENS, COLOR, CONSUME, INPUT and OUTPUT fields, plus lowercase aliases and a positional constructor.
+- Added per-recipe colors and optional catalyst consumption for any item. Bulk processing is capped by available consumables; unfinished input stays behind.
+- Added Create sequenced assembly steps with catalyst checks, intermediate progression, loops and final outputs.
+- Catalyst inventory accepts stacked items and hopper insertion from above. Container remainders are retained or returned.
+- Added independent common-config switches for bundled processing and crafting recipes. Custom recipes remain enabled.
+- JEI/EMI distinguish consumables from reusable catalysts; JEI assemblies display the laser and catalyst.
+- Added server regression coverage for consumption, interruptions, top hoppers, assembly loops and recipe synchronization.
+
+Validation: 46 server GameTests passed with KubeJS 2101.7.2-build.379, Rhino 2101.2.7-build.81 and KubeJS Create 2101.3.1-build.18. The same suite passed without KubeJS (the scripting-only case skips in that installation). A separate config test passed with both bundled recipe switches disabled and confirmed custom recipes survive. Native builders loaded with zero failed recipes. Resource/schema checks and the Gradle build passed. Graphical JEI/EMI review remains manual.
+
 # Changelog
 
 ## 0.3.0

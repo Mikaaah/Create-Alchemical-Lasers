@@ -7,6 +7,8 @@ import nbtlib as n
 R=Path(__file__).resolve().parents[1]/'src/main/resources'
 A=R/'assets/alchemicallaser'
 def js(path,data):
+    if path.parent.name == 'recipe' and 'type' in data:
+        data['neoforge:conditions'] = [{'type': 'alchemicallaser:default_recipes', 'crafting': data['type'] != 'alchemicallaser:laser_processing'}]
     path.parent.mkdir(parents=True,exist_ok=True); path.write_text(json.dumps(data,indent=2)+'\n')
 def img(path,im):
     path.parent.mkdir(parents=True,exist_ok=True); im.save(path)

@@ -8,5 +8,11 @@
     "id": "minecraft:glass"
   },
   "duration": 100,
-  "minimum_rpm": 16
+  "minimum_rpm": 16,
+  "neoforge:conditions": [
+    {
+      "type": "alchemicallaser:default_recipes",
+      "crafting": false
+    }
+  ]
 }
