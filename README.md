@@ -2,7 +2,7 @@
 
 # Create: Alchemical Lasers
 
-[Documentation](wiki/Home.md) · [Changelog](CHANGELOG.md) · [Report an issue](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
+[Wiki](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki) · [Changelog](CHANGELOG.md) · [Report an issue](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
 
 Kinetic laser processing for **Minecraft 1.21.1 • NeoForge • Create 6.0.10**.
 
