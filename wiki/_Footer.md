@@ -1,3 +1,3 @@
-[Source](https://github.com/Mikaaah/Alchemical-Laser) · [Issues](https://github.com/Mikaaah/Alchemical-Laser/issues)
+[Source](https://github.com/Mikaaah/Create-Alchemical-Lasers) · [Issues](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
 
 A Towns & Kingdoms project by Mikaaah.

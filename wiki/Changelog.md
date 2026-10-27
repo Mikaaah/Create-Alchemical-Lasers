@@ -1,5 +1,5 @@
 # Changelog
 
-Read the maintained [release notes](https://github.com/Mikaaah/Alchemical-Laser/blob/main/CHANGELOG.md).
+Read the maintained [release notes](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/main/CHANGELOG.md).
 
 [Documentation home](Home.md)

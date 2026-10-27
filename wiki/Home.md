@@ -12,4 +12,4 @@ Kinetic laser processing for Minecraft 1.21.1 / NeoForge / Create 6.0.10. Source
 - [Troubleshooting](Troubleshooting.md)
 - [Changelog](Changelog.md)
 
-[Repository](https://github.com/Mikaaah/Alchemical-Laser) · [Report an issue](https://github.com/Mikaaah/Alchemical-Laser/issues)
+[Repository](https://github.com/Mikaaah/Create-Alchemical-Lasers) · [Report an issue](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
