@@ -1,10 +1,12 @@
-![Create: Alchemical Lasers](docs/branding/banner.png)
+<p align="center"><img src="https://i.imgur.com/iXGIzOA.png" alt="Create: Alchemical Lasers" width="100%"></p>
+
+# Create: Alchemical Lasers
+
+[Documentation](wiki/Home.md) · [Changelog](CHANGELOG.md) · [Report an issue](https://github.com/Mikaaah/Alchemical-Laser/issues)
 
 Kinetic laser processing for **Minecraft 1.21.1 • NeoForge • Create 6.0.10**.
 
 A single emitter bulk-processes items on Mechanical Belts, Depots and the ground. A caged industrial optical head hangs below a solid brass housing, powered through its horizontal side shaft. Five reusable lenses select recipes and color a native beacon beam. Includes pixel-art optical cartridges, spatial audio and Create Ponder tutorials.
-
-![Industrial laser model and five optical lenses](docs/images/optics-0.4.0.png)
 
 ## How it works
 
