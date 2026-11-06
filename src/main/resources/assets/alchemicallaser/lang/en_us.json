@@ -53,5 +53,8 @@
   "item.alchemicallaser.convergence_lens": "Convergence Lens",
   "item.alchemicallaser.splitting_lens": "Splitting Lens",
   "item.alchemicallaser.power_lens": "Power Lens",
-  "item.alchemicallaser.eclipse_lens": "Eclipse Lens"
+  "item.alchemicallaser.eclipse_lens": "Eclipse Lens",
+  "recipe.alchemicallaser.assembly": "Laser processing with %s",
+  "recipe.alchemicallaser.consumed": "Consumed once per operation",
+  "recipe.alchemicallaser.reusable": "Reusable catalyst"
 }

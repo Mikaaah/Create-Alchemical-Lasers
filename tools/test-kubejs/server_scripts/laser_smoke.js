@@ -10,6 +10,10 @@ ServerEvents.recipes(event => {
     .lens('minecraft:diamond').color('#2244FF').consume(false)
     .input('minecraft:gravel').output('minecraft:flint')
     .id('alchemicallaser:custom_same_namespace')
+  event.recipes.alchemicallaser.laser_processing()
+    .LENS('alchemicallaser:power_lens')
+    .INPUT('minecraft:granite').OUTPUT('minecraft:stone')
+    .id('tnk:kjs_default_color')
   const incomplete = 'create:incomplete_precision_mechanism'
   event.recipes.create.sequenced_assembly(['minecraft:diamond'], 'minecraft:iron_ingot', [
     event.recipes.alchemicallaser.laser_processing()

@@ -1,4 +1,8 @@
 """Rebuild the original pixel-art, procedural audio and Ponder scene assets. Requires pillow, numpy, nbtlib and ffmpeg."""
+# Historical generation snapshots can overwrite later assets and recipe changes.
+import sys
+if "--overwrite-generated-assets" not in sys.argv:
+    raise SystemExit("Historical asset generator. Use a disposable checkout and pass --overwrite-generated-assets explicitly.")
 from pathlib import Path
 import json, math, random, subprocess, tempfile, wave, re
 import numpy as np

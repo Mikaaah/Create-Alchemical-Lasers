@@ -13,7 +13,7 @@ for p in (a/'models').rglob('*.json'):
         assert all(lo<hi for lo,hi in zip(element['from'],element['to'])),p
 for name,entry in json.loads((a/'sounds.json').read_text()).items():
     assert (a/'sounds'/f'{name}.ogg').stat().st_size>1000,name
-for p in r.rglob('*.nbt'):
+for p in list(r.rglob('*.nbt')) + list((root/'src/gameTest/resources').rglob('*.nbt')):
     n=nbtlib.load(p);assert 'size' in n and 'palette' in n and 'blocks' in n,p
     for b in n['blocks']:assert 0<=b['state']<len(n['palette']),p
 for p in (r/'data/alchemicallaser/recipe').glob('*.json'):
@@ -23,12 +23,12 @@ for p in (r/'data/alchemicallaser/recipe').glob('*.json'):
         assert recipe['duration']>0
 plugin=(root/'src/main/java/nl/mikaaah/alchemicallaser/ponder/LaserPonderPlugin.java').read_text()
 assert plugin.count('.addStoryBoard(')==6
-for name in re.findall(r'addStoryBoard\("([^"]+)"',plugin):assert (a/'ponder'/f'{name}.nbt').is_file()
+for name in re.findall(r'addStoryBoard\(\s*"([^"]+)"',plugin):assert (a/'ponder'/f'{name}.nbt').is_file()
 print('Resource validation passed: JSON, owned textures, models, seven OGG assets, structures, recipes and six storyboard registrations.')
 
 lang=json.loads((a/'lang/en_us.json').read_text())
 for file in (root/'src/main/java').rglob('*.java'):
-    for key in re.findall(r'Component.translatable\("([^"\n]+)"',file.read_text()):
+    for key in re.findall(r'Component.translatable\(\s*"([^"\n]+)"',file.read_text()):
         if not key.endswith('.') and key.startswith(('goggles.alchemicallaser.','recipe.alchemicallaser.','itemGroup.')):assert key in lang,(file,key)
 print('Static translation references passed.')
 

@@ -1,6 +1,6 @@
-# KubeJS and sequenced assembly — 0.4.0
+# KubeJS and sequenced assembly
 
-Put recipes in `kubejs/server_scripts/alchemical_lasers.js`. Requires KubeJS 7 for Minecraft 1.21.1. Install KubeJS Create as well when using its `event.recipes.create.sequenced_assembly` helper. Laser steps themselves work with Create alone through datapack JSON.
+Put recipes in `kubejs/server_scripts/alchemical_lasers.js`. Requires KubeJS 7 for Minecraft 1.21.1. The previously tested combination is KubeJS 2101.7.2-build.379, Rhino 2101.2.7-build.81 and KubeJS Create 2101.3.1-build.18. Older KubeJS Create builds may be incompatible with Create 6.0.10. Install KubeJS Create as well when using its `event.recipes.create.sequenced_assembly` helper. Laser steps themselves work with Create alone through datapack JSON.
 
 The addon ships a native KubeJS recipe schema. No `event.custom` wrapper, startup registration or hard dependency on KubeJS is needed.
 
