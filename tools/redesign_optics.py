@@ -3,6 +3,10 @@
 Requires Pillow and nbtlib. No Create Deco installation is needed to build or play.
 The source lantern and its three palette textures remain third-party assets.
 """
+# Historical generation snapshots can overwrite later assets and recipe changes.
+import sys
+if "--overwrite-generated-assets" not in sys.argv:
+    raise SystemExit("Historical asset generator. Use a disposable checkout and pass --overwrite-generated-assets explicitly.")
 from pathlib import Path
 import copy, json, re
 from PIL import Image, ImageDraw

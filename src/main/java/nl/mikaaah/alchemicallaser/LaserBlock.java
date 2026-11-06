@@ -1,5 +1,6 @@
 package nl.mikaaah.alchemicallaser;
 
+import com.simibubi.create.AllItems;
 import com.simibubi.create.content.kinetics.base.HorizontalKineticBlock;
 import com.simibubi.create.foundation.block.IBE;
 import net.minecraft.core.*;
@@ -13,42 +14,79 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.*;
 
 public class LaserBlock extends HorizontalKineticBlock implements IBE<LaserBlockEntity> {
-    private static final VoxelShape LANTERN = Shapes.or(box(4, -3, 4, 12, 7, 12), box(5, -6, 5, 11, -3, 11));
-    private static final VoxelShape SHAPE = Shapes.or(LANTERN, box(1, 6, 1, 15, 15, 15));
-    public LaserBlock(Properties properties) { super(properties); }
-    @Override public Direction.Axis getRotationAxis(BlockState state) { return state.getValue(HORIZONTAL_FACING).getAxis(); }
-    @Override public boolean hasShaftTowards(LevelReader level, BlockPos pos, BlockState state, Direction face) {
-        return face.getAxis() == getRotationAxis(state);
+  private static final VoxelShape LANTERN =
+      Shapes.or(box(4, -3, 4, 12, 7, 12), box(5, -6, 5, 11, -3, 11));
+  private static final VoxelShape SHAPE = Shapes.or(LANTERN, box(1, 6, 1, 15, 15, 15));
+
+  public LaserBlock(Properties properties) {
+    super(properties);
+  }
+
+  @Override
+  public Direction.Axis getRotationAxis(BlockState state) {
+    return state.getValue(HORIZONTAL_FACING).getAxis();
+  }
+
+  @Override
+  public boolean hasShaftTowards(
+      LevelReader level, BlockPos pos, BlockState state, Direction face) {
+    return face.getAxis() == getRotationAxis(state);
+  }
+
+  @Override
+  public Class<LaserBlockEntity> getBlockEntityClass() {
+    return LaserBlockEntity.class;
+  }
+
+  @Override
+  public BlockEntityType<? extends LaserBlockEntity> getBlockEntityType() {
+    return AlchemicalLaser.LASER_ENTITY.get();
+  }
+
+  @Override
+  public VoxelShape getShape(
+      BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+    return SHAPE;
+  }
+
+  @Override
+  protected ItemInteractionResult useItemOn(
+      ItemStack held,
+      BlockState state,
+      Level level,
+      BlockPos pos,
+      Player player,
+      InteractionHand hand,
+      BlockHitResult hit) {
+    if (!held.isEmpty() && !held.is(AllItems.WRENCH.get())) {
+      if (!player.mayBuild()) return ItemInteractionResult.FAIL;
+      if (!level.isClientSide && level.getBlockEntity(pos) instanceof LaserBlockEntity be) {
+        ItemStack old = be.exchangeLens(held.copyWithCount(1));
+        if (!player.isCreative()) held.shrink(1);
+        if (!old.isEmpty() && !player.getInventory().add(old)) player.drop(old, false);
+      }
+      return ItemInteractionResult.sidedSuccess(level.isClientSide);
     }
-    @Override public Class<LaserBlockEntity> getBlockEntityClass() { return LaserBlockEntity.class; }
-    @Override public BlockEntityType<? extends LaserBlockEntity> getBlockEntityType() { return AlchemicalLaser.LASER_ENTITY.get(); }
-    @Override public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return SHAPE;
+    return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+  }
+
+  @Override
+  protected InteractionResult useWithoutItem(
+      BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
+    if (player.isShiftKeyDown()
+        && player.mayBuild()
+        && level.getBlockEntity(pos) instanceof LaserBlockEntity be) {
+      if (!level.isClientSide) {
+        ItemStack old = be.exchangeLens(ItemStack.EMPTY);
+        if (!old.isEmpty() && !player.getInventory().add(old)) player.drop(old, false);
+      }
+      return InteractionResult.sidedSuccess(level.isClientSide);
     }
-    @Override protected ItemInteractionResult useItemOn(ItemStack held, BlockState state, Level level, BlockPos pos,
-            Player player, InteractionHand hand, BlockHitResult hit) {
-        if (!held.isEmpty() && !held.is(com.simibubi.create.AllItems.WRENCH.get())) {
-            if (!player.mayBuild()) return ItemInteractionResult.FAIL;
-            if (!level.isClientSide && level.getBlockEntity(pos) instanceof LaserBlockEntity be) {
-                ItemStack old = be.exchangeLens(held.copyWithCount(1));
-                if (!player.isCreative()) held.shrink(1);
-                if (!old.isEmpty() && !player.getInventory().add(old)) player.drop(old, false);
-            }
-            return ItemInteractionResult.sidedSuccess(level.isClientSide);
-        }
-        return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
-    }
-    @Override protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
-        if (player.isShiftKeyDown() && player.mayBuild() && level.getBlockEntity(pos) instanceof LaserBlockEntity be) {
-            if (!level.isClientSide) {
-                ItemStack old = be.exchangeLens(ItemStack.EMPTY);
-                if (!old.isEmpty() && !player.getInventory().add(old)) player.drop(old, false);
-            }
-            return InteractionResult.sidedSuccess(level.isClientSide);
-        }
-        return InteractionResult.PASS;
-    }
-    @Override public boolean triggerEvent(BlockState state, Level level, BlockPos pos, int event, int data) {
-        return level.getBlockEntity(pos) instanceof LaserBlockEntity be && be.triggerEvent(event,data);
-    }
+    return InteractionResult.PASS;
+  }
+
+  @Override
+  public boolean triggerEvent(BlockState state, Level level, BlockPos pos, int event, int data) {
+    return level.getBlockEntity(pos) instanceof LaserBlockEntity be && be.triggerEvent(event, data);
+  }
 }

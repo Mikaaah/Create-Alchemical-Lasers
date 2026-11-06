@@ -1,4 +1,20 @@
-# 0.4.0
+# Changelog
+
+## 1.0.0-rc.1
+
+- Fixed processing through a blocked beam gap on belts/Depots.
+- Protected assembly outputs and installed catalysts from shared mutable item stacks.
+- Preserved catalyst identity after NBT reload so same-item refills keep active progress.
+- Rejected missing/air catalyst IDs with a recipe-loading error.
+- Corrected lens colors in Ponder previews and translated assembly/catalyst text.
+- Updated JEI integration to its current size and rich-tooltip APIs.
+- Cleaned and formatted Java source; recipe selection avoids sorting the full match list.
+- Removed GameTests and fixture structures from shipped JARs; added packaging checks and synchronized version metadata.
+- Reworked player/developer documentation, configuration reference, wiki, contributor guidance and automated core/scripting verification.
+
+This is a release candidate for Minecraft 1.21.1 / NeoForge / Create 6.0.10. See [release audit](docs/RELEASE_AUDIT.md) for exact checks and outstanding graphical-client review. Current five-lens item IDs, recipe fields, catalyst inventory and side-shaft layout are preserved.
+
+## 0.4.0
 
 - Added native KubeJS builders with LENS, COLOR, CONSUME, INPUT and OUTPUT fields, plus lowercase aliases and a positional constructor.
 - Added per-recipe colors and optional catalyst consumption for any item. Bulk processing is capped by available consumables; unfinished input stays behind.
@@ -9,8 +25,6 @@
 - Added server regression coverage for consumption, interruptions, top hoppers, assembly loops and recipe synchronization.
 
 Validation: 46 server GameTests passed with KubeJS 2101.7.2-build.379, Rhino 2101.2.7-build.81 and KubeJS Create 2101.3.1-build.18. The same suite passed without KubeJS (the scripting-only case skips in that installation). A separate config test passed with both bundled recipe switches disabled and confirmed custom recipes survive. Native builders loaded with zero failed recipes. Resource/schema checks and the Gradle build passed. Graphical JEI/EMI review remains manual.
-
-# Changelog
 
 ## 0.3.0
 

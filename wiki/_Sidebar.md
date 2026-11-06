@@ -2,9 +2,10 @@
 
 **Create: Alchemical Lasers**
 
-- [Home](Home.md)
-- [Getting started](Getting-Started.md)
-- [Processing and lenses](Processing-and-Lenses.md)
-- [KubeJS and assemblies](KubeJS-and-Assemblies.md)
-- [Troubleshooting](Troubleshooting.md)
-- [Changelog](Changelog.md)
+- [Home](Home)
+- [Getting started](Getting-Started)
+- [Processing and lenses](Processing-and-Lenses)
+- [KubeJS and assemblies](KubeJS-and-Assemblies)
+- [Configuration](Configuration)
+- [Troubleshooting](Troubleshooting)
+- [Changelog](Changelog)

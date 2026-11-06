@@ -12,3 +12,6 @@ runs/
 Thumbs.db
 
 logs/
+
+# Local build tools and optional integration downloads
+tooling/

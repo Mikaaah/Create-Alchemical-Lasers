@@ -2,7 +2,7 @@ plugins {
     id 'java-library'
     id 'net.neoforged.moddev' version '2.0.148'
 }
-version = '0.4.0'
+version = '1.0.0-rc.1'
 group = 'nl.mikaaah.alchemicallaser'
 base { archivesName = 'create-alchemical-lasers' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -16,15 +16,27 @@ repositories {
     maven { url = 'https://maven.terraformersmc.com/releases'; content { includeGroup 'dev.emi' } }
     mavenCentral()
 }
+sourceSets {
+    gameTest {
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += sourceSets.main.output
+    }
+}
+configurations {
+    gameTestImplementation.extendsFrom implementation
+    gameTestRuntimeOnly.extendsFrom runtimeOnly
+    gameTestCompileOnly.extendsFrom compileOnly
+}
 neoForge {
     version = '21.1.219'
+    addModdingDependenciesTo(sourceSets.gameTest)
     runs {
         client { client() }
         server { server(); programArgument '--nogui' }
-        configTestServer { type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', 'alchemicallaser_config' }
-        gameTestServer { type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', 'alchemicallaser' }
+        configTestServer { sourceSet = sourceSets.gameTest; type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', 'alchemicallaser_config' }
+        gameTestServer { sourceSet = sourceSets.gameTest; type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', 'alchemicallaser' }
     }
-    mods { alchemicallaser { sourceSet sourceSets.main } }
+    mods { alchemicallaser { sourceSet sourceSets.main; sourceSet sourceSets.gameTest } }
 }
 dependencies {
     implementation('com.simibubi.create:create-1.21.1:6.0.10-280:slim') { transitive = false }
@@ -37,4 +49,22 @@ dependencies {
     compileOnly 'dev.emi:emi-neoforge:1.1.22+1.21.1:api'
 }
 tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
-tasks.named('processResources') { from('THIRD_PARTY_NOTICES.md') }
+tasks.named('processResources') {
+    from('THIRD_PARTY_NOTICES.md')
+    inputs.property 'version', project.version
+    filesMatching('META-INF/neoforge.mods.toml') { expand version: project.version }
+}
+tasks.register('verifyReleaseJar') {
+    dependsOn tasks.named('jar')
+    doLast {
+        def entries = zipTree(tasks.named('jar').get().archiveFile.get().asFile)
+        if (!entries.matching { include '**/test/**', '**/structure/empty.nbt' }.isEmpty()) {
+            throw new GradleException('Test classes or fixtures leaked into the release JAR')
+        }
+        def metadata = entries.matching { include 'META-INF/neoforge.mods.toml' }.singleFile.text
+        if (!metadata.contains('version="' + project.version + '"')) {
+            throw new GradleException('Packaged mod version does not match the build')
+        }
+    }
+}
+tasks.named('check') { dependsOn tasks.named('verifyReleaseJar') }
