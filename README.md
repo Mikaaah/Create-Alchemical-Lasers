@@ -21,7 +21,6 @@ Speed scales processing time, up to the configured cap. A powered redstone signa
 
 - Bulk processing on belts and Depots, plus multiple dropped item stacks directly beneath the beam. Complete recipe quantities process together; incomplete remainders stay behind.
 - Five reusable lenses with fitted 3D cartridges, animated Minecraft beacon beams, charging particles and completion effects.
-- Industrial lantern adapted from Create Deco with permission, paired with a brass housing using Create’s brass texture; see [credits](THIRD_PARTY_NOTICES.md).
 - Seven original sound events, including a spatial beam loop that stops when processing stops or the machine unloads.
 - Engineer's Goggles information, Create wrench interaction and a one-slot lens item capability for automation.
 - Datapack recipes and native KubeJS builders, consumable catalysts, custom beam colors and Create sequenced assembly; optional component copying and probabilistic secondary outputs.
