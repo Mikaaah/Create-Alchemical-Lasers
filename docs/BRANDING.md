@@ -4,8 +4,8 @@ Owner-supplied artwork. Use one banner at the top of the README and documentatio
 
 | Asset | Official URL |
 | --- | --- |
-| Banner | [Open banner](https://i.imgur.com/iXGIzOA.png) |
-| Logo | [Open logo](https://i.imgur.com/DRseyOn.png) |
+| Banner | [Open banner](https://i.imgur.com/q7nqwEG.png) |
+| Logo | [Open logo](https://i.imgur.com/YpFfZOQ.png) |
 
 These links supersede earlier artwork references. Preserve the artwork, proportions and typography.
 
