@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/DRseyOn.png" alt="Project logo" width="96">
+<img src="https://i.imgur.com/YpFfZOQ.png" alt="Project logo" width="96">
 
 **Create: Alchemical Lasers**
 

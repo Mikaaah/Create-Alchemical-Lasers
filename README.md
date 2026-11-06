@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.imgur.com/iXGIzOA.png" alt="Create: Alchemical Lasers" width="100%"></p>
+<p align="center"><img src="https://i.imgur.com/q7nqwEG.png" alt="Create: Alchemical Lasers" width="100%"></p>
 
 # Create: Alchemical Lasers
 
