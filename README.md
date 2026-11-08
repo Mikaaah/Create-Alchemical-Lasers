@@ -1,12 +1,15 @@
-<p align="center"><img src="https://i.imgur.com/q7nqwEG.png" alt="Create: Alchemical Lasers" width="100%"></p>
+<p align="center"><img src="docs/branding/banner.png" alt="Create: Alchemical Lasers" width="100%"></p>
 
-# Create: Alchemical Lasers
+<h1 align="center">Create: Alchemical Lasers</h1>
 
-[Wiki](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki) · [Changelog](CHANGELOG.md) · [Report an issue](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
+<p align="center"><strong>Put a little alchemy on the assembly line: kinetic lasers, five lenses and bulk processing.</strong></p>
 
-Kinetic laser processing for **Minecraft 1.21.1 • NeoForge • Create 6.0.10**.
+<p align="center"><a href="https://www.curseforge.com/members/mikaaah/projects">Downloads</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki">Player guide</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/issues">Report an issue</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/CHANGELOG.md">Changelog</a> · <a href="https://discord.gg/CRYk3uDPVt">Discord</a></p>
 
-A single emitter bulk-processes items on Mechanical Belts, Depots and the ground. A caged industrial optical head hangs below a solid brass housing, powered through its horizontal side shaft. Five reusable lenses select recipes and color a native beacon beam. Includes pixel-art optical cartridges, spatial audio and Create Ponder tutorials.
+<p align="center"><img src="https://img.shields.io/badge/Minecraft-1.21.1-5b8731?style=flat-square" alt="Minecraft 1.21.1"> <img src="https://img.shields.io/badge/NeoForge-d77828?style=flat-square" alt="NeoForge"> <a href="https://mikaaah.github.io/TownsAndKingdoms/projects/"><img src="https://img.shields.io/badge/Towns_%26_Kingdoms-Modding_Hub-7f384a?style=flat-square" alt="Towns & Kingdoms Modding Hub"></a></p>
+
+
+**TNK development edition · 1.0.0-rc.1 · Minecraft 1.21.1**
 
 ## How it works
 
@@ -44,13 +47,13 @@ Speed scales processing time, up to the configured cap. A powered redstone signa
 
 These are standalone examples. Modpacks can replace them with their own progression. Towns & Kingdoms is not required.
 
-[Recipe reference](docs/RECIPES.md) · [KubeJS and assemblies](docs/KUBEJS.md) · [Configuration](docs/CONFIGURATION.md) · [Development](docs/DEVELOPMENT.md)
+[Recipe reference](docs/RECIPES.md) · [KubeJS and assemblies](docs/KUBEJS.md) · [Configuration](docs/CONFIGURATION.md) · [Support](SUPPORT.md)
 
 ## Requirements
 
 Minecraft 1.21.1, Java 21, NeoForge 21.1.219 or newer, and Create 6.0.10 (6.0.x). Use Create's required matching dependencies. JEI, EMI and KubeJS are optional.
 
-This branch prepares **1.0.0-rc.1**. See the [release audit](docs/RELEASE_AUDIT.md) for verification results and remaining 1.0 checks. The latest stable source on main remains 0.4.0.
+This branch contains **1.0.0-rc.1**. It is a release candidate; the main branch keeps the 0.4.0 source. See [release notes](CHANGELOG.md) for changes and [release status](docs/RELEASE_AUDIT.md) for remaining checks.
 
 The specialist lenses are recipe selectors. Their starter recipes demonstrate growth, consolidation, splitting, energizing and sculk processing; datapacks and KubeJS can replace them. The obsidian Power recipe requires 64 RPM and the Eclipse example requires 128 RPM.
 
@@ -63,5 +66,10 @@ The specialist lenses are recipe selectors. Their starter recipes demonstrate gr
 The mod supports per-recipe catalyst items, hex colors, optional consumption, top hopper feeding, native KubeJS recipe builders and Create sequenced assembly. See [complete scripting examples](docs/KUBEJS.md). Bundled processing and crafting recipes can be disabled independently in `config/alchemicallaser-common.toml`.
 
 ## Contributing and support
+## Pull up a chair
 
-Include exact mod versions and a minimal recipe/setup when reporting issues. See [contribution guidance](CONTRIBUTING.md) for builds, coding style and validation. The source and original assets are All Rights Reserved; see [LICENSE](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
+Questions, builds, feedback, server news and the occasional wildly overambitious factory: join the **Towns & Kingdoms Modding Hub**.
+
+[![Join the Towns & Kingdoms Discord](https://i.imgur.com/Ojgcccm.png)](https://discord.gg/CRYk3uDPVt)
+
+**[Join Discord](https://discord.gg/CRYk3uDPVt)** · [Explore all projects](https://mikaaah.github.io/TownsAndKingdoms/projects/) · [CurseForge projects](https://www.curseforge.com/members/mikaaah/projects)
