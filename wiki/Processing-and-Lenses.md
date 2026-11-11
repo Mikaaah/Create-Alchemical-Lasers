@@ -1,5 +1,3 @@
-[← Guide home](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki) · [Project](https://github.com/Mikaaah/Create-Alchemical-Lasers) · [Get help](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
-
 # Processing and lenses
 
 | Lens | Item ID | Default beam color | Example |
@@ -18,4 +16,4 @@ Belts, Depots and dropped stacks follow the same quantity rules. Several dropped
 
 Create sequenced assembly steps take priority over standalone recipes. Intermediates awaiting another step are left untouched. Standalone recipe ties use alphabetical recipe ID order.
 
-[Home](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki/Home)
+[Home](Home)

@@ -1,3 +1,3 @@
-[![Join the Towns & Kingdoms Discord](https://i.imgur.com/Ojgcccm.png)](https://discord.gg/CRYk3uDPVt)
+[Source](https://github.com/Mikaaah/Create-Alchemical-Lasers) · [Issues](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
 
-[Join Discord](https://discord.gg/CRYk3uDPVt) · [All mod projects](https://mikaaah.github.io/TownsAndKingdoms/projects/) · [Repository](https://github.com/Mikaaah/Create-Alchemical-Lasers) · [Report an issue](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
+A Towns & Kingdoms project by Mikaaah.

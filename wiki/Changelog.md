@@ -1,7 +1,5 @@
-[← Guide home](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki) · [Project](https://github.com/Mikaaah/Create-Alchemical-Lasers) · [Get help](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
-
 # Changelog
 
-Read the maintained [release notes](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/main/CHANGELOG.md).
+Read the maintained [release notes](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/CHANGELOG.md).
 
-[Documentation home](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki/Home)
+[Documentation home](Home)

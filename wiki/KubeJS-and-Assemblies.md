@@ -1,5 +1,3 @@
-[← Guide home](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki) · [Project](https://github.com/Mikaaah/Create-Alchemical-Lasers) · [Get help](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
-
 # KubeJS and assemblies
 
 Put recipes in `kubejs/server_scripts/`. KubeJS and Rhino are optional. KubeJS Create is additionally needed for its sequenced-assembly JavaScript helper; datapack assemblies work with Create alone.
@@ -24,4 +22,4 @@ Laser steps can be nested inside Create sequenced assembly. Use one input per op
 
 [Full builder and assembly examples](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/docs/KUBEJS.md) · [Datapack field reference](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/docs/RECIPES.md)
 
-[Home](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki/Home)
+[Home](Home)

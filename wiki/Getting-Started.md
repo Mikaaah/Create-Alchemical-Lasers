@@ -1,5 +1,3 @@
-[← Guide home](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki) · [Project](https://github.com/Mikaaah/Create-Alchemical-Lasers) · [Get help](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
-
 # Getting started
 
 Requires Minecraft 1.21.1, Java 21, NeoForge 21.1.219+ and Create 6.0.10 within the declared 6.0.x range. The pinned tested build is Create 6.0.10-280. Install Create's matching dependencies. JEI, EMI and KubeJS are optional.
@@ -14,4 +12,4 @@ Keep the gap clear and redstone off. Right-click installs one catalyst and retur
 
 If a pack disables the default recipes, use its custom recipes instead. Hold the Ponder key on the emitter or lenses for the six tutorials. Recipe viewers display catalyst, input, outputs, duration and minimum RPM.
 
-[Home](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki/Home)
+[Home](Home)

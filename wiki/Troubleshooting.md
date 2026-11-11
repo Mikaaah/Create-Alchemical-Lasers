@@ -1,5 +1,3 @@
-[← Guide home](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki) · [Project](https://github.com/Mikaaah/Create-Alchemical-Lasers) · [Get help](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
-
 # Troubleshooting
 
 | Symptom | Check |
@@ -19,4 +17,4 @@ The four old colored lenses were removed in **0.3.0**, not 0.4.0. Replace Red/Bl
 
 Report exact Minecraft, NeoForge, Create and addon versions, a minimal recipe/setup and relevant logs. Dedicated-server test results do not verify graphical rendering or optional viewer layouts.
 
-[Home](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki/Home)
+[Home](Home)

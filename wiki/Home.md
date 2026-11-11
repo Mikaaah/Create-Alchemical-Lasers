@@ -6,15 +6,13 @@ Bulk kinetic laser processing for **Minecraft 1.21.1 / NeoForge / Create 6.0.10*
 
 An emitter hangs above a belt, Depot or dropped stack. Its horizontal shaft provides power; a lens or ordinary catalyst selects a recipe and beam color. Full recipe quantities process together without spending inputs before completion.
 
-- [Getting started](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki/Getting-Started)
-- [Processing and lenses](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki/Processing-and-Lenses)
-- [KubeJS and assemblies](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki/KubeJS-and-Assemblies)
-- [Configuration](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki/Configuration)
-- [Troubleshooting](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki/Troubleshooting)
-- [Changelog](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki/Changelog)
+- [Getting started](Getting-Started)
+- [Processing and lenses](Processing-and-Lenses)
+- [KubeJS and assemblies](KubeJS-and-Assemblies)
+- [Configuration](Configuration)
+- [Troubleshooting](Troubleshooting)
+- [Changelog](Changelog)
 
 [Source](https://github.com/Mikaaah/Create-Alchemical-Lasers) · [Report an issue](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
 
-## TNK development edition
-
-[1.0.0-rc.1 guide](https://github.com/Mikaaah/Create-Alchemical-Lasers/tree/release/1.0.0) — keep its matching dependencies and configuration together.
+**Guide edition: 1.0.0-rc.1.** [Current source](https://github.com/Mikaaah/Create-Alchemical-Lasers/tree/release/1.0.0). Main retains the earlier 0.4.0 source; check the JAR version when following recipes.

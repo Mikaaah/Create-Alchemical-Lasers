@@ -1,5 +1,3 @@
-[← Guide home](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki) · [Project](https://github.com/Mikaaah/Create-Alchemical-Lasers) · [Get help](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
-
 # Configuration
 
 ## Bundled recipes
@@ -28,4 +26,4 @@ NeoForge stores `alchemicallaser-server.toml` in the world's `serverconfig` dire
 
 At a constant speed, cycle ticks are `chargeTicks + ceil(duration * 32 / min(abs(RPM), maximumEffectiveRpm))`. Processing starts only when the absolute network speed meets both minimums and the emitter has no disabling redstone signal. Reloading a world restarts unfinished cycles without consuming input.
 
-[Home](https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki/Home)
+[Home](Home)
