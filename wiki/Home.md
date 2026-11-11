@@ -14,3 +14,5 @@ An emitter hangs above a belt, Depot or dropped stack. Its horizontal shaft prov
 - [Changelog](Changelog)
 
 [Source](https://github.com/Mikaaah/Create-Alchemical-Lasers) · [Report an issue](https://github.com/Mikaaah/Create-Alchemical-Lasers/issues)
+
+**Guide edition: 1.0.0-rc.1.** [Current source](https://github.com/Mikaaah/Create-Alchemical-Lasers/tree/release/1.0.0). Main retains the earlier 0.4.0 source; check the JAR version when following recipes.

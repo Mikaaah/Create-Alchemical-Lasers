@@ -4,12 +4,12 @@
 
 <p align="center"><strong>Put a little alchemy on the assembly line: kinetic lasers, five lenses and bulk processing.</strong></p>
 
-<p align="center"><a href="https://www.curseforge.com/members/mikaaah/projects">Downloads</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki">Player guide</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/issues">Report an issue</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/CHANGELOG.md">Changelog</a> · <a href="https://discord.gg/CRYk3uDPVt">Discord</a></p>
+<p align="center"><a href="https://www.curseforge.com/minecraft/mc-mods/create-alchemical-lasers">Downloads</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki">Player guide</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/issues">Report an issue</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/CHANGELOG.md">Changelog</a> · <a href="https://discord.gg/CRYk3uDPVt">Discord</a></p>
 
 <p align="center"><img src="https://img.shields.io/badge/Minecraft-1.21.1-5b8731?style=flat-square" alt="Minecraft 1.21.1"> <img src="https://img.shields.io/badge/NeoForge-d77828?style=flat-square" alt="NeoForge"> <a href="https://mikaaah.github.io/TownsAndKingdoms/projects/"><img src="https://img.shields.io/badge/Towns_%26_Kingdoms-Modding_Hub-7f384a?style=flat-square" alt="Towns & Kingdoms Modding Hub"></a></p>
 
 
-**TNK development edition · 1.0.0-rc.1 · Minecraft 1.21.1**
+**Current guide: 1.0.0-rc.1 · Minecraft 1.21.1 · NeoForge · Java 21.** [Current source](https://github.com/Mikaaah/Create-Alchemical-Lasers/tree/release/1.0.0); `main` retains the earlier 0.4.0 code.
 
 ## How it works
 
@@ -47,13 +47,13 @@ Speed scales processing time, up to the configured cap. A powered redstone signa
 
 These are standalone examples. Modpacks can replace them with their own progression. Towns & Kingdoms is not required.
 
-[Recipe reference](docs/RECIPES.md) · [KubeJS and assemblies](docs/KUBEJS.md) · [Configuration](docs/CONFIGURATION.md) · [Support](SUPPORT.md)
+[Recipe reference](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/docs/RECIPES.md) · [KubeJS and assemblies](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/docs/KUBEJS.md) · [Configuration](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/docs/CONFIGURATION.md) · [Support](SUPPORT.md)
 
 ## Requirements
 
 Minecraft 1.21.1, Java 21, NeoForge 21.1.219 or newer, and Create 6.0.10 (6.0.x). Use Create's required matching dependencies. JEI, EMI and KubeJS are optional.
 
-This branch contains **1.0.0-rc.1**. It is a release candidate; the main branch keeps the 0.4.0 source. See [release notes](CHANGELOG.md) for changes and [release status](docs/RELEASE_AUDIT.md) for remaining checks.
+**1.0.0-rc.1 is a release candidate.** See [release notes](CHANGELOG.md) for changes and [release status](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/docs/RELEASE_AUDIT.md) for remaining checks.
 
 The specialist lenses are recipe selectors. Their starter recipes demonstrate growth, consolidation, splitting, energizing and sculk processing; datapacks and KubeJS can replace them. The obsidian Power recipe requires 64 RPM and the Eclipse example requires 128 RPM.
 
@@ -63,9 +63,8 @@ The specialist lenses are recipe selectors. Their starter recipes demonstrate gr
 
 ## Consumables, KubeJS and assemblies
 
-The mod supports per-recipe catalyst items, hex colors, optional consumption, top hopper feeding, native KubeJS recipe builders and Create sequenced assembly. See [complete scripting examples](docs/KUBEJS.md). Bundled processing and crafting recipes can be disabled independently in `config/alchemicallaser-common.toml`.
+The mod supports per-recipe catalyst items, hex colors, optional consumption, top hopper feeding, native KubeJS recipe builders and Create sequenced assembly. See [complete scripting examples](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/docs/KUBEJS.md). Bundled processing and crafting recipes can be disabled independently in `config/alchemicallaser-common.toml`.
 
-## Contributing and support
 ## Pull up a chair
 
 Questions, builds, feedback, server news and the occasional wildly overambitious factory: join the **Towns & Kingdoms Modding Hub**.
