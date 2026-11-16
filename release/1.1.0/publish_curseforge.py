@@ -21,7 +21,7 @@ metadata = {
     'changelogType': 'html',
     'releaseType': 'release',
     'gameVersionNames': ['1.21.1', 'NeoForge', 'Java 21'],
-    'relations': {'projects': [{'slug': 'create', 'projectID': '328085', 'type': 'requiredDependency'}]},
+    'relations': {'projects': [{'slug': 'create', 'projectID': 328085, 'type': 'requiredDependency'}]},
 }
 boundary = '----AlchemyUpload' + uuid.uuid4().hex
 body = (
