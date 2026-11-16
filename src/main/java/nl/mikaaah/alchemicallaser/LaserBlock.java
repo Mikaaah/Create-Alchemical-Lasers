@@ -71,9 +71,15 @@ public class LaserBlock extends HorizontalKineticBlock implements IBE<LaserBlock
     if (!held.isEmpty() && !held.is(AllItems.WRENCH.get())) {
       if (!player.mayBuild()) return ItemInteractionResult.FAIL;
       if (!level.isClientSide && level.getBlockEntity(pos) instanceof LaserBlockEntity be) {
-        ItemStack old = be.exchangeLens(held.copyWithCount(1));
+        if (!be.lens().isEmpty()) {
+          player.displayClientMessage(
+              net.minecraft.network.chat.Component.translatable(
+                  "message.alchemicallaser.remove_lens_first"),
+              true);
+          return ItemInteractionResult.CONSUME;
+        }
+        be.exchangeLens(held.copyWithCount(1));
         if (!player.isCreative()) held.shrink(1);
-        if (!old.isEmpty() && !player.getInventory().add(old)) player.drop(old, false);
       }
       return ItemInteractionResult.sidedSuccess(level.isClientSide);
     }
@@ -84,8 +90,10 @@ public class LaserBlock extends HorizontalKineticBlock implements IBE<LaserBlock
   protected InteractionResult useWithoutItem(
       BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
     if (player.isShiftKeyDown()
+        && player.getMainHandItem().isEmpty()
         && player.mayBuild()
-        && level.getBlockEntity(pos) instanceof LaserBlockEntity be) {
+        && level.getBlockEntity(pos) instanceof LaserBlockEntity be
+        && !be.lens().isEmpty()) {
       if (!level.isClientSide) {
         ItemStack old = be.exchangeLens(ItemStack.EMPTY);
         if (!old.isEmpty() && !player.getInventory().add(old)) player.drop(old, false);

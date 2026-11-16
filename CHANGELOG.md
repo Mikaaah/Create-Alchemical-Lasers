@@ -2,6 +2,8 @@
 
 ## 1.1.0
 
+- Lens replacement is now two-step: sneak-right-click with an empty hand to remove it and open the claws, then insert a new lens to close them. Direct right-click swapping is blocked; automated catalyst refills remain supported.
+
 - Replaced the laser body and all five lens sprites/socket models with the supplied industrial artwork.
 - Added authored power-up, spin, power-down, lens clamp, ignition recoil, vent and idle animations, with independent state for each machine.
 - Added multi-texture glass/emissive rendering and the complete machine model in inventory and hand views.

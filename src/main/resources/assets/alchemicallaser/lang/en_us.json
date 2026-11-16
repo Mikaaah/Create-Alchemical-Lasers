@@ -56,5 +56,6 @@
   "item.alchemicallaser.eclipse_lens": "Eclipse Lens",
   "recipe.alchemicallaser.assembly": "Laser processing with %s",
   "recipe.alchemicallaser.consumed": "Consumed once per operation",
-  "recipe.alchemicallaser.reusable": "Reusable catalyst"
+  "recipe.alchemicallaser.reusable": "Reusable catalyst",
+  "message.alchemicallaser.remove_lens_first": "Remove the installed lens or catalyst first: sneak-right-click with an empty hand."
 }

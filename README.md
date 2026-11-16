@@ -15,7 +15,7 @@
 
 1. Place an emitter above a horizontal belt or Depot, leaving one air block between them, like a Mechanical Press.
 2. Connect rotational power to either exposed end of the horizontal shaft and supply at least 16 RPM. Use a wrench to align the emitter with your shaft line.
-3. Right-click with any optical lens. Sneak-right-click with an empty hand to remove it.
+3. Right-click an empty socket with an optical lens. To change lenses, sneak-right-click with an empty hand: the installed lens returns to you and the claws open. Insert the new lens to close them. Direct swaps are blocked.
 4. Supply a matching item. The laser holds it during charging and processing, commits the transformation, then releases the output.
 
 Speed scales processing time, up to the configured cap. A powered redstone signal disables the emitter. Interrupted cycles leave input unchanged; belt items are released, and Depots can restart when power returns.

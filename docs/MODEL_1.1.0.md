@@ -25,6 +25,14 @@ The kit's standalone mod (`alchemical_laser`) is a visual reference rather than
 the processing implementation. Do not install that reference JAR alongside this
 update in place of the existing addon.
 
+## Changing a lens
+
+Sneak-right-click with an empty main hand to remove the installed lens or catalyst.
+The claws open and remain open while the socket is empty. Right-click with the new
+lens to insert it and close the claws. Clicking an occupied socket with another
+item leaves both items unchanged and shows the removal instruction. Hopper refills
+of the same catalyst still work.
+
 ## Lens artwork mapping
 
 Only the five established functional lenses are registered. Reference-art names
@@ -68,7 +76,7 @@ original fallback texels are included. See [material provenance](MATERIAL_PROVEN
 ## Verification
 
 - Java 21 build and release packaging checks pass.
-- Existing 52 server GameTests pass without scripting mods; the scripting-only
+- All 53 server GameTests pass without scripting mods; the scripting-only
   case takes its documented skip path in that installation.
 - Geometry validation covers six models (250 cuboids), bone parents, UV bounds,
   texture sizes, nine authored animation clips and all particle sprite references.

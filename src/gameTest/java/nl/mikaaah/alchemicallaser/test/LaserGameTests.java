@@ -1239,4 +1239,34 @@ public class LaserGameTests {
         "First same-catalyst refill after reload restarted processing");
     h.succeed();
   }
+
+  @GameTest(template = "empty", timeoutTicks = 40)
+  public static void manualLensChangesRequireRemoval(GameTestHelper h) {
+    var be = setup(h, "power", 0);
+    var player = h.makeMockPlayer(net.minecraft.world.level.GameType.SURVIVAL);
+    var replacement = AlchemicalLaser.LENSES.get("eclipse").toStack();
+    player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, replacement);
+    h.useBlock(EMITTER, player);
+    h.assertTrue(
+        be.lens().is(AlchemicalLaser.LENSES.get("power").get()),
+        "Direct click replaced the installed lens");
+    h.assertTrue(replacement.getCount() == 1, "Rejected insertion consumed the replacement lens");
+    player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, ItemStack.EMPTY);
+    player.setShiftKeyDown(true);
+    h.useBlock(EMITTER, player);
+    h.assertTrue(be.lens().isEmpty(), "Empty-hand removal did not empty the socket");
+    h.assertTrue(
+        player.getInventory().countItem(AlchemicalLaser.LENSES.get("power").get()) == 1,
+        "Removed lens was not returned exactly once");
+    player.setShiftKeyDown(false);
+    player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, replacement);
+    h.useBlock(EMITTER, player);
+    h.assertTrue(
+        be.lens().is(AlchemicalLaser.LENSES.get("eclipse").get()),
+        "New lens did not enter the empty socket");
+    h.assertTrue(
+        replacement.isEmpty() && be.lens().getCount() == 1,
+        "Lens insertion did not conserve the item");
+    h.succeed();
+  }
 }
