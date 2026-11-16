@@ -30,7 +30,8 @@ public final class CreationItemRenderer extends BlockEntityWithoutLevelRenderer 
     pose.translate(.5, 0, .5);
     pose.scale(1f / 16, 1f / 16, 1f / 16);
     CreationGeometry.get(CreationAugmenter.id("geometry/machine.json"))
-        .render(pose, buffers, light, overlay, (name, pivot, bones) -> {}, null, false);
+        .render(pose, buffers, light, overlay, (name, pivot, bones) -> {}, null, true);
     pose.popPose();
+    ShaftRenderer.renderItem(pose, buffers, light);
   }
 }

@@ -26,7 +26,8 @@ public final class LaserItemRenderer extends BlockEntityWithoutLevelRenderer {
     pose.translate(.5, 0, .5);
     pose.scale(1f / 16, 1f / 16, 1f / 16);
     MachineGeometry.get(AlchemicalLaser.id("geometry/machine.json"))
-        .render(pose, buffers, light, overlay, (name, pivot, bones) -> {}, null, false);
+        .render(pose, buffers, light, overlay, (name, pivot, bones) -> {}, null, true);
     pose.popPose();
+    KineticShaftRenderer.renderItem(pose, buffers, light);
   }
 }

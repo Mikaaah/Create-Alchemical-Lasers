@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.2
+
+- Replaced both machines’ stretched custom shaft models with Create’s native shaft, including its proper end-cap texture and horizontal-axis rotation.
+- Unified Flywheel, fallback and inventory shaft rendering; removed the duplicate authored shaft from inventory views.
+
 ## 1.1.1
 
 - Moved Alchemical Laser belt/Depot processing three blocks below the housing, matching the Creation Augmenter's clearance and restoring a full visible beam beneath the longer nozzle.
