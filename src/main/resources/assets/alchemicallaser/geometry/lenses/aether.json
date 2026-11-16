@@ -1,0 +1,936 @@
+{
+  "format_version": 1,
+  "units": "pixels",
+  "coordinate_system": "x/z centred on block; y0 block floor; emission strictly -Y",
+  "bounds": [
+    -10,
+    -12,
+    -8.3,
+    10,
+    16,
+    8.3
+  ],
+  "bones": [
+    {
+      "name": "gearbox",
+      "parent": null,
+      "origin": [
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "side_shaft",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "bevel_gear_x",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "bevel_gear_y",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        8,
+        -3
+      ]
+    },
+    {
+      "name": "amethyst_core",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        -3,
+        0
+      ]
+    },
+    {
+      "name": "amethyst_shards",
+      "parent": "amethyst_core",
+      "origin": [
+        0,
+        -3,
+        0
+      ]
+    },
+    {
+      "name": "brass_gimbal",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        -3,
+        0
+      ]
+    },
+    {
+      "name": "lower_nozzle",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        -6,
+        0
+      ]
+    },
+    {
+      "name": "stabilizer_1",
+      "parent": "gearbox",
+      "origin": [
+        -5.5,
+        -1,
+        -5.5
+      ]
+    },
+    {
+      "name": "stabilizer_2",
+      "parent": "gearbox",
+      "origin": [
+        5.5,
+        -1,
+        -5.5
+      ]
+    },
+    {
+      "name": "stabilizer_3",
+      "parent": "gearbox",
+      "origin": [
+        5.5,
+        -1,
+        5.5
+      ]
+    },
+    {
+      "name": "stabilizer_4",
+      "parent": "gearbox",
+      "origin": [
+        -5.5,
+        -1,
+        5.5
+      ]
+    },
+    {
+      "name": "lens_clamps_1",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -9,
+        -4.5
+      ]
+    },
+    {
+      "name": "cooling_vents_1",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -7.1,
+        -4.5
+      ]
+    },
+    {
+      "name": "lens_clamps_2",
+      "parent": "lower_nozzle",
+      "origin": [
+        4.5,
+        -9,
+        0
+      ]
+    },
+    {
+      "name": "cooling_vents_2",
+      "parent": "lower_nozzle",
+      "origin": [
+        4.5,
+        -7.1,
+        0
+      ]
+    },
+    {
+      "name": "lens_clamps_3",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -9,
+        4.5
+      ]
+    },
+    {
+      "name": "cooling_vents_3",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -7.1,
+        4.5
+      ]
+    },
+    {
+      "name": "lens_clamps_4",
+      "parent": "lower_nozzle",
+      "origin": [
+        -4.5,
+        -9,
+        0
+      ]
+    },
+    {
+      "name": "cooling_vents_4",
+      "parent": "lower_nozzle",
+      "origin": [
+        -4.5,
+        -7.1,
+        0
+      ]
+    },
+    {
+      "name": "socketed_lens",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -11,
+        0
+      ]
+    }
+  ],
+  "textures": {
+    "alchemicallaser:textures/block/metal_atlas.png": [
+      512,
+      512
+    ],
+    "alchemicallaser:textures/block/copper_atlas.png": [
+      512,
+      512
+    ],
+    "alchemicallaser:textures/block/crystal_atlas.png": [
+      512,
+      512
+    ],
+    "alchemicallaser:textures/block/detail_atlas.png": [
+      512,
+      512
+    ]
+  },
+  "cubes": [
+    {
+      "name": "aether_bezel_north",
+      "from": [
+        -3.3,
+        -11.25,
+        -3.3
+      ],
+      "to": [
+        3.3,
+        -10.25,
+        -2.3
+      ],
+      "origin": [
+        0.0,
+        -10.75,
+        -2.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            463,
+            58,
+            470,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "south": {
+          "uv": [
+            472,
+            58,
+            479,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "east": {
+          "uv": [
+            481,
+            58,
+            483,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "west": {
+          "uv": [
+            485,
+            58,
+            487,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "up": {
+          "uv": [
+            489,
+            58,
+            496,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "down": {
+          "uv": [
+            498,
+            58,
+            505,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        }
+      }
+    },
+    {
+      "name": "aether_bezel_south",
+      "from": [
+        -3.3,
+        -11.25,
+        2.3
+      ],
+      "to": [
+        3.3,
+        -10.25,
+        3.3
+      ],
+      "origin": [
+        0.0,
+        -10.75,
+        2.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            67,
+            8,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "south": {
+          "uv": [
+            10,
+            67,
+            17,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "east": {
+          "uv": [
+            19,
+            67,
+            21,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "west": {
+          "uv": [
+            23,
+            67,
+            25,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "up": {
+          "uv": [
+            27,
+            67,
+            34,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "down": {
+          "uv": [
+            36,
+            67,
+            43,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        }
+      }
+    },
+    {
+      "name": "aether_bezel_west",
+      "from": [
+        -3.3,
+        -11.25,
+        -2.3
+      ],
+      "to": [
+        -2.3,
+        -10.25,
+        2.3
+      ],
+      "origin": [
+        -2.8,
+        -10.75,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            45,
+            67,
+            47,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "south": {
+          "uv": [
+            49,
+            67,
+            51,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "east": {
+          "uv": [
+            53,
+            67,
+            58,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "west": {
+          "uv": [
+            60,
+            67,
+            65,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "up": {
+          "uv": [
+            67,
+            67,
+            69,
+            72
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "down": {
+          "uv": [
+            71,
+            67,
+            73,
+            72
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        }
+      }
+    },
+    {
+      "name": "aether_bezel_east",
+      "from": [
+        2.3,
+        -11.25,
+        -2.3
+      ],
+      "to": [
+        3.3,
+        -10.25,
+        2.3
+      ],
+      "origin": [
+        2.8,
+        -10.75,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            75,
+            67,
+            77,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "south": {
+          "uv": [
+            79,
+            67,
+            81,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "east": {
+          "uv": [
+            83,
+            67,
+            88,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "west": {
+          "uv": [
+            90,
+            67,
+            95,
+            69
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "up": {
+          "uv": [
+            97,
+            67,
+            99,
+            72
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        },
+        "down": {
+          "uv": [
+            101,
+            67,
+            103,
+            72
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "minecraft:block/oxidized_cut_copper"
+        }
+      }
+    },
+    {
+      "name": "aether_central_crystal",
+      "from": [
+        -1.9,
+        -11.8,
+        -1.9
+      ],
+      "to": [
+        1.9,
+        -10.65,
+        1.9
+      ],
+      "origin": [
+        0,
+        -11.2,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            15,
+            20,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/amethyst_block",
+          "emissive": true
+        },
+        "south": {
+          "uv": [
+            22,
+            15,
+            26,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/amethyst_block",
+          "emissive": true
+        },
+        "east": {
+          "uv": [
+            28,
+            15,
+            32,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/amethyst_block",
+          "emissive": true
+        },
+        "west": {
+          "uv": [
+            34,
+            15,
+            38,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/amethyst_block",
+          "emissive": true
+        },
+        "up": {
+          "uv": [
+            40,
+            15,
+            44,
+            19
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/amethyst_block",
+          "emissive": true
+        },
+        "down": {
+          "uv": [
+            46,
+            15,
+            50,
+            19
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/amethyst_block",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "aether_exit_facet",
+      "from": [
+        -1.35,
+        -12,
+        -1.35
+      ],
+      "to": [
+        1.35,
+        -11.65,
+        1.35
+      ],
+      "origin": [
+        0,
+        -11.8,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            52,
+            15,
+            55,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/amethyst_block",
+          "emissive": true
+        },
+        "south": {
+          "uv": [
+            57,
+            15,
+            60,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/amethyst_block",
+          "emissive": true
+        },
+        "east": {
+          "uv": [
+            62,
+            15,
+            65,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/amethyst_block",
+          "emissive": true
+        },
+        "west": {
+          "uv": [
+            67,
+            15,
+            70,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/amethyst_block",
+          "emissive": true
+        },
+        "up": {
+          "uv": [
+            72,
+            15,
+            75,
+            18
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/amethyst_block",
+          "emissive": true
+        },
+        "down": {
+          "uv": [
+            77,
+            15,
+            80,
+            18
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/amethyst_block",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "aether_obsidian_dual_-1.3",
+      "from": [
+        -1.85,
+        -11.7,
+        -1.7
+      ],
+      "to": [
+        -0.75,
+        -10.75,
+        1.7
+      ],
+      "origin": [
+        -1.3,
+        -11.225,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            82,
+            15,
+            84,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/crying_obsidian",
+          "emissive": true
+        },
+        "south": {
+          "uv": [
+            86,
+            15,
+            88,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/crying_obsidian",
+          "emissive": true
+        },
+        "east": {
+          "uv": [
+            90,
+            15,
+            94,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/crying_obsidian",
+          "emissive": true
+        },
+        "west": {
+          "uv": [
+            96,
+            15,
+            100,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/crying_obsidian",
+          "emissive": true
+        },
+        "up": {
+          "uv": [
+            102,
+            15,
+            104,
+            19
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/crying_obsidian",
+          "emissive": true
+        },
+        "down": {
+          "uv": [
+            106,
+            15,
+            108,
+            19
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/crying_obsidian",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "aether_obsidian_dual_1.3",
+      "from": [
+        0.75,
+        -11.7,
+        -1.7
+      ],
+      "to": [
+        1.85,
+        -10.75,
+        1.7
+      ],
+      "origin": [
+        1.3,
+        -11.225,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            110,
+            15,
+            112,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/crying_obsidian",
+          "emissive": true
+        },
+        "south": {
+          "uv": [
+            114,
+            15,
+            116,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/crying_obsidian",
+          "emissive": true
+        },
+        "east": {
+          "uv": [
+            118,
+            15,
+            122,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/crying_obsidian",
+          "emissive": true
+        },
+        "west": {
+          "uv": [
+            124,
+            15,
+            128,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/crying_obsidian",
+          "emissive": true
+        },
+        "up": {
+          "uv": [
+            130,
+            15,
+            132,
+            19
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/crying_obsidian",
+          "emissive": true
+        },
+        "down": {
+          "uv": [
+            134,
+            15,
+            136,
+            19
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/crying_obsidian",
+          "emissive": true
+        }
+      }
+    }
+  ]
+}

@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.1.0
+
+- Replaced the laser body and all five lens sprites/socket models with the supplied industrial artwork.
+- Added authored power-up, spin, power-down, lens clamp, ignition recoil, vent and idle animations, with independent state for each machine.
+- Added multi-texture glass/emissive rendering and the complete machine model in inventory and hand views.
+- Added layered lens/recipe-colored beams, animated lens particles, impact rings and collision-aware embers.
+- Added Flywheel shaft instancing and a conventional rendering fallback for both horizontal drive axes.
+- Preserved the existing block/lens IDs, saved inventories, recipes, config switches, hopper feeding, bulk processing, KubeJS and sequenced assemblies.
+- Kept existing belt/Depot spacing and updated the model outline and beam origin for the larger nozzle.
+- Added geometry/animation/particle validation and retained supplied material provenance. No new runtime dependency is required.
+
+See [integration and validation notes](docs/MODEL_1.1.0.md).
+
 ## 1.0.0-rc.1
 
 - Fixed processing through a blocked beam gap on belts/Depots.

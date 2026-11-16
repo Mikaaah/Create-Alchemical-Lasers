@@ -14,9 +14,19 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.*;
 
 public class LaserBlock extends HorizontalKineticBlock implements IBE<LaserBlockEntity> {
-  private static final VoxelShape LANTERN =
-      Shapes.or(box(4, -3, 4, 12, 7, 12), box(5, -6, 5, 11, -3, 11));
-  private static final VoxelShape SHAPE = Shapes.or(LANTERN, box(1, 6, 1, 15, 15, 15));
+  private static final VoxelShape SHAPE =
+      Shapes.or(Shapes.block(), box(1, -6, 1, 15, 0, 15), box(2, -12, 2, 14, -6, 14));
+
+  @Override
+  public VoxelShape getCollisionShape(
+      BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+    return Shapes.block();
+  }
+
+  @Override
+  public net.minecraft.world.level.block.RenderShape getRenderShape(BlockState state) {
+    return net.minecraft.world.level.block.RenderShape.ENTITYBLOCK_ANIMATED;
+  }
 
   public LaserBlock(Properties properties) {
     super(properties);

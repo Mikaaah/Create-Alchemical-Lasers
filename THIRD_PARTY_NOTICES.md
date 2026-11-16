@@ -21,7 +21,7 @@ Create Deco is not required at runtime; no Create Deco code is bundled.
 
 Copyright (c) The Create Team / The Creators of Create.
 
-The brass housing references `create:block/brass_block`; the rotating horizontal shaft uses Create’s own runtime shaft model. No Create textures, model JSON or original Java code are redistributed by this addon. The controller model import and special cog connection from 0.2.1 have been removed.
+Version 1.1.0 uses the supplied original industrial model geometry and custom shaft partial. Its packed texture sheets include Minecraft/Create material texels and Nuclear-derived textures. Those retain their upstream ownership and applicable notices. See `docs/MATERIAL_PROVENANCE.md`, `docs/verified-external-materials.json` and `licenses/` for the supplied sources and licenses. Optional Aeronautics resource references use original fallback artwork when those resources are absent. The old controller model import and special cog connection are not active. The earlier Create Deco artwork described above remains only as legacy resources and references.
 
 Source project and asset license: https://github.com/Creators-of-Create/Create/blob/mc1.21.1/dev/LICENSE.md
 

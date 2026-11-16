@@ -1,0 +1,1096 @@
+{
+  "format_version": 1,
+  "units": "pixels",
+  "coordinate_system": "x/z centred on block; y0 block floor; emission strictly -Y",
+  "bounds": [
+    -10,
+    -12,
+    -8.3,
+    10,
+    16,
+    8.3
+  ],
+  "bones": [
+    {
+      "name": "gearbox",
+      "parent": null,
+      "origin": [
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "side_shaft",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "bevel_gear_x",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "bevel_gear_y",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        8,
+        -3
+      ]
+    },
+    {
+      "name": "amethyst_core",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        -3,
+        0
+      ]
+    },
+    {
+      "name": "amethyst_shards",
+      "parent": "amethyst_core",
+      "origin": [
+        0,
+        -3,
+        0
+      ]
+    },
+    {
+      "name": "brass_gimbal",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        -3,
+        0
+      ]
+    },
+    {
+      "name": "lower_nozzle",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        -6,
+        0
+      ]
+    },
+    {
+      "name": "stabilizer_1",
+      "parent": "gearbox",
+      "origin": [
+        -5.5,
+        -1,
+        -5.5
+      ]
+    },
+    {
+      "name": "stabilizer_2",
+      "parent": "gearbox",
+      "origin": [
+        5.5,
+        -1,
+        -5.5
+      ]
+    },
+    {
+      "name": "stabilizer_3",
+      "parent": "gearbox",
+      "origin": [
+        5.5,
+        -1,
+        5.5
+      ]
+    },
+    {
+      "name": "stabilizer_4",
+      "parent": "gearbox",
+      "origin": [
+        -5.5,
+        -1,
+        5.5
+      ]
+    },
+    {
+      "name": "lens_clamps_1",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -9,
+        -4.5
+      ]
+    },
+    {
+      "name": "cooling_vents_1",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -7.1,
+        -4.5
+      ]
+    },
+    {
+      "name": "lens_clamps_2",
+      "parent": "lower_nozzle",
+      "origin": [
+        4.5,
+        -9,
+        0
+      ]
+    },
+    {
+      "name": "cooling_vents_2",
+      "parent": "lower_nozzle",
+      "origin": [
+        4.5,
+        -7.1,
+        0
+      ]
+    },
+    {
+      "name": "lens_clamps_3",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -9,
+        4.5
+      ]
+    },
+    {
+      "name": "cooling_vents_3",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -7.1,
+        4.5
+      ]
+    },
+    {
+      "name": "lens_clamps_4",
+      "parent": "lower_nozzle",
+      "origin": [
+        -4.5,
+        -9,
+        0
+      ]
+    },
+    {
+      "name": "cooling_vents_4",
+      "parent": "lower_nozzle",
+      "origin": [
+        -4.5,
+        -7.1,
+        0
+      ]
+    },
+    {
+      "name": "socketed_lens",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -11,
+        0
+      ]
+    }
+  ],
+  "textures": {
+    "alchemicallaser:textures/block/metal_atlas.png": [
+      512,
+      512
+    ],
+    "alchemicallaser:textures/block/copper_atlas.png": [
+      512,
+      512
+    ],
+    "alchemicallaser:textures/block/crystal_atlas.png": [
+      512,
+      512
+    ],
+    "alchemicallaser:textures/block/detail_atlas.png": [
+      512,
+      512
+    ]
+  },
+  "cubes": [
+    {
+      "name": "void_bezel_north",
+      "from": [
+        -3.3,
+        -11.25,
+        -3.3
+      ],
+      "to": [
+        3.3,
+        -10.25,
+        -2.3
+      ],
+      "origin": [
+        0.0,
+        -10.75,
+        -2.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            84,
+            8,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "south": {
+          "uv": [
+            10,
+            84,
+            17,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "east": {
+          "uv": [
+            19,
+            84,
+            21,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "west": {
+          "uv": [
+            23,
+            84,
+            25,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "up": {
+          "uv": [
+            27,
+            84,
+            34,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "down": {
+          "uv": [
+            36,
+            84,
+            43,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        }
+      }
+    },
+    {
+      "name": "void_bezel_south",
+      "from": [
+        -3.3,
+        -11.25,
+        2.3
+      ],
+      "to": [
+        3.3,
+        -10.25,
+        3.3
+      ],
+      "origin": [
+        0.0,
+        -10.75,
+        2.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            45,
+            84,
+            52,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "south": {
+          "uv": [
+            54,
+            84,
+            61,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "east": {
+          "uv": [
+            63,
+            84,
+            65,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "west": {
+          "uv": [
+            67,
+            84,
+            69,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "up": {
+          "uv": [
+            71,
+            84,
+            78,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "down": {
+          "uv": [
+            80,
+            84,
+            87,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        }
+      }
+    },
+    {
+      "name": "void_bezel_west",
+      "from": [
+        -3.3,
+        -11.25,
+        -2.3
+      ],
+      "to": [
+        -2.3,
+        -10.25,
+        2.3
+      ],
+      "origin": [
+        -2.8,
+        -10.75,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            89,
+            84,
+            91,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "south": {
+          "uv": [
+            93,
+            84,
+            95,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "east": {
+          "uv": [
+            97,
+            84,
+            102,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "west": {
+          "uv": [
+            104,
+            84,
+            109,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "up": {
+          "uv": [
+            111,
+            84,
+            113,
+            89
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "down": {
+          "uv": [
+            115,
+            84,
+            117,
+            89
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        }
+      }
+    },
+    {
+      "name": "void_bezel_east",
+      "from": [
+        2.3,
+        -11.25,
+        -2.3
+      ],
+      "to": [
+        3.3,
+        -10.25,
+        2.3
+      ],
+      "origin": [
+        2.8,
+        -10.75,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            119,
+            84,
+            121,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "south": {
+          "uv": [
+            123,
+            84,
+            125,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "east": {
+          "uv": [
+            127,
+            84,
+            132,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "west": {
+          "uv": [
+            134,
+            84,
+            139,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "up": {
+          "uv": [
+            141,
+            84,
+            143,
+            89
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        },
+        "down": {
+          "uv": [
+            145,
+            84,
+            147,
+            89
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/steel_block"
+        }
+      }
+    },
+    {
+      "name": "void_central_crystal",
+      "from": [
+        -1.9,
+        -11.8,
+        -1.9
+      ],
+      "to": [
+        1.9,
+        -10.65,
+        1.9
+      ],
+      "origin": [
+        0,
+        -11.2,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            138,
+            15,
+            142,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/sculk",
+          "emissive": true
+        },
+        "south": {
+          "uv": [
+            144,
+            15,
+            148,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/sculk",
+          "emissive": true
+        },
+        "east": {
+          "uv": [
+            150,
+            15,
+            154,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/sculk",
+          "emissive": true
+        },
+        "west": {
+          "uv": [
+            156,
+            15,
+            160,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/sculk",
+          "emissive": true
+        },
+        "up": {
+          "uv": [
+            162,
+            15,
+            166,
+            19
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/sculk",
+          "emissive": true
+        },
+        "down": {
+          "uv": [
+            168,
+            15,
+            172,
+            19
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/sculk",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "void_exit_facet",
+      "from": [
+        -1.35,
+        -12,
+        -1.35
+      ],
+      "to": [
+        1.35,
+        -11.65,
+        1.35
+      ],
+      "origin": [
+        0,
+        -11.8,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            174,
+            15,
+            177,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/sculk",
+          "emissive": true
+        },
+        "south": {
+          "uv": [
+            179,
+            15,
+            182,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/sculk",
+          "emissive": true
+        },
+        "east": {
+          "uv": [
+            184,
+            15,
+            187,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/sculk",
+          "emissive": true
+        },
+        "west": {
+          "uv": [
+            189,
+            15,
+            192,
+            17
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/sculk",
+          "emissive": true
+        },
+        "up": {
+          "uv": [
+            194,
+            15,
+            197,
+            18
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/sculk",
+          "emissive": true
+        },
+        "down": {
+          "uv": [
+            199,
+            15,
+            202,
+            18
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/sculk",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "void_shutter_0",
+      "from": [
+        2.05,
+        -11.7,
+        -1.45
+      ],
+      "to": [
+        3.1500000000000004,
+        -10.8,
+        1.45
+      ],
+      "origin": [
+        2.6,
+        -11.2,
+        0.0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            149,
+            84,
+            151,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "south": {
+          "uv": [
+            153,
+            84,
+            155,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "east": {
+          "uv": [
+            157,
+            84,
+            160,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "west": {
+          "uv": [
+            162,
+            84,
+            165,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "up": {
+          "uv": [
+            167,
+            84,
+            169,
+            87
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "down": {
+          "uv": [
+            171,
+            84,
+            173,
+            87
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        }
+      }
+    },
+    {
+      "name": "void_shutter_1",
+      "from": [
+        -0.5499999999999999,
+        -11.7,
+        1.1500000000000001
+      ],
+      "to": [
+        0.5500000000000002,
+        -10.8,
+        4.05
+      ],
+      "origin": [
+        1.5920408388915593e-16,
+        -11.2,
+        2.6
+      ],
+      "rotation": [
+        0,
+        135,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            175,
+            84,
+            177,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "south": {
+          "uv": [
+            179,
+            84,
+            181,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "east": {
+          "uv": [
+            183,
+            84,
+            186,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "west": {
+          "uv": [
+            188,
+            84,
+            191,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "up": {
+          "uv": [
+            193,
+            84,
+            195,
+            87
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "down": {
+          "uv": [
+            197,
+            84,
+            199,
+            87
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        }
+      }
+    },
+    {
+      "name": "void_shutter_2",
+      "from": [
+        -3.1500000000000004,
+        -11.7,
+        -1.4499999999999997
+      ],
+      "to": [
+        -2.05,
+        -10.8,
+        1.4500000000000002
+      ],
+      "origin": [
+        -2.6,
+        -11.2,
+        3.1840816777831187e-16
+      ],
+      "rotation": [
+        0,
+        225,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            201,
+            84,
+            203,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "south": {
+          "uv": [
+            205,
+            84,
+            207,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "east": {
+          "uv": [
+            209,
+            84,
+            212,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "west": {
+          "uv": [
+            214,
+            84,
+            217,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "up": {
+          "uv": [
+            219,
+            84,
+            221,
+            87
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "down": {
+          "uv": [
+            223,
+            84,
+            225,
+            87
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        }
+      }
+    },
+    {
+      "name": "void_shutter_3",
+      "from": [
+        -0.5500000000000005,
+        -11.7,
+        -4.05
+      ],
+      "to": [
+        0.5499999999999996,
+        -10.8,
+        -1.1500000000000001
+      ],
+      "origin": [
+        -4.776122516674677e-16,
+        -11.2,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        315,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            227,
+            84,
+            229,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "south": {
+          "uv": [
+            231,
+            84,
+            233,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "east": {
+          "uv": [
+            235,
+            84,
+            238,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "west": {
+          "uv": [
+            240,
+            84,
+            243,
+            86
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "up": {
+          "uv": [
+            245,
+            84,
+            247,
+            87
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        },
+        "down": {
+          "uv": [
+            249,
+            84,
+            251,
+            87
+          ],
+          "texture": "alchemicallaser:textures/block/metal_atlas.png",
+          "material": "createnuclear:block/lead_block"
+        }
+      }
+    }
+  ]
+}

@@ -12,6 +12,8 @@ import org.joml.Vector3f;
 
 public final class LaserEffects {
   public static void tick(LaserBlockEntity be) {
+    MachineAnimation.tick(be);
+    OpticalEffects.tick(be);
     var level = be.getLevel();
     var pos = be.getBlockPos();
     var mc = Minecraft.getInstance();
@@ -28,6 +30,7 @@ public final class LaserEffects {
     boolean charging = be.phase == LaserBlockEntity.Phase.CHARGING;
     boolean completing = be.phase == LaserBlockEntity.Phase.COMPLETING;
     if (!be.isBeamActive() && !charging && !completing) return;
+    if (be.isBeamActive()) return;
     if (level.getGameTime() % (completing ? 2 : 3) != 0) return;
     int rgb = be.beamColor();
     var dust =
@@ -36,7 +39,7 @@ public final class LaserEffects {
             .65f);
     double x = pos.getX() + .5, y = pos.getY(), z = pos.getZ() + .5;
     if (charging) {
-      y -= .375;
+      y -= .70;
       for (int i = 0; i < 2; i++) {
         double a = level.random.nextDouble() * Math.PI * 2,
             dx = Math.cos(a) * .35,

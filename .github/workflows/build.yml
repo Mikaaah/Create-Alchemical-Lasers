@@ -27,6 +27,7 @@ jobs:
         run: |
           pip install -r tools/requirements-dev.txt
           python tools/verify_resources.py
+          python tools/verify_industrial_assets.py
       - name: Check Java formatting
         run: |
           curl --fail --location --output "$RUNNER_TEMP/formatter.jar" https://repo.maven.apache.org/maven2/com/google/googlejavaformat/google-java-format/1.28.0/google-java-format-1.28.0-all-deps.jar

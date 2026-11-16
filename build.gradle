@@ -2,9 +2,9 @@ plugins {
     id 'java-library'
     id 'net.neoforged.moddev' version '2.0.148'
 }
-version = '1.0.0-rc.1'
+version = '1.1.0'
 group = 'nl.mikaaah.alchemicallaser'
-base { archivesName = 'create-alchemical-lasers' }
+base { archivesName = 'alchemical-lasers' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 java { withSourcesJar() }
 repositories {
@@ -68,3 +68,9 @@ tasks.register('verifyReleaseJar') {
     }
 }
 tasks.named('check') { dependsOn tasks.named('verifyReleaseJar') }
+
+tasks.named('jar') {
+    archiveFileName = 'alchemical-lasers-1.1.0-neoforge-1.21.1.jar'
+    from('licenses') { into 'META-INF/licenses' }
+    from('docs/MATERIAL_PROVENANCE.md') { into 'META-INF' }
+}

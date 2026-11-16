@@ -1,0 +1,675 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.lens_quartz",
+        "texture_width": 1024,
+        "texture_height": 1024,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 3,
+        "visible_bounds_offset": [
+          0,
+          0.125,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "gearbox",
+          "pivot": [
+            0,
+            8,
+            0
+          ]
+        },
+        {
+          "name": "side_shaft",
+          "pivot": [
+            0,
+            8,
+            0
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "bevel_gear_x",
+          "pivot": [
+            0,
+            8,
+            0
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "bevel_gear_y",
+          "pivot": [
+            0,
+            8,
+            -3
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "amethyst_core",
+          "pivot": [
+            0,
+            -3,
+            0
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "amethyst_shards",
+          "pivot": [
+            0,
+            -3,
+            0
+          ],
+          "parent": "amethyst_core"
+        },
+        {
+          "name": "brass_gimbal",
+          "pivot": [
+            0,
+            -3,
+            0
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "lower_nozzle",
+          "pivot": [
+            0,
+            -6,
+            0
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "stabilizer_1",
+          "pivot": [
+            5.5,
+            -1,
+            -5.5
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "stabilizer_2",
+          "pivot": [
+            -5.5,
+            -1,
+            -5.5
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "stabilizer_3",
+          "pivot": [
+            -5.5,
+            -1,
+            5.5
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "stabilizer_4",
+          "pivot": [
+            5.5,
+            -1,
+            5.5
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "lens_clamps_1",
+          "pivot": [
+            0,
+            -9,
+            -4.5
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "cooling_vents_1",
+          "pivot": [
+            0,
+            -7.1,
+            -4.5
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "lens_clamps_2",
+          "pivot": [
+            -4.5,
+            -9,
+            0
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "cooling_vents_2",
+          "pivot": [
+            -4.5,
+            -7.1,
+            0
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "lens_clamps_3",
+          "pivot": [
+            0,
+            -9,
+            4.5
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "cooling_vents_3",
+          "pivot": [
+            0,
+            -7.1,
+            4.5
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "lens_clamps_4",
+          "pivot": [
+            4.5,
+            -9,
+            0
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "cooling_vents_4",
+          "pivot": [
+            4.5,
+            -7.1,
+            0
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "socketed_lens",
+          "pivot": [
+            0,
+            -11,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3.3,
+                -11.25,
+                -3.3
+              ],
+              "size": [
+                6.6,
+                1.0,
+                1.0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    315,
+                    58
+                  ],
+                  "uv_size": [
+                    7,
+                    2
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    324,
+                    58
+                  ],
+                  "uv_size": [
+                    7,
+                    2
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    333,
+                    58
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    337,
+                    58
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    348,
+                    60
+                  ],
+                  "uv_size": [
+                    -7,
+                    -2
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    357,
+                    60
+                  ],
+                  "uv_size": [
+                    -7,
+                    -2
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                -3.3,
+                -11.25,
+                2.3
+              ],
+              "size": [
+                6.6,
+                1.0,
+                1.0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    359,
+                    58
+                  ],
+                  "uv_size": [
+                    7,
+                    2
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    368,
+                    58
+                  ],
+                  "uv_size": [
+                    7,
+                    2
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    377,
+                    58
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    381,
+                    58
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    392,
+                    60
+                  ],
+                  "uv_size": [
+                    -7,
+                    -2
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    401,
+                    60
+                  ],
+                  "uv_size": [
+                    -7,
+                    -2
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                2.3,
+                -11.25,
+                -2.3
+              ],
+              "size": [
+                1.0,
+                1.0,
+                4.6
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    403,
+                    58
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    407,
+                    58
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    411,
+                    58
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    418,
+                    58
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    427,
+                    63
+                  ],
+                  "uv_size": [
+                    -2,
+                    -5
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    431,
+                    63
+                  ],
+                  "uv_size": [
+                    -2,
+                    -5
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                -3.3,
+                -11.25,
+                -2.3
+              ],
+              "size": [
+                1.0,
+                1.0,
+                4.6
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    433,
+                    58
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    437,
+                    58
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    441,
+                    58
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    448,
+                    58
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    457,
+                    63
+                  ],
+                  "uv_size": [
+                    -2,
+                    -5
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    461,
+                    63
+                  ],
+                  "uv_size": [
+                    -2,
+                    -5
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                -1.9,
+                -11.8,
+                -1.9
+              ],
+              "size": [
+                3.8,
+                1.15,
+                3.8
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    837,
+                    1
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    843,
+                    1
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    849,
+                    1
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    855,
+                    1
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    865,
+                    5
+                  ],
+                  "uv_size": [
+                    -4,
+                    -4
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    871,
+                    5
+                  ],
+                  "uv_size": [
+                    -4,
+                    -4
+                  ]
+                }
+              },
+              "pivot": [
+                0,
+                -11.2,
+                0
+              ],
+              "rotation": [
+                0,
+                -45,
+                0
+              ]
+            },
+            {
+              "origin": [
+                -1.35,
+                -12,
+                -1.35
+              ],
+              "size": [
+                2.7,
+                0.35,
+                2.7
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    873,
+                    1
+                  ],
+                  "uv_size": [
+                    3,
+                    2
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    878,
+                    1
+                  ],
+                  "uv_size": [
+                    3,
+                    2
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    883,
+                    1
+                  ],
+                  "uv_size": [
+                    3,
+                    2
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    888,
+                    1
+                  ],
+                  "uv_size": [
+                    3,
+                    2
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    896,
+                    4
+                  ],
+                  "uv_size": [
+                    -3,
+                    -3
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    901,
+                    4
+                  ],
+                  "uv_size": [
+                    -3,
+                    -3
+                  ]
+                }
+              },
+              "pivot": [
+                0,
+                -11.8,
+                0
+              ],
+              "rotation": [
+                0,
+                -45,
+                0
+              ]
+            }
+          ],
+          "parent": "lower_nozzle"
+        }
+      ]
+    }
+  ]
+}

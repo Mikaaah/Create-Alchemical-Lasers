@@ -1,0 +1,1016 @@
+{
+  "format_version": 1,
+  "units": "pixels",
+  "coordinate_system": "x/z centred on block; y0 block floor; emission strictly -Y",
+  "bounds": [
+    -10,
+    -12,
+    -8.3,
+    10,
+    16,
+    8.3
+  ],
+  "bones": [
+    {
+      "name": "gearbox",
+      "parent": null,
+      "origin": [
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "side_shaft",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "bevel_gear_x",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "bevel_gear_y",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        8,
+        -3
+      ]
+    },
+    {
+      "name": "amethyst_core",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        -3,
+        0
+      ]
+    },
+    {
+      "name": "amethyst_shards",
+      "parent": "amethyst_core",
+      "origin": [
+        0,
+        -3,
+        0
+      ]
+    },
+    {
+      "name": "brass_gimbal",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        -3,
+        0
+      ]
+    },
+    {
+      "name": "lower_nozzle",
+      "parent": "gearbox",
+      "origin": [
+        0,
+        -6,
+        0
+      ]
+    },
+    {
+      "name": "stabilizer_1",
+      "parent": "gearbox",
+      "origin": [
+        -5.5,
+        -1,
+        -5.5
+      ]
+    },
+    {
+      "name": "stabilizer_2",
+      "parent": "gearbox",
+      "origin": [
+        5.5,
+        -1,
+        -5.5
+      ]
+    },
+    {
+      "name": "stabilizer_3",
+      "parent": "gearbox",
+      "origin": [
+        5.5,
+        -1,
+        5.5
+      ]
+    },
+    {
+      "name": "stabilizer_4",
+      "parent": "gearbox",
+      "origin": [
+        -5.5,
+        -1,
+        5.5
+      ]
+    },
+    {
+      "name": "lens_clamps_1",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -9,
+        -4.5
+      ]
+    },
+    {
+      "name": "cooling_vents_1",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -7.1,
+        -4.5
+      ]
+    },
+    {
+      "name": "lens_clamps_2",
+      "parent": "lower_nozzle",
+      "origin": [
+        4.5,
+        -9,
+        0
+      ]
+    },
+    {
+      "name": "cooling_vents_2",
+      "parent": "lower_nozzle",
+      "origin": [
+        4.5,
+        -7.1,
+        0
+      ]
+    },
+    {
+      "name": "lens_clamps_3",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -9,
+        4.5
+      ]
+    },
+    {
+      "name": "cooling_vents_3",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -7.1,
+        4.5
+      ]
+    },
+    {
+      "name": "lens_clamps_4",
+      "parent": "lower_nozzle",
+      "origin": [
+        -4.5,
+        -9,
+        0
+      ]
+    },
+    {
+      "name": "cooling_vents_4",
+      "parent": "lower_nozzle",
+      "origin": [
+        -4.5,
+        -7.1,
+        0
+      ]
+    },
+    {
+      "name": "socketed_lens",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -11,
+        0
+      ]
+    }
+  ],
+  "textures": {
+    "alchemicallaser:textures/block/metal_atlas.png": [
+      512,
+      512
+    ],
+    "alchemicallaser:textures/block/copper_atlas.png": [
+      512,
+      512
+    ],
+    "alchemicallaser:textures/block/crystal_atlas.png": [
+      512,
+      512
+    ],
+    "alchemicallaser:textures/block/detail_atlas.png": [
+      512,
+      512
+    ]
+  },
+  "cubes": [
+    {
+      "name": "quartz_bezel_north",
+      "from": [
+        -3.3,
+        -11.25,
+        -3.3
+      ],
+      "to": [
+        3.3,
+        -10.25,
+        -2.3
+      ],
+      "origin": [
+        0.0,
+        -10.75,
+        -2.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            315,
+            58,
+            322,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "uv": [
+            324,
+            58,
+            331,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "uv": [
+            333,
+            58,
+            335,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "uv": [
+            337,
+            58,
+            339,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "uv": [
+            341,
+            58,
+            348,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "uv": [
+            350,
+            58,
+            357,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "quartz_bezel_south",
+      "from": [
+        -3.3,
+        -11.25,
+        2.3
+      ],
+      "to": [
+        3.3,
+        -10.25,
+        3.3
+      ],
+      "origin": [
+        0.0,
+        -10.75,
+        2.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            359,
+            58,
+            366,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "uv": [
+            368,
+            58,
+            375,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "uv": [
+            377,
+            58,
+            379,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "uv": [
+            381,
+            58,
+            383,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "uv": [
+            385,
+            58,
+            392,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "uv": [
+            394,
+            58,
+            401,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "quartz_bezel_west",
+      "from": [
+        -3.3,
+        -11.25,
+        -2.3
+      ],
+      "to": [
+        -2.3,
+        -10.25,
+        2.3
+      ],
+      "origin": [
+        -2.8,
+        -10.75,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            403,
+            58,
+            405,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "uv": [
+            407,
+            58,
+            409,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "uv": [
+            411,
+            58,
+            416,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "uv": [
+            418,
+            58,
+            423,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "uv": [
+            425,
+            58,
+            427,
+            63
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "uv": [
+            429,
+            58,
+            431,
+            63
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "quartz_bezel_east",
+      "from": [
+        2.3,
+        -11.25,
+        -2.3
+      ],
+      "to": [
+        3.3,
+        -10.25,
+        2.3
+      ],
+      "origin": [
+        2.8,
+        -10.75,
+        0.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            433,
+            58,
+            435,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "uv": [
+            437,
+            58,
+            439,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "uv": [
+            441,
+            58,
+            446,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "uv": [
+            448,
+            58,
+            453,
+            60
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "uv": [
+            455,
+            58,
+            457,
+            63
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "uv": [
+            459,
+            58,
+            461,
+            63
+          ],
+          "texture": "alchemicallaser:textures/block/copper_atlas.png",
+          "material": "alchemicallaser:block/aerospace_brass",
+          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
+          "preferred_size": [
+            16,
+            16
+          ],
+          "preferred_uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "name": "quartz_central_crystal",
+      "from": [
+        -1.9,
+        -11.8,
+        -1.9
+      ],
+      "to": [
+        1.9,
+        -10.65,
+        1.9
+      ],
+      "origin": [
+        0,
+        -11.2,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            325,
+            1,
+            329,
+            3
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/quartz_block_side",
+          "emissive": true
+        },
+        "south": {
+          "uv": [
+            331,
+            1,
+            335,
+            3
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/quartz_block_side",
+          "emissive": true
+        },
+        "east": {
+          "uv": [
+            337,
+            1,
+            341,
+            3
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/quartz_block_side",
+          "emissive": true
+        },
+        "west": {
+          "uv": [
+            343,
+            1,
+            347,
+            3
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/quartz_block_side",
+          "emissive": true
+        },
+        "up": {
+          "uv": [
+            349,
+            1,
+            353,
+            5
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/quartz_block_side",
+          "emissive": true
+        },
+        "down": {
+          "uv": [
+            355,
+            1,
+            359,
+            5
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/quartz_block_side",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "quartz_exit_facet",
+      "from": [
+        -1.35,
+        -12,
+        -1.35
+      ],
+      "to": [
+        1.35,
+        -11.65,
+        1.35
+      ],
+      "origin": [
+        0,
+        -11.8,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "group": "socketed_lens",
+      "faces": {
+        "north": {
+          "uv": [
+            361,
+            1,
+            364,
+            3
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/quartz_block_side",
+          "emissive": true
+        },
+        "south": {
+          "uv": [
+            366,
+            1,
+            369,
+            3
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/quartz_block_side",
+          "emissive": true
+        },
+        "east": {
+          "uv": [
+            371,
+            1,
+            374,
+            3
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/quartz_block_side",
+          "emissive": true
+        },
+        "west": {
+          "uv": [
+            376,
+            1,
+            379,
+            3
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/quartz_block_side",
+          "emissive": true
+        },
+        "up": {
+          "uv": [
+            381,
+            1,
+            384,
+            4
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/quartz_block_side",
+          "emissive": true
+        },
+        "down": {
+          "uv": [
+            386,
+            1,
+            389,
+            4
+          ],
+          "texture": "alchemicallaser:textures/block/crystal_atlas.png",
+          "material": "minecraft:block/quartz_block_side",
+          "emissive": true
+        }
+      }
+    }
+  ]
+}

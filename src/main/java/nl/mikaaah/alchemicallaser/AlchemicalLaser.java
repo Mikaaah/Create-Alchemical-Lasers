@@ -118,6 +118,7 @@ public final class AlchemicalLaser {
     TYPES.register(bus);
     SERIALIZERS.register(bus);
     SOUNDS.register(bus);
+    nl.mikaaah.alchemicallaser.particle.LaserParticles.register(bus);
     TABS.register(bus);
     container.registerConfig(ModConfig.Type.SERVER, LaserConfig.SPEC);
     container.registerConfig(ModConfig.Type.COMMON, DefaultRecipeConfig.SPEC);

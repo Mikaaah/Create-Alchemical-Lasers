@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[4,)"
-license="All Rights Reserved"
+license="All Rights Reserved; third-party textures retain upstream licenses (see META-INF/licenses and MATERIAL_PROVENANCE.md)"
 [[mods]]
 modId="alchemicallaser"
 version="${version}"

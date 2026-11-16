@@ -4,12 +4,12 @@
 
 <p align="center"><strong>Put a little alchemy on the assembly line: kinetic lasers, five lenses and bulk processing.</strong></p>
 
-<p align="center"><a href="https://www.curseforge.com/minecraft/mc-mods/create-alchemical-lasers">Downloads</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki">Player guide</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/issues">Report an issue</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/CHANGELOG.md">Changelog</a> · <a href="https://discord.gg/CRYk3uDPVt">Discord</a></p>
+<p align="center"><a href="https://www.curseforge.com/minecraft/mc-mods/create-alchemical-lasers">Downloads</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/wiki">Player guide</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/issues">Report an issue</a> · <a href="https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/feature/1.1.0-industrial-model/CHANGELOG.md">Changelog</a> · <a href="https://discord.gg/CRYk3uDPVt">Discord</a></p>
 
 <p align="center"><img src="https://img.shields.io/badge/Minecraft-1.21.1-5b8731?style=flat-square" alt="Minecraft 1.21.1"> <img src="https://img.shields.io/badge/NeoForge-d77828?style=flat-square" alt="NeoForge"> <a href="https://mikaaah.github.io/TownsAndKingdoms/projects/"><img src="https://img.shields.io/badge/Towns_%26_Kingdoms-Modding_Hub-7f384a?style=flat-square" alt="Towns & Kingdoms Modding Hub"></a></p>
 
 
-**Current guide: 1.0.0-rc.1 · Minecraft 1.21.1 · NeoForge · Java 21.** [Current source](https://github.com/Mikaaah/Create-Alchemical-Lasers/tree/release/1.0.0); `main` retains the earlier 0.4.0 code.
+**Version 1.1.0 · Minecraft 1.21.1 · NeoForge · Java 21.** New industrial model, animated focusing chamber, lens clamps and layered beams. [Model integration and validation](docs/MODEL_1.1.0.md).
 
 ## How it works
 
@@ -23,7 +23,7 @@ Speed scales processing time, up to the configured cap. A powered redstone signa
 ## Features
 
 - Bulk processing on belts and Depots, plus multiple dropped item stacks directly beneath the beam. Complete recipe quantities process together; incomplete remainders stay behind.
-- Five reusable lenses with fitted 3D cartridges, animated Minecraft beacon beams, charging particles and completion effects.
+- Five reusable lenses with fitted 3D optics, an animated industrial focusing chamber, layered beams, lens-specific particles and completion effects.
 - Seven original sound events, including a spatial beam loop that stops when processing stops or the machine unloads.
 - Engineer's Goggles information, Create wrench interaction and a one-slot lens item capability for automation.
 - Datapack recipes and native KubeJS builders, consumable catalysts, custom beam colors and Create sequenced assembly; optional component copying and probabilistic secondary outputs.
@@ -47,23 +47,25 @@ Speed scales processing time, up to the configured cap. A powered redstone signa
 
 These are standalone examples. Modpacks can replace them with their own progression. Towns & Kingdoms is not required.
 
-[Recipe reference](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/docs/RECIPES.md) · [KubeJS and assemblies](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/docs/KUBEJS.md) · [Configuration](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/docs/CONFIGURATION.md) · [Support](SUPPORT.md)
+[Recipe reference](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/feature/1.1.0-industrial-model/docs/RECIPES.md) · [KubeJS and assemblies](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/feature/1.1.0-industrial-model/docs/KUBEJS.md) · [Configuration](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/feature/1.1.0-industrial-model/docs/CONFIGURATION.md) · [Support](SUPPORT.md)
 
 ## Requirements
 
 Minecraft 1.21.1, Java 21, NeoForge 21.1.219 or newer, and Create 6.0.10 (6.0.x). Use Create's required matching dependencies. JEI, EMI and KubeJS are optional.
 
-**1.0.0-rc.1 is a release candidate.** See [release notes](CHANGELOG.md) for changes and [release status](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/docs/RELEASE_AUDIT.md) for remaining checks.
+See the [1.1.0 release notes](CHANGELOG.md) and [validation notes](docs/MODEL_1.1.0.md) for completed checks and remaining graphical review.
 
 The specialist lenses are recipe selectors. Their starter recipes demonstrate growth, consolidation, splitting, energizing and sculk processing; datapacks and KubeJS can replace them. The obsidian Power recipe requires 64 RPM and the Eclipse example requires 128 RPM.
 
-**Updating from 0.2.0 or 0.2.1:** connect power to either horizontal shaft end. The top no longer accepts a shaft or large cog drive. Belt/Depot height and the lantern position stay the same; the five named lenses retain their item IDs.
+**Updating to 1.1.0:** existing blocks, lenses, installed catalysts and scripts keep their identifiers. Replace the previous mod JAR; no extra runtime dependency is needed.
+
+**Updating from 0.2.0 or 0.2.1:** connect power to either horizontal shaft end. The top no longer accepts a shaft or large cog drive. Belt/Depot height stays the same; the five named lenses retain their item IDs.
 
 **Updating from versions before 0.3.0:** Red, Blue, Purple and White lenses were removed in 0.3.0. Replace them with Power, Convergence, Splitting and Eclipse respectively; the earlier starter transformations now use those lenses. Removed lens items cannot be recovered after loading an old world.
 
 ## Consumables, KubeJS and assemblies
 
-The mod supports per-recipe catalyst items, hex colors, optional consumption, top hopper feeding, native KubeJS recipe builders and Create sequenced assembly. See [complete scripting examples](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/release/1.0.0/docs/KUBEJS.md). Bundled processing and crafting recipes can be disabled independently in `config/alchemicallaser-common.toml`.
+The mod supports per-recipe catalyst items, hex colors, optional consumption, top hopper feeding, native KubeJS recipe builders and Create sequenced assembly. See [complete scripting examples](https://github.com/Mikaaah/Create-Alchemical-Lasers/blob/feature/1.1.0-industrial-model/docs/KUBEJS.md). Bundled processing and crafting recipes can be disabled independently in `config/alchemicallaser-common.toml`.
 
 ## Pull up a chair
 
