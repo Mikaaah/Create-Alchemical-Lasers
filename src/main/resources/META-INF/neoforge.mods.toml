@@ -1,6 +1,8 @@
 modLoader="javafml"
 loaderVersion="[4,)"
 license="All Rights Reserved; third-party textures retain upstream licenses (see META-INF/licenses and MATERIAL_PROVENANCE.md)"
+[[mixins]]
+config="alchemicallaser.mixins.json"
 [[mods]]
 modId="alchemicallaser"
 version="${version}"

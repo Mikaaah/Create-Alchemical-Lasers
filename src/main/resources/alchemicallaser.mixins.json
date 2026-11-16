@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "nl.mikaaah.alchemicallaser.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["LaserBeltProcessingMixin", "LaserDepotProcessingMixin"],
+  "injectors": {"defaultRequire": 1}
+}

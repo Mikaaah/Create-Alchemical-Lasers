@@ -16,10 +16,11 @@ Blockbench projects and Gecko companions are regenerated with
 
 ## Runtime alignment and effects
 
-- `MachineAnimation` defines the resting muzzle at `-0.9375` blocks and keeps
-  impact at `-1.04`. The resting beam length is `0.1025`; recoil changes that
-  length while the impact stays fixed. The chamber arcs retain their original
-  position rather than following the extended nozzle.
+- `MachineAnimation` defines the resting muzzle at `-0.9375` blocks and the
+  impact at `-2.04`. The resting beam length is `1.1025`; recoil changes that
+  length while the impact stays fixed. Belts and Depots sit three block positions
+  below the upper housing. The chamber arcs retain their original position rather
+  than following the extended nozzle.
 - `OpticalEffects` keeps the chamber energy arcs and emits sparse lens-colored
   impact sparks every four ticks. The beam's three animated geometry layers
   remain. Soul, flame and continuous beam-smoke emissions are removed.

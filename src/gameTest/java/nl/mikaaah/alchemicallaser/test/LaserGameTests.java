@@ -16,7 +16,7 @@ import nl.mikaaah.alchemicallaser.*;
 @PrefixGameTestTemplate(false)
 public class LaserGameTests {
   private static final BlockPos EMITTER = new BlockPos(2, 3, 2),
-      DEPOT = new BlockPos(2, 1, 2),
+      DEPOT = new BlockPos(2, 0, 2),
       MOTOR = new BlockPos(2, 3, 3);
 
   private static LaserBlockEntity setup(GameTestHelper h, String lens, int count) {
@@ -53,6 +53,29 @@ public class LaserGameTests {
           h.assertTrue(
               stack.is(Items.GLASS) && stack.getCount() == 1,
               "Expected exactly one glass from one sand");
+        });
+  }
+
+  @GameTest(template = "empty", timeoutTicks = 180)
+  public static void depotInsideNozzleClearanceDoesNotProcess(GameTestHelper h) {
+    setup(h, "power", 0);
+    h.setBlock(DEPOT, Blocks.AIR);
+    BlockPos tooClose = EMITTER.below(2);
+    h.setBlock(tooClose, AllBlocks.DEPOT.getDefaultState());
+    var depot = (DepotBlockEntity) h.getBlockEntity(tooClose);
+    var behaviour =
+        depot.getBehaviour(com.simibubi.create.content.logistics.depot.DepotBehaviour.TYPE);
+    behaviour.setCenteredHeldItem(
+        new com.simibubi.create.content.kinetics.belt.transport.TransportedItemStack(
+            new ItemStack(Items.SAND, 8)));
+    h.runAfterDelay(
+        150,
+        () -> {
+          var stack = behaviour.getHeldItemStack();
+          h.assertTrue(
+              stack.is(Items.SAND) && stack.getCount() == 8,
+              "A Depot only two blocks below the emitter must not process inside nozzle clearance");
+          h.succeed();
         });
   }
 
@@ -232,9 +255,9 @@ public class LaserGameTests {
     power.updateGeneratedRotation();
     ((LaserBlockEntity) h.getBlockEntity(EMITTER))
         .exchangeLens(AlchemicalLaser.LENSES.get("power").toStack());
-    BlockPos start = new BlockPos(0, 1, 2),
-        end = new BlockPos(4, 1, 2),
-        drive = new BlockPos(0, 1, 3);
+    BlockPos start = new BlockPos(0, 0, 2),
+        end = new BlockPos(4, 0, 2),
+        drive = new BlockPos(0, 0, 3);
     var shaft =
         AllBlocks.SHAFT
             .getDefaultState()
@@ -661,7 +684,7 @@ public class LaserGameTests {
     var p = h.absolutePos(EMITTER);
     var entity =
         new net.minecraft.world.entity.item.ItemEntity(
-            h.getLevel(), p.getX() + .5 + dx, p.getY() - .9, p.getZ() + .5, stack);
+            h.getLevel(), p.getX() + .5 + dx, p.getY() - 1.9, p.getZ() + .5, stack);
     entity.setNoGravity(true);
     entity.setDeltaMovement(0, 0, 0);
     entity.setDefaultPickUpDelay();
@@ -756,7 +779,7 @@ public class LaserGameTests {
     var entity = looseSetup(h, "power", new ItemStack(Items.SAND, 32));
     h.setBlock(DEPOT, Blocks.AIR);
     // Keep the item below the glass, inside the beam query, without embedding it in either block.
-    entity.setPos(entity.getX(), h.absolutePos(EMITTER).getY() - 1.3, entity.getZ());
+    entity.setPos(entity.getX(), h.absolutePos(EMITTER).getY() - 2.3, entity.getZ());
     h.setBlock(EMITTER.below(), Blocks.GLASS);
     h.runAfterDelay(
         170,
@@ -1170,17 +1193,17 @@ public class LaserGameTests {
     h.succeed();
   }
 
-  @GameTest(template = "empty", timeoutTicks = 300)
-  public static void obstructionStopsAndRestartsDepot(GameTestHelper h) {
+  private static void obstructionStopsAndRestartsDepot(GameTestHelper h, int gapDepth) {
     setup(h, "power", 8);
-    h.setBlock(EMITTER.below(), Blocks.GLASS);
+    BlockPos obstruction = EMITTER.below(gapDepth);
+    h.setBlock(obstruction, Blocks.GLASS);
     h.runAfterDelay(
         90,
         () -> {
           h.assertTrue(
               countDepot(h, Items.SAND) == 8 && countDepot(h, Items.GLASS) == 0,
               "Depot processed through a blocked beam gap");
-          h.setBlock(EMITTER.below(), Blocks.AIR);
+          h.setBlock(obstruction, Blocks.AIR);
         });
     h.runAfterDelay(
         240,
@@ -1190,6 +1213,16 @@ public class LaserGameTests {
               "Depot did not restart after the obstruction was removed");
           h.succeed();
         });
+  }
+
+  @GameTest(template = "empty", timeoutTicks = 300)
+  public static void upperObstructionStopsAndRestartsDepot(GameTestHelper h) {
+    obstructionStopsAndRestartsDepot(h, 1);
+  }
+
+  @GameTest(template = "empty", timeoutTicks = 300)
+  public static void lowerObstructionStopsAndRestartsDepot(GameTestHelper h) {
+    obstructionStopsAndRestartsDepot(h, 2);
   }
 
   @GameTest(template = "empty", timeoutTicks = 180)

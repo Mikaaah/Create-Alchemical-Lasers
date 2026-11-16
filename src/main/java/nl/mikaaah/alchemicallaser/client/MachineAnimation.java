@@ -18,7 +18,7 @@ public final class MachineAnimation {
   /** The extended 31px model ends at y=-15px; the processing surface remains fixed. */
   public static final float MUZZLE_Y = -15f / 16f;
 
-  public static final float IMPACT_Y = -1.04f;
+  public static final float IMPACT_Y = -2.04f;
   public static final float BEAM_LENGTH = MUZZLE_Y - IMPACT_Y;
   private static final Map<LaserBlockEntity, MachineAnimation> STATES = new WeakHashMap<>();
   private static Map<String, Clip> clips;

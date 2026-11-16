@@ -11,9 +11,9 @@ import net.minecraft.world.level.block.Blocks;
 import nl.mikaaah.alchemicallaser.*;
 
 public class LaserScenes {
-  private static final BlockPos LASER = new BlockPos(2, 3, 3),
+  private static final BlockPos LASER = new BlockPos(2, 4, 3),
       BELT = new BlockPos(2, 1, 3),
-      SECOND = new BlockPos(4, 3, 3);
+      SECOND = new BlockPos(4, 4, 3);
 
   private static CreateSceneBuilder base(
       SceneBuilder builder, SceneBuildingUtil util, String key, String title) {
@@ -59,10 +59,12 @@ public class LaserScenes {
     text(
         s,
         u,
-        "Place the emitter above a horizontal belt, leaving one air block between them, just like a"
-            + " Mechanical Press.",
+        "Place the upper emitter block three blocks above a horizontal belt, leaving two air"
+            + " blocks for the extended nozzle and beam.",
         LASER);
-    s.overlay().showOutline(PonderPalette.GREEN, LASER, u.select().position(LASER.below()), 60);
+    s.overlay()
+        .showOutline(
+            PonderPalette.GREEN, LASER, u.select().fromTo(LASER.below(), LASER.below(2)), 60);
     s.idle(65);
     s.world().setBlock(BELT, AllBlocks.DEPOT.getDefaultState(), true);
     text(

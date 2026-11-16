@@ -74,6 +74,6 @@ public final class LaserRenderer implements BlockEntityRenderer<LaserBlockEntity
 
   @Override
   public AABB getRenderBoundingBox(LaserBlockEntity be) {
-    return new AABB(be.getBlockPos()).expandTowards(0, -1.1, 0).inflate(.35);
+    return new AABB(be.getBlockPos()).expandTowards(0, -2.1, 0).inflate(.35);
   }
 }

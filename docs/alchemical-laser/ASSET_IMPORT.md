@@ -57,9 +57,11 @@ values retain the approved palette; lens pitch values and packaged recipes
 remain unchanged. Recipe-defined beam color overrides continue to take precedence.
 
 The resting beam begins at the new muzzle (`Y: -0.9375` blocks) and travels
-`0.1025` blocks to the unchanged processing impact (`Y: -1.04`). Recoil extends
-the beam back to that fixed endpoint. Chamber arcs retain their original
-position and do not move with the extended muzzle.
+`1.1025` blocks to the processing impact (`Y: -2.04`). Belts and Depots are
+three block positions below the upper housing, so existing shorter-gap setups
+need the emitter raised or processing line lowered by one block. Recoil extends
+the beam back to that fixed endpoint. Chamber arcs retain their original position
+and do not move with the extended muzzle.
 
 ## Verification and notices
 

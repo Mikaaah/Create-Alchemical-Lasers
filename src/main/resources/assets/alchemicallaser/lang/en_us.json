@@ -21,7 +21,7 @@
   "subtitles.alchemicallaser.complete": "Laser complete",
   "subtitles.alchemicallaser.shutdown": "Laser vents pressure",
   "alchemicallaser.ponder.laser_setup.header": "Setting up an Alchemical Laser",
-  "alchemicallaser.ponder.laser_setup.text_1": "Place the emitter above a horizontal belt, leaving one air block between them, just like a Mechanical Press.",
+  "alchemicallaser.ponder.laser_setup.text_1": "Place the upper emitter block three blocks above a horizontal belt, leaving two air blocks for the extended nozzle and beam.",
   "alchemicallaser.ponder.laser_setup.text_2": "A Depot works at the same height. Funnels and hoppers can supply and extract items.",
   "alchemicallaser.ponder.laser_setup.text_3": "Connect a shaft to either exposed end of the horizontal axle. Use a wrench to rotate the emitter and align the shaft.",
   "alchemicallaser.ponder.laser_power.header": "Power and processing speed",

@@ -20,6 +20,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.SingleRecipeInput;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
@@ -28,6 +29,17 @@ import nl.mikaaah.alchemicallaser.client.LaserEffects;
 import nl.mikaaah.alchemicallaser.recipe.LaserRecipe;
 
 public class LaserBlockEntity extends KineticBlockEntity {
+  public static final int PROCESSING_DISTANCE = 3;
+
+  /** Keep Create's normal processors at their native height, and find lasers one block higher. */
+  public static BeltProcessingBehaviour findProcessingBehaviour(BlockGetter level, BlockPos pos) {
+    var original = BlockEntityBehaviour.get(level, pos, BeltProcessingBehaviour.TYPE);
+    if (original != null && !(original.blockEntity instanceof LaserBlockEntity)) return original;
+    return level.getBlockEntity(pos.above()) instanceof LaserBlockEntity laser
+        ? laser.getBehaviour(BeltProcessingBehaviour.TYPE)
+        : null;
+  }
+
   private ItemStack inventoryIdentity = ItemStack.EMPTY;
   public final ItemStackHandler lensInventory =
       new ItemStackHandler(1) {
@@ -354,10 +366,13 @@ public class LaserBlockEntity extends KineticBlockEntity {
     tickLooseItems();
   }
 
-  /** The lantern hangs in the gap between the emitter and processing surface. */
+  /** Both cells beneath the housing must stay clear of solid obstructions. */
   private boolean isBeamObstructed() {
-    BlockPos gap = worldPosition.below();
-    return !level.getBlockState(gap).getCollisionShape(level, gap).isEmpty();
+    for (int distance = 1; distance < PROCESSING_DISTANCE; distance++) {
+      BlockPos gap = worldPosition.below(distance);
+      if (!level.getBlockState(gap).getCollisionShape(level, gap).isEmpty()) return true;
+    }
+    return false;
   }
 
   private void tickLooseItems() {
@@ -373,7 +388,7 @@ public class LaserBlockEntity extends KineticBlockEntity {
     var items =
         level.getEntitiesOfClass(
             ItemEntity.class,
-            new AABB(x + .2, y - 1.25, z + .2, x + .8, y - .35, z + .8),
+            new AABB(x + .2, y - 2.25, z + .2, x + .8, y - 1.35, z + .8),
             entity -> entity.isAlive() && !entity.getItem().isEmpty());
     Set<UUID> present = new HashSet<>();
     boolean processing = false, charging = false, completed = false;

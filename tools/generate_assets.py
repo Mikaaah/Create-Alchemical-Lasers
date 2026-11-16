@@ -118,11 +118,11 @@ for x in range(7):
     block(x,1,3,'create:belt',{'facing':'east','slope':'horizontal','part':'start' if x==0 else 'end' if x==6 else 'middle','casing':'false','waterlogged':'false'},
           {'id':n.String('create:belt'),'Controller':n.IntArray([0,1,3]),'IsController':n.Byte(x==0),'Length':n.Int(7),'Index':n.Int(x),'Speed':n.Float(-32),'Casing':n.String('NONE'),'Inventory':n.Compound()})
 for x in [2,4]:
-    block(x,3,3,'alchemicallaser:laser_emitter',{'facing':'north'},{'id':n.String('alchemicallaser:laser_emitter'),'Speed':n.Float(32)})
-    block(x,3,4,'create:shaft',{'axis':'z','waterlogged':'false'},{'id':n.String('create:shaft'),'Speed':n.Float(32)})
+    block(x,4,3,'alchemicallaser:laser_emitter',{'facing':'north'},{'id':n.String('alchemicallaser:laser_emitter'),'Speed':n.Float(32)})
+    block(x,4,4,'create:shaft',{'axis':'z','waterlogged':'false'},{'id':n.String('create:shaft'),'Speed':n.Float(32)})
 block(2,1,1,'create:depot',{'waterlogged':'false'},{'id':n.String('create:depot')})
-block(5,3,3,'minecraft:lever',{'face':'wall','facing':'east','powered':'false'})
-structure=n.File({'DataVersion':n.Int(3955),'size':n.List[n.Int]([7,5,7]),'palette':n.List[n.Compound](palette),
+block(5,4,3,'minecraft:lever',{'face':'wall','facing':'east','powered':'false'})
+structure=n.File({'DataVersion':n.Int(3955),'size':n.List[n.Int]([7,6,7]),'palette':n.List[n.Compound](palette),
                   'blocks':n.List[n.Compound](blocks),'entities':n.List[n.Compound]()},gzipped=True)
 (A/'ponder').mkdir(exist_ok=True)
 structure.save(A/'ponder/laser_workshop.nbt')

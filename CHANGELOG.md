@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1
+
+- Moved Alchemical Laser belt/Depot processing three blocks below the housing, matching the Creation Augmenter's clearance and restoring a full visible beam beneath the longer nozzle.
+- Moved dropped-item processing, beam impacts and completion effects down one block; solid blocks in either gap cell now stop processing.
+- Updated the Ponder setup and placement documentation. Existing laser setups need the emitter and side drive raised one block, or the processing line lowered one block.
+
 ## 1.1.0
 
 - Integrated the revised 31px copper/fluid-tank laser and dark-steel Creation Augmenter with editable models, atlases, emissive masks and animated rainbow core.

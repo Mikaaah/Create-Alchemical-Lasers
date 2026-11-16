@@ -19,11 +19,13 @@ The mod ID remains `alchemicallaser`; the block and entity remain
 configs, datapacks, KubeJS builders, sequenced assemblies and bundled recipes keep
 their identifiers and behavior. A powered redstone signal still disables the laser.
 
-The beam retains the existing processing endpoint. Leave one air block between
-the emitter and a belt/Depot. The larger nozzle occupies more of that visual gap;
-no extra block of vertical spacing is needed. Shafts still connect horizontally on
-either end, and wrench rotation supports both X and Z axes. Hoppers still feed the
-catalyst slot from above. Ordinary item catalysts remain visible in the socket.
+The original 1.1.0 integration retained the old processing height. The clearance
+update supersedes that layout: put the belt/Depot three blocks below the upper
+emitter block, leaving two air blocks between their block positions. Raise the
+emitter and side power by one block, or lower the processing line by one block,
+when updating an existing setup. Shafts still connect horizontally on either end,
+and wrench rotation supports both X and Z axes. Hoppers still feed the catalyst
+slot from above. Ordinary item catalysts remain visible in the socket.
 
 The kit's standalone mod (`alchemical_laser`) is a visual reference rather than
 the processing implementation. Do not install that reference JAR alongside this
