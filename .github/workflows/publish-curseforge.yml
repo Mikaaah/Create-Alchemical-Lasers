@@ -1,0 +1,27 @@
+name: Publish verified Alchemical Lasers 1.1.0 to CurseForge
+on:
+  push:
+    branches: ['publish/curseforge-1.1.0']
+    paths: ['release/1.1.0/**', '.github/workflows/publish-curseforge.yml']
+permissions:
+  contents: read
+concurrency:
+  group: curseforge-alchemical-lasers-1.1.0
+  cancel-in-progress: false
+jobs:
+  upload:
+    if: startsWith(github.event.head_commit.message, 'Publish Alchemical Lasers 1.1.0')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Upload existing verified JAR and full HTML changelog
+        env:
+          CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
+        run: python3 release/1.1.0/publish_curseforge.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: curseforge-1.1.0-publish-result
+          path: |
+            release/1.1.0/publish-result.json
+            release/1.1.0/Create-Alchemical-Lasers-1.1.0-Changelog.html
