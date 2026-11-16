@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.3
+
+- Imported the revised Alchemical Laser metal, copper and compatibility atlases, with cleaner metal shading and matching embedded Blockbench texture pages.
+- Retained the extended model, native Create shafts, three-block processing clearance, animations and recipe compatibility.
+
 ## 1.1.2
 
 - Replaced both machines’ stretched custom shaft models with Create’s native shaft, including its proper end-cap texture and horizontal-axis rotation.
