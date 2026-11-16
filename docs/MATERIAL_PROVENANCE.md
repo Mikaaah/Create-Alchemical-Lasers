@@ -30,6 +30,6 @@ The official Modrinth project `oWaK0Q19` links to that repository. Verified comm
 | `aeronautics:block/gyroscopic_propeller_bearing_side` | 16×16 |
 | `aeronautics:block/steam_vent/steam_vent_head_brass` | 16×16 |
 
-The official license explicitly reserves all rights to the `assets` directories, while licensing the code under MIT. Consequently the shipped default aerospace detail sheet is original artwork. These verified IDs are appropriate for optional direct resource references when the original mod supplies the textures. Aeronautics source PNGs are excluded from the deliverable. See `licenses/Aeronautics-asset-license-reference.md` for the exact source license text.
+The official license explicitly reserves all rights to the `assets` directories, while licensing the code under MIT. Consequently the shipped default aerospace detail sheet is original artwork. These IDs remain material-reference metadata only. The runtime always uses the supplied atlas UVs and original aerospace detail artwork; installing Aeronautics or a resource pack no longer silently substitutes external textures. Aeronautics source PNGs are excluded from the deliverable. See `licenses/Aeronautics-asset-license-reference.md` for the exact source license text.
 
 IDs here are verified paths, not guessed names. Verify the same paths exist if targeting a different installed Nuclear or Aeronautics build. No external block models are copied.

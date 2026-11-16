@@ -52,9 +52,10 @@ public final class MachineGeometry {
 
   private static MachineGeometry load(ResourceLocation resource) {
     try (var reader =
-        new InputStreamReader(
-            Minecraft.getInstance().getResourceManager().getResourceOrThrow(resource).open(),
-            StandardCharsets.UTF_8)) {
+            new InputStreamReader(
+                Minecraft.getInstance().getResourceManager().getResourceOrThrow(resource).open(),
+                StandardCharsets.UTF_8);
+        var opacity = new GeometryOpacity(Minecraft.getInstance().getResourceManager())) {
       JsonObject root = GSON.fromJson(reader, JsonObject.class);
       Map<String, Bone> bones = new LinkedHashMap<>();
       for (JsonElement element : root.getAsJsonArray("bones")) {
@@ -95,24 +96,7 @@ public final class MachineGeometry {
                   || material.contains("tinted_glass")
                   || material.contains("blast_glass");
           JsonArray uv = f.getAsJsonArray("uv");
-          // Aero assets stay in their owner mod. Prefer them only when the
-          // resource pack stack supplies them, otherwise use our original atlas.
-          if (f.has("preferred_texture")) {
-            ResourceLocation preferred =
-                ResourceLocation.parse(f.get("preferred_texture").getAsString());
-            if (Minecraft.getInstance().getResourceManager().getResource(preferred).isPresent()) {
-              texture = preferred;
-              uv = f.getAsJsonArray("preferred_uv");
-              JsonArray size = f.getAsJsonArray("preferred_size");
-              int width = size == null ? 16 : size.get(0).getAsInt();
-              int height = size == null ? 16 : size.get(1).getAsInt();
-              ResourceLocation mask =
-                  preferred.withPath(preferred.getPath().replace(".png", "_e.png"));
-              boolean hasMask =
-                  Minecraft.getInstance().getResourceManager().getResource(mask).isPresent();
-              textures.putIfAbsent(preferred, new Texture(width, height, hasMask ? mask : null));
-            }
-          }
+          // UVs refer to the shipped atlas; optional mods must not replace that mapping.
           faces.put(
               entry.getKey(),
               new Face(
@@ -126,11 +110,48 @@ public final class MachineGeometry {
                   glass,
                   f.has("rotation") ? f.get("rotation").getAsInt() : 0,
                   f.has("alpha") ? f.get("alpha").getAsFloat() : 1f,
-                  bool(f, "emissive")));
+                  bool(f, "emissive"),
+                  GeometryOcclusion.FULL));
         }
         cubes.add(
             new Cube(
                 group, vec(c, "from"), vec(c, "to"), vec(c, "origin"), vec(c, "rotation"), faces));
+      }
+      List<GeometryOcclusion.Box> boxes = new ArrayList<>();
+      for (Cube cube : cubes) {
+        var opaqueFaces =
+            cube.faces.entrySet().stream()
+                .filter(
+                    entry -> {
+                      Face face = entry.getValue();
+                      Texture texture = textures.get(face.texture);
+                      return !face.translucent
+                          && face.alpha >= 1f
+                          && texture != null
+                          && opacity.isOpaque(face.texture, face.uv, texture.width, texture.height);
+                    })
+                .map(Map.Entry::getKey)
+                .collect(java.util.stream.Collectors.toSet());
+        boxes.add(
+            new GeometryOcclusion.Box(
+                cube.group, cube.from, cube.to, cube.origin, cube.rotation, opaqueFaces));
+      }
+      var visibleRegions = GeometryOcclusion.build(boxes);
+      for (int i = 0; i < cubes.size(); i++) {
+        var regions = visibleRegions.get(i);
+        cubes
+            .get(i)
+            .faces
+            .replaceAll(
+                (direction, face) ->
+                    new Face(
+                        face.texture,
+                        face.uv,
+                        face.translucent,
+                        face.rotation,
+                        face.alpha,
+                        face.emissive,
+                        regions.getOrDefault(direction, GeometryOcclusion.FULL)));
       }
       return new MachineGeometry(bones, textures, cubes);
     } catch (Exception error) {
@@ -160,6 +181,7 @@ public final class MachineGeometry {
         rotateAt(pose, cube.origin, cube.rotation);
         for (var entry : cube.faces.entrySet()) {
           Face face = entry.getValue();
+          if (face.regions.isEmpty()) continue;
           Texture texture = textures.get(face.texture);
           if (texture == null) continue;
           boolean emissive = pass == 2;
@@ -167,10 +189,12 @@ public final class MachineGeometry {
           if (!emissive && face.translucent != (pass == 1)) continue;
           RenderType type =
               emissive
-                  ? RenderType.entityTranslucentEmissive(texture.emissive)
+                  ? face.translucent
+                      ? RenderType.entityTranslucentEmissive(texture.emissive)
+                      : MachineRenderTypes.opaqueSurfaceEmissive(texture.emissive)
                   : face.translucent
                       ? RenderType.entityTranslucent(face.texture)
-                      : RenderType.entityCutoutNoCull(face.texture);
+                      : RenderType.entityCutout(face.texture);
           renderFace(
               cube,
               entry.getKey(),
@@ -257,15 +281,35 @@ public final class MachineGeometry {
     float[][] uv = {{u0, v1}, {u1, v1}, {u1, v0}, {u0, v0}};
     int rotation = Math.floorMod(face.rotation / 90, 4);
     int a = Math.clamp((int) (alpha * 255), 0, 255);
-    for (int i = 0; i < 4; i++) {
-      float[] tex = uv[(i + rotation) % 4];
-      out.addVertex(pose.pose(), p[i][0], p[i][1], p[i][2])
-          .setColor(255, 255, 255, a)
-          .setUv(tex[0], tex[1])
-          .setOverlay(overlay)
-          .setLight(light)
-          .setNormal(pose, nx, ny, nz);
+    // Clip positions and UVs from the same original quad, including rotated UV corners.
+    for (GeometryOcclusion.Region region : face.regions) {
+      for (int i = 0; i < 4; i++) {
+        float horizontal = i == 0 || i == 3 ? region.s0() : region.s1();
+        float vertical = i < 2 ? region.t0() : region.t1();
+        float[] a0 = uv[rotation];
+        float[] a1 = uv[(1 + rotation) % 4];
+        float[] a2 = uv[(2 + rotation) % 4];
+        float[] a3 = uv[(3 + rotation) % 4];
+        float u = interpolate(a0[0], a1[0], a2[0], a3[0], horizontal, vertical);
+        float v = interpolate(a0[1], a1[1], a2[1], a3[1], horizontal, vertical);
+        out.addVertex(
+                pose.pose(),
+                interpolate(p[0][0], p[1][0], p[2][0], p[3][0], horizontal, vertical),
+                interpolate(p[0][1], p[1][1], p[2][1], p[3][1], horizontal, vertical),
+                interpolate(p[0][2], p[1][2], p[2][2], p[3][2], horizontal, vertical))
+            .setColor(255, 255, 255, a)
+            .setUv(u, v)
+            .setOverlay(overlay)
+            .setLight(light)
+            .setNormal(pose, nx, ny, nz);
+      }
     }
+  }
+
+  private static float interpolate(float p0, float p1, float p2, float p3, float s, float t) {
+    float bottom = p0 + (p1 - p0) * s;
+    float top = p3 + (p2 - p3) * s;
+    return bottom + (top - bottom) * t;
   }
 
   private static boolean bool(JsonObject obj, String key) {
@@ -296,7 +340,8 @@ public final class MachineGeometry {
       boolean translucent,
       int rotation,
       float alpha,
-      boolean emissive) {}
+      boolean emissive,
+      List<GeometryOcclusion.Region> regions) {}
 
   private record Cube(
       String group,

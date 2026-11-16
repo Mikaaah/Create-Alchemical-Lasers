@@ -76,5 +76,5 @@ all six Blockbench projects and the Gecko companions.
 
 See `MATERIAL_PROVENANCE.md`, `verified-external-materials.json` and `licenses/`
 for the upstream texture references and applicable notices. No third-party
-model geometry is imported. Aeronautics textures are optional runtime resource
-references with original fallback artwork.
+model geometry is imported. Aeronautics paths remain reference metadata only;
+the runtime uses the supplied original atlas artwork without automatic substitution.

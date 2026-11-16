@@ -84,8 +84,8 @@ No additional runtime dependency is needed. The supplied custom renderer does no
 use GeckoLib's Java API. Create's existing matching Flywheel/Ponder dependencies
 remain necessary as before; KubeJS, KubeJS Create, JEI and EMI remain optional.
 Nuclear-derived texels are shipped with the supplied license and provenance.
-Aeronautics materials are selected only if the resource stack supplies them;
-original fallback texels are included. See [material provenance](MATERIAL_PROVENANCE.md).
+Aeronautics paths are retained as reference metadata; the runtime consistently
+uses the supplied atlas artwork and UVs, including when other mods are installed. See [material provenance](MATERIAL_PROVENANCE.md).
 
 ## Verification
 

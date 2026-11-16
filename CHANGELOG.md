@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.4
+
+- Removed overlapping opaque face regions and hidden internal joins from both machine renderers while retaining the original UV mapping, transparent cutouts and independent animated parts.
+- Kept the supplied Alchemical Laser atlas on claws and braces instead of silently switching to optional third-party texture files.
+- Culled opaque backfaces and removed unnecessary translucent sorting from glow masks backed by solid surfaces. Added geometry regression checks for open claws, partial overlaps, glass and rotated parts.
+
 ## 1.1.3
 
 - Imported the revised Alchemical Laser metal, copper and compatibility atlases, with cleaner metal shading and matching embedded Blockbench texture pages.
