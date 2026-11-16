@@ -1,0 +1,50 @@
+{
+  "refinement": "Dark forged borders and clean Jappa-style crystalline clusters",
+  "scope": "All three Creation Lens item sprites and in-world crystalline atlas faces; machine/kinetic/core/animation data untouched",
+  "palettes": {
+    "unbreaking": "Warm netherite frame, adamantine cyan/white crystal",
+    "absolute_conversion": "Gilded shadow-steel bezel, magenta contacts, diagonal gold/violet polarity",
+    "transmutation": "Runic dark-steel bezel, connected emerald/aether facets"
+  },
+  "beam_colors_unchanged": true,
+  "lens_model_geometry_unchanged": true,
+  "native_pixel_grids": "art/lens-pixel-grids.json",
+  "checks": {
+    "unbreaking": {
+      "geometry_sha256_before": "ab078c0eb4ce6ca5628c6ea2f9444f6c21ce1f197961dc174e7ce2a48ca76271",
+      "geometry_sha256_after": "ab078c0eb4ce6ca5628c6ea2f9444f6c21ce1f197961dc174e7ce2a48ca76271",
+      "geometry_unchanged": true,
+      "sprite_sha256": "28a7fff000957b78a110ad02ae76af662b2e67dffa10d5bf7ed019402cd7ef31",
+      "native_16px": true,
+      "emissive_matches_base": true,
+      "solid_interior_verified": true,
+      "explicit_pixel_grid_reconstructs_sprite": true,
+      "socket_crystal_faces_match_final_native_palette": 18,
+      "socket_emissive_pixels_match_base": true
+    },
+    "absolute_conversion": {
+      "geometry_sha256_before": "21a4a9131a60a43861ca227938874944120e75e233091850107f009e0d792c95",
+      "geometry_sha256_after": "21a4a9131a60a43861ca227938874944120e75e233091850107f009e0d792c95",
+      "geometry_unchanged": true,
+      "sprite_sha256": "a6dc5871ee8f23ab56cd956ca928f54074f354c85d9f61b3b7bb3c2b364a69bd",
+      "native_16px": true,
+      "emissive_matches_base": true,
+      "solid_interior_verified": true,
+      "explicit_pixel_grid_reconstructs_sprite": true,
+      "socket_crystal_faces_match_final_native_palette": 18,
+      "socket_emissive_pixels_match_base": true
+    },
+    "transmutation": {
+      "geometry_sha256_before": "c48e49ffff1cdc4bb7960bc34f1ab04baf393e82e3bba79601d8f6660cbb96f9",
+      "geometry_sha256_after": "c48e49ffff1cdc4bb7960bc34f1ab04baf393e82e3bba79601d8f6660cbb96f9",
+      "geometry_unchanged": true,
+      "sprite_sha256": "d2c34bb3044ae28c853c145e6e28604666264a6d82363da5563ec2d5755c6fbc",
+      "native_16px": true,
+      "emissive_matches_base": true,
+      "solid_interior_verified": true,
+      "explicit_pixel_grid_reconstructs_sprite": true,
+      "socket_crystal_faces_match_final_native_palette": 30,
+      "socket_emissive_pixels_match_base": true
+    }
+  }
+}

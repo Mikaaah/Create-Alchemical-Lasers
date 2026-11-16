@@ -1,0 +1,48 @@
+{
+  "native_item_size": [
+    16,
+    16
+  ],
+  "lens_count": 3,
+  "no_internal_transparent_crystal_pixels": true,
+  "socket_maximum_width_pixels": 6,
+  "socket_min_y": -15,
+  "socket_pivot": [
+    0,
+    -14,
+    0
+  ],
+  "beam_colors": {
+    "unbreaking": "#BCEFFF",
+    "absolute_conversion": "#DEB655",
+    "transmutation": "#47D5A0"
+  },
+  "atlas_size": [
+    256,
+    256
+  ],
+  "unique_nonoverlapping_face_islands": 186,
+  "source_materials": {
+    "netherite": {
+      "asset": "assets/minecraft/textures/block/netherite_block.png",
+      "sha256": "7f9ec5010d043fb4bafa661f27a255f04db6393d95f83a663f2f92206531298e"
+    },
+    "steel": {
+      "asset": "assets/create/textures/block/industrial_iron_block.png",
+      "sha256": "962b044ebd8849c99d2b8e6a008e194654254d8ed587c182fcb0601d706014bf"
+    },
+    "shadow": {
+      "asset": "assets/create/textures/block/shadow_steel_casing.png",
+      "sha256": "8ff9d57878ffa71750a50588dbc8f021ff902394be9d1aafedbab4edd0c90532"
+    },
+    "gold": {
+      "asset": "assets/create/textures/block/brass_casing.png",
+      "sha256": "3f82796571a690a9722abdcd825b88c988745bc322c6333809d1da7e160292a9"
+    },
+    "creative": {
+      "asset": "assets/create/textures/block/creative_casing.png",
+      "sha256": "86abeef551800a257b1d82b98dce449ecc4d228f5dde34973356b483cbaf2d96"
+    }
+  },
+  "item_animation": "One-frame metadata preserves native16x16 dimensions; the Creation Core supplies continuous hue animation."
+}

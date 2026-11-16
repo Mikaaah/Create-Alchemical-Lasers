@@ -1,0 +1,55 @@
+{
+  "beam": {
+    "file": "sounds/beam.ogg",
+    "seconds": 2.0,
+    "sample_rate": 48000,
+    "channels": 1,
+    "decoded_peak_dbfs": -0.4399999976158142,
+    "decoded_rms_dbfs": -6.239999771118164,
+    "sha256": "eb835e86bed842c5ab32e216d3ffe4e56b2015ed4c32ec58ab2f89acf23bdf45",
+    "decoded_loop_boundary_step": 0.0028412295505404472,
+    "decoded_typical_step_rms": 0.007984011434018612
+  },
+  "fire": {
+    "file": "sounds/fire.ogg",
+    "seconds": 0.4573333333333333,
+    "sample_rate": 48000,
+    "channels": 1,
+    "decoded_peak_dbfs": -0.4699999988079071,
+    "decoded_rms_dbfs": -12.880000114440918,
+    "sha256": "6e2ede46a2a709518cadb6f99ccc688be7357ca5aa678b7369f809bcc8e0e00a"
+  },
+  "shutdown": {
+    "vanilla_event": "minecraft:block.lava.extinguish",
+    "reference_type": "event",
+    "server_volume": 0.5,
+    "server_pitch": 1.15,
+    "volume_config_multiplier": true,
+    "embedded_mojang_audio": false
+  },
+  "lens_remove": {
+    "file": "sounds/lens_remove.ogg",
+    "seconds": 0.17733333333333334,
+    "sample_rate": 48000,
+    "channels": 1,
+    "decoded_peak_dbfs": -4.03000020980835,
+    "decoded_rms_dbfs": -22.3799991607666,
+    "sha256": "8904fc7e64aca0127dc624df3d4313ee0ee5a368026e076bab63f202bf2e8f06"
+  },
+  "lens_install": {
+    "file": "sounds/lens_install.ogg",
+    "seconds": 0.23733333333333334,
+    "sample_rate": 48000,
+    "channels": 1,
+    "decoded_peak_dbfs": -2.6700000762939453,
+    "decoded_rms_dbfs": -20.739999771118164,
+    "sha256": "9a95a4cf87464a26c65eed792ce70003c40a94b191a1ff6a6111c464b117c960"
+  },
+  "charge": {
+    "vanilla_event": "minecraft:block.respawn_anchor.charge",
+    "reference_type": "event",
+    "volume_multiplier": 0.85,
+    "pitch_multiplier": 0.95,
+    "embedded_mojang_audio": false
+  }
+}

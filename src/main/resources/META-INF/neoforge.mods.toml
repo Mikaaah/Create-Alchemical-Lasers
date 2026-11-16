@@ -27,3 +27,28 @@ type="required"
 versionRange="[6.0.10,6.1)"
 ordering="AFTER"
 side="BOTH"
+
+[[mods]]
+modId="creationaugmenter"
+version="${version}"
+displayName="Create: Creation Augmenter"
+authors="Mikaaah"
+description='''An endgame kinetic Creation Augmenter with a floating prismatic core, three equipment lenses and an animated infusion beam.'''
+[[dependencies.creationaugmenter]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.219,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.creationaugmenter]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+[[dependencies.creationaugmenter]]
+modId="create"
+type="required"
+versionRange="[6.0.10,6.1)"
+ordering="AFTER"
+side="BOTH"

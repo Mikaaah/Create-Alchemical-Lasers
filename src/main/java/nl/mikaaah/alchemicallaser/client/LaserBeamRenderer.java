@@ -108,8 +108,7 @@ public final class LaserBeamRenderer {
   }
 
   public static AABB boundingBox(LaserBlockEntity be) {
-    Vec3 a = MachineAnimation.muzzle(be, 0),
-        b = a.add(0, -boundedLength(MachineAnimation.BEAM_LENGTH), 0);
+    Vec3 a = MachineAnimation.muzzle(be, 0), b = MachineAnimation.impact(be);
     return new AABB(a, b).inflate(1.1).minmax(new AABB(be.getBlockPos()).inflate(.25));
   }
 

@@ -1,0 +1,18 @@
+{
+  "block.creationaugmenter.creation_augmenter": "Creation Augmenter",
+  "item.creationaugmenter.unbreaking_lens": "Lens of Unbreaking",
+  "item.creationaugmenter.absolute_conversion_lens": "Lens of Absolute Conversion",
+  "item.creationaugmenter.transmutation_lens": "Lens of Transmutation",
+  "itemGroup.creationaugmenter": "Create: Creation Augmenter",
+  "message.creationaugmenter.remove_lens_first": "Remove the current Creation Lens first.",
+  "tooltip.creationaugmenter.lens": "Lens: %s",
+  "tooltip.creationaugmenter.phase": "Phase: %s",
+  "subtitles.creationaugmenter.fire": "Creation infusion ignites",
+  "subtitles.creationaugmenter.beam": "Creation field resonates",
+  "tooltip.creationaugmenter.uses": "Lens uses remaining: %s / %s",
+  "tooltip.creationaugmenter.minimum_rpm": "Requires at least 128 RPM",
+  "recipe.creationaugmenter.creation_augmenting": "Creation Augmenting",
+  "recipe.creationaugmenter.duration": "%s ticks / 1 lens use",
+  "recipe.creationaugmenter.minimum": "Minimum %s RPM",
+  "recipe.creationaugmenter.lens_use": "Spends 1 durability per completed operation."
+}

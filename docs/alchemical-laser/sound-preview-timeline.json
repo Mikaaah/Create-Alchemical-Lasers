@@ -1,0 +1,32 @@
+{
+  "preview": "Audition montage, not in-game capture; dry assets are mixed at demonstration levels. The mod has positional attenuation, lens/RPM pitch and a configurable volume multiplier.",
+  "seconds": 8.7,
+  "real_vanilla_charge_in_preview": true,
+  "real_vanilla_lava_extinguish_in_preview": true,
+  "timeline": [
+    {
+      "seconds": 0.15,
+      "event": "Vanilla respawn-anchor charge"
+    },
+    {
+      "seconds": 1.5,
+      "event": "Custom heavy ignition"
+    },
+    {
+      "seconds": 1.52,
+      "event": "Heavy beam loop, repeated continuously for3s"
+    },
+    {
+      "seconds": 4.53,
+      "event": "Vanilla lava extinguish hiss at pitch1.15"
+    },
+    {
+      "seconds": 6.1,
+      "event": "Lens removal latch"
+    },
+    {
+      "seconds": 6.7,
+      "event": "Lens seating clunk"
+    }
+  ]
+}

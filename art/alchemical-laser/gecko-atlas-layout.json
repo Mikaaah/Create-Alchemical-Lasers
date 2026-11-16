@@ -1,0 +1,54 @@
+{
+  "width": 1024,
+  "height": 1024,
+  "source_sheets": {
+    "alchemicallaser:textures/block/copper_atlas.png": {
+      "offset": [
+        0,
+        0
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    "alchemicallaser:textures/block/crystal_atlas.png": {
+      "offset": [
+        512,
+        0
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    "alchemicallaser:textures/block/detail_atlas.png": {
+      "offset": [
+        0,
+        512
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    "alchemicallaser:textures/block/metal_atlas.png": {
+      "offset": [
+        512,
+        512
+      ],
+      "size": [
+        512,
+        512
+      ]
+    }
+  },
+  "geometry": [
+    "src/main/resources/assets/alchemicallaser/geo/alchemical_laser.geo.json",
+    "src/main/resources/assets/alchemicallaser/geo/lens_aether.geo.json",
+    "src/main/resources/assets/alchemicallaser/geo/lens_glacies.geo.json",
+    "src/main/resources/assets/alchemicallaser/geo/lens_ignis.geo.json",
+    "src/main/resources/assets/alchemicallaser/geo/lens_quartz.geo.json",
+    "src/main/resources/assets/alchemicallaser/geo/lens_void.geo.json"
+  ]
+}

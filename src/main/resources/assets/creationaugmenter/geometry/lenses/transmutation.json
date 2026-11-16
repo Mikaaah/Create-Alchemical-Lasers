@@ -1,0 +1,1044 @@
+{
+  "format_version": 1,
+  "units": "pixels",
+  "coordinate_system": "x/z centred on block; y0 block floor; emission strictly -Y",
+  "bounds": [
+    -3,
+    -15,
+    -3,
+    3,
+    -13.4,
+    3
+  ],
+  "bones": [
+    {
+      "name": "socketed_lens",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -14,
+        0
+      ]
+    }
+  ],
+  "textures": {
+    "creationaugmenter:textures/block/lens_atlas.png": [
+      256,
+      256
+    ]
+  },
+  "cubes": [
+    {
+      "name": "transmutation_bezel_front",
+      "group": "socketed_lens",
+      "from": [
+        -1.5,
+        -14.7,
+        -2.8
+      ],
+      "to": [
+        1.5,
+        -13.8,
+        -2.2
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            69,
+            13,
+            72,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            74,
+            13,
+            77,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            79,
+            13,
+            81,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            83,
+            13,
+            85,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            87,
+            13,
+            90,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            92,
+            13,
+            95,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "transmutation_bezel_back",
+      "group": "socketed_lens",
+      "from": [
+        -1.5,
+        -14.7,
+        2.2
+      ],
+      "to": [
+        1.5,
+        -13.8,
+        2.8
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            97,
+            13,
+            100,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            102,
+            13,
+            105,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            107,
+            13,
+            109,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            111,
+            13,
+            113,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            115,
+            13,
+            118,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            120,
+            13,
+            123,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "transmutation_bezel_diagonal_2",
+      "group": "socketed_lens",
+      "from": [
+        -2.35,
+        -14.7,
+        -2.25
+      ],
+      "to": [
+        -1.65,
+        -13.8,
+        -0.1499999999999999
+      ],
+      "origin": [
+        -2.0,
+        -14,
+        -1.2
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            125,
+            13,
+            127,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            129,
+            13,
+            131,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            133,
+            13,
+            136,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            138,
+            13,
+            141,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            143,
+            13,
+            145,
+            16
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            147,
+            13,
+            149,
+            16
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "transmutation_bezel_diagonal_3",
+      "group": "socketed_lens",
+      "from": [
+        1.65,
+        -14.7,
+        -2.25
+      ],
+      "to": [
+        2.35,
+        -13.8,
+        -0.1499999999999999
+      ],
+      "origin": [
+        2.0,
+        -14,
+        -1.2
+      ],
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            151,
+            13,
+            153,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            155,
+            13,
+            157,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            159,
+            13,
+            162,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            164,
+            13,
+            167,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            169,
+            13,
+            171,
+            16
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            173,
+            13,
+            175,
+            16
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "transmutation_bezel_diagonal_4",
+      "group": "socketed_lens",
+      "from": [
+        -2.35,
+        -14.7,
+        0.1499999999999999
+      ],
+      "to": [
+        -1.65,
+        -13.8,
+        2.25
+      ],
+      "origin": [
+        -2.0,
+        -14,
+        1.2
+      ],
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            177,
+            13,
+            179,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            181,
+            13,
+            183,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            185,
+            13,
+            188,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            190,
+            13,
+            193,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            195,
+            13,
+            197,
+            16
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            199,
+            13,
+            201,
+            16
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "transmutation_bezel_diagonal_5",
+      "group": "socketed_lens",
+      "from": [
+        1.65,
+        -14.7,
+        0.1499999999999999
+      ],
+      "to": [
+        2.35,
+        -13.8,
+        2.25
+      ],
+      "origin": [
+        2.0,
+        -14,
+        1.2
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            203,
+            13,
+            205,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            207,
+            13,
+            209,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            211,
+            13,
+            214,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            216,
+            13,
+            219,
+            15
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            221,
+            13,
+            223,
+            16
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            225,
+            13,
+            227,
+            16
+          ],
+          "material": "create:block/shadow_steel_casing",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "transmutation_crystal_body",
+      "group": "socketed_lens",
+      "from": [
+        -1.9,
+        -14.7,
+        -1.9
+      ],
+      "to": [
+        1.9,
+        -13.85,
+        1.9
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            229,
+            13,
+            233,
+            15
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            235,
+            13,
+            239,
+            15
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            241,
+            13,
+            245,
+            15
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            247,
+            13,
+            251,
+            15
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            1,
+            18,
+            5,
+            22
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            7,
+            18,
+            11,
+            22
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "transmutation_crystal_crown",
+      "group": "socketed_lens",
+      "from": [
+        -1.55,
+        -13.85,
+        -1.55
+      ],
+      "to": [
+        1.55,
+        -13.45,
+        1.55
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            13,
+            18,
+            17,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            19,
+            18,
+            23,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            25,
+            18,
+            29,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            31,
+            18,
+            35,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            37,
+            18,
+            41,
+            22
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            43,
+            18,
+            47,
+            22
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "transmutation_crystal_downward_facet",
+      "group": "socketed_lens",
+      "from": [
+        -1.35,
+        -15,
+        -1.35
+      ],
+      "to": [
+        1.35,
+        -14.7,
+        1.35
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            49,
+            18,
+            52,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            54,
+            18,
+            57,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            59,
+            18,
+            62,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            64,
+            18,
+            67,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            69,
+            18,
+            72,
+            21
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            74,
+            18,
+            77,
+            21
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "transmutation_rune_contact_-2.5",
+      "group": "socketed_lens",
+      "from": [
+        -2.7,
+        -14.8,
+        -0.45
+      ],
+      "to": [
+        -2.3,
+        -14.25,
+        0.45
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            79,
+            18,
+            81,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            83,
+            18,
+            85,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            87,
+            18,
+            89,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            91,
+            18,
+            93,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            95,
+            18,
+            97,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            99,
+            18,
+            101,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "transmutation_rune_contact_2.5",
+      "group": "socketed_lens",
+      "from": [
+        2.3,
+        -14.8,
+        -0.45
+      ],
+      "to": [
+        2.7,
+        -14.25,
+        0.45
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            103,
+            18,
+            105,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            107,
+            18,
+            109,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            111,
+            18,
+            113,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            115,
+            18,
+            117,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            119,
+            18,
+            121,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            123,
+            18,
+            125,
+            20
+          ],
+          "material": "creationaugmenter:lens/transmutation/faceted_crystal",
+          "emissive": true
+        }
+      }
+    }
+  ]
+}

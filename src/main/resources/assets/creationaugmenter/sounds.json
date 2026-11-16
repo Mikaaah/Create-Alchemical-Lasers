@@ -1,0 +1,20 @@
+{
+  "beam": {
+    "subtitle": "subtitles.creationaugmenter.beam",
+    "sounds": [
+      {
+        "name": "creationaugmenter:beam",
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "fire": {
+    "subtitle": "subtitles.creationaugmenter.fire",
+    "sounds": [
+      {
+        "name": "creationaugmenter:fire",
+        "attenuation_distance": 16
+      }
+    ]
+  }
+}

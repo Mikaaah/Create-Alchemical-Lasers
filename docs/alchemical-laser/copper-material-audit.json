@@ -1,0 +1,1627 @@
+{
+  "refinement": "copper fluid-tank housing",
+  "create_version": "6.0.10-280",
+  "minecraft_version": "1.21.1",
+  "verified_texture_aliases": {
+    "create:block/copper_tank": "create:block/fluid_tank",
+    "create:block/copper_tank_top": "create:block/fluid_tank_top"
+  },
+  "sources": {
+    "minecraft:block/copper_block": {
+      "asset": "assets/minecraft/textures/block/copper_block.png",
+      "sha256": "e5587b25d698a33eaa84b4f9faca00115cf91ff01e0340004c604913a1b2b22c",
+      "dimensions": [
+        16,
+        16
+      ]
+    },
+    "minecraft:block/cut_copper": {
+      "asset": "assets/minecraft/textures/block/cut_copper.png",
+      "sha256": "a18f8e12937a0a9ab2ad9968af57586e314505c9e0fc3c2c9395e6e54e846f2b",
+      "dimensions": [
+        16,
+        16
+      ]
+    },
+    "create:block/fluid_tank": {
+      "asset": "assets/create/textures/block/fluid_tank.png",
+      "sha256": "aadf5cf033690859c2105cb735acfe736f9c568abb5e220395931c5fbd163e67",
+      "dimensions": [
+        16,
+        16
+      ]
+    },
+    "create:block/fluid_tank_top": {
+      "asset": "assets/create/textures/block/fluid_tank_top.png",
+      "sha256": "bec09ddca58171c3c360ec00800c8c2c1c4f189c8e433b7dc7ab00b39e75d8e2",
+      "dimensions": [
+        16,
+        16
+      ]
+    },
+    "create:block/copper_casing": {
+      "asset": "assets/create/textures/block/copper_casing.png",
+      "sha256": "c0fc185958e4f94a651b21477aa0777d5b3cab95ab6446a456eef17c8b59859c",
+      "dimensions": [
+        16,
+        16
+      ]
+    }
+  },
+  "changed_cuboids": 20,
+  "changed_faces": 120,
+  "changed_material_counts": {
+    "create:block/fluid_tank": 78,
+    "create:block/fluid_tank_top": 5,
+    "minecraft:block/copper_block": 9,
+    "minecraft:block/cut_copper": 12,
+    "create:block/copper_casing": 16
+  },
+  "untouched_face_texels_verified": 1164,
+  "geometry_unchanged_by_material_patch": true,
+  "UV_coordinates_unchanged": true,
+  "amethyst_and_cage_texels_unchanged": true,
+  "railway_casing_references_remaining": 0,
+  "changes": [
+    {
+      "cube": "lower_pressure_deck",
+      "face": "north",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        1,
+        1,
+        17,
+        3
+      ]
+    },
+    {
+      "cube": "lower_pressure_deck",
+      "face": "south",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        19,
+        1,
+        35,
+        3
+      ]
+    },
+    {
+      "cube": "lower_pressure_deck",
+      "face": "east",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        37,
+        1,
+        53,
+        3
+      ]
+    },
+    {
+      "cube": "lower_pressure_deck",
+      "face": "west",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        55,
+        1,
+        71,
+        3
+      ]
+    },
+    {
+      "cube": "lower_pressure_deck",
+      "face": "up",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank_top",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        73,
+        1,
+        89,
+        17
+      ]
+    },
+    {
+      "cube": "lower_pressure_deck",
+      "face": "down",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank_top",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        91,
+        1,
+        107,
+        17
+      ]
+    },
+    {
+      "cube": "upper_pressure_deck",
+      "face": "north",
+      "previous": "create:block/industrial_iron_block",
+      "material": "minecraft:block/copper_block",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        109,
+        1,
+        125,
+        3
+      ]
+    },
+    {
+      "cube": "upper_pressure_deck",
+      "face": "south",
+      "previous": "create:block/industrial_iron_block",
+      "material": "minecraft:block/copper_block",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        127,
+        1,
+        143,
+        3
+      ]
+    },
+    {
+      "cube": "upper_pressure_deck",
+      "face": "east",
+      "previous": "create:block/industrial_iron_block",
+      "material": "minecraft:block/copper_block",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        145,
+        1,
+        161,
+        3
+      ]
+    },
+    {
+      "cube": "upper_pressure_deck",
+      "face": "west",
+      "previous": "create:block/industrial_iron_block",
+      "material": "minecraft:block/copper_block",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        163,
+        1,
+        179,
+        3
+      ]
+    },
+    {
+      "cube": "upper_pressure_deck",
+      "face": "up",
+      "previous": "create:block/industrial_iron_block",
+      "material": "create:block/fluid_tank_top",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        181,
+        1,
+        197,
+        17
+      ]
+    },
+    {
+      "cube": "upper_pressure_deck",
+      "face": "down",
+      "previous": "create:block/industrial_iron_block",
+      "material": "create:block/fluid_tank_top",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        199,
+        1,
+        215,
+        17
+      ]
+    },
+    {
+      "cube": "rear_shielded_bulkhead",
+      "face": "north",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        217,
+        1,
+        230,
+        14
+      ]
+    },
+    {
+      "cube": "rear_shielded_bulkhead",
+      "face": "south",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        232,
+        1,
+        245,
+        14
+      ]
+    },
+    {
+      "cube": "rear_shielded_bulkhead",
+      "face": "east",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        247,
+        1,
+        249,
+        14
+      ]
+    },
+    {
+      "cube": "rear_shielded_bulkhead",
+      "face": "west",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        251,
+        1,
+        253,
+        14
+      ]
+    },
+    {
+      "cube": "rear_shielded_bulkhead",
+      "face": "up",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        255,
+        1,
+        268,
+        3
+      ]
+    },
+    {
+      "cube": "rear_shielded_bulkhead",
+      "face": "down",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        270,
+        1,
+        283,
+        3
+      ]
+    },
+    {
+      "cube": "side_bulkhead_-1_lower",
+      "face": "north",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        285,
+        1,
+        287,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_-1_lower",
+      "face": "south",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        289,
+        1,
+        291,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_-1_lower",
+      "face": "east",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        293,
+        1,
+        305,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_-1_lower",
+      "face": "west",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        307,
+        1,
+        319,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_-1_lower",
+      "face": "up",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        321,
+        1,
+        323,
+        13
+      ]
+    },
+    {
+      "cube": "side_bulkhead_-1_lower",
+      "face": "down",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        325,
+        1,
+        327,
+        13
+      ]
+    },
+    {
+      "cube": "side_bulkhead_-1_upper",
+      "face": "north",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        329,
+        1,
+        331,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_-1_upper",
+      "face": "south",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        333,
+        1,
+        335,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_-1_upper",
+      "face": "east",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        337,
+        1,
+        349,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_-1_upper",
+      "face": "west",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        351,
+        1,
+        363,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_-1_upper",
+      "face": "up",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        365,
+        1,
+        367,
+        13
+      ]
+    },
+    {
+      "cube": "side_bulkhead_-1_upper",
+      "face": "down",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        369,
+        1,
+        371,
+        13
+      ]
+    },
+    {
+      "cube": "side_bulkhead_1_lower",
+      "face": "north",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        429,
+        1,
+        431,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_1_lower",
+      "face": "south",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        433,
+        1,
+        435,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_1_lower",
+      "face": "east",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        437,
+        1,
+        449,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_1_lower",
+      "face": "west",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        451,
+        1,
+        463,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_1_lower",
+      "face": "up",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        465,
+        1,
+        467,
+        13
+      ]
+    },
+    {
+      "cube": "side_bulkhead_1_lower",
+      "face": "down",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        469,
+        1,
+        471,
+        13
+      ]
+    },
+    {
+      "cube": "side_bulkhead_1_upper",
+      "face": "north",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        473,
+        1,
+        475,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_1_upper",
+      "face": "south",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        477,
+        1,
+        479,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_1_upper",
+      "face": "east",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        481,
+        1,
+        493,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_1_upper",
+      "face": "west",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        495,
+        1,
+        507,
+        5
+      ]
+    },
+    {
+      "cube": "side_bulkhead_1_upper",
+      "face": "up",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        1,
+        19,
+        3,
+        31
+      ]
+    },
+    {
+      "cube": "side_bulkhead_1_upper",
+      "face": "down",
+      "previous": "createnuclear:block/steel_block",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        5,
+        19,
+        7,
+        31
+      ]
+    },
+    {
+      "cube": "front_lower_armour",
+      "face": "north",
+      "previous": "createnuclear:block/reactor/casing/reactor_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        65,
+        19,
+        77,
+        23
+      ]
+    },
+    {
+      "cube": "front_lower_armour",
+      "face": "south",
+      "previous": "createnuclear:block/reactor/casing/reactor_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        79,
+        19,
+        91,
+        23
+      ]
+    },
+    {
+      "cube": "front_lower_armour",
+      "face": "east",
+      "previous": "createnuclear:block/reactor/casing/reactor_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        93,
+        19,
+        95,
+        23
+      ]
+    },
+    {
+      "cube": "front_lower_armour",
+      "face": "west",
+      "previous": "createnuclear:block/reactor/casing/reactor_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        97,
+        19,
+        99,
+        23
+      ]
+    },
+    {
+      "cube": "front_lower_armour",
+      "face": "up",
+      "previous": "createnuclear:block/reactor/casing/reactor_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        101,
+        19,
+        113,
+        21
+      ]
+    },
+    {
+      "cube": "front_lower_armour",
+      "face": "down",
+      "previous": "createnuclear:block/reactor/casing/reactor_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        115,
+        19,
+        127,
+        21
+      ]
+    },
+    {
+      "cube": "front_upper_armour",
+      "face": "north",
+      "previous": "createnuclear:block/reactor/casing/reactor_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        129,
+        19,
+        141,
+        23
+      ]
+    },
+    {
+      "cube": "front_upper_armour",
+      "face": "south",
+      "previous": "createnuclear:block/reactor/casing/reactor_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        143,
+        19,
+        155,
+        23
+      ]
+    },
+    {
+      "cube": "front_upper_armour",
+      "face": "east",
+      "previous": "createnuclear:block/reactor/casing/reactor_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        157,
+        19,
+        159,
+        23
+      ]
+    },
+    {
+      "cube": "front_upper_armour",
+      "face": "west",
+      "previous": "createnuclear:block/reactor/casing/reactor_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        161,
+        19,
+        163,
+        23
+      ]
+    },
+    {
+      "cube": "front_upper_armour",
+      "face": "up",
+      "previous": "createnuclear:block/reactor/casing/reactor_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        165,
+        19,
+        177,
+        21
+      ]
+    },
+    {
+      "cube": "front_upper_armour",
+      "face": "down",
+      "previous": "createnuclear:block/reactor/casing/reactor_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        179,
+        19,
+        191,
+        21
+      ]
+    },
+    {
+      "cube": "front_window_jamb_-1",
+      "face": "north",
+      "previous": "createnuclear:block/lead_block",
+      "material": "minecraft:block/cut_copper",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        193,
+        19,
+        195,
+        26
+      ]
+    },
+    {
+      "cube": "front_window_jamb_-1",
+      "face": "south",
+      "previous": "createnuclear:block/lead_block",
+      "material": "minecraft:block/cut_copper",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        197,
+        19,
+        199,
+        26
+      ]
+    },
+    {
+      "cube": "front_window_jamb_-1",
+      "face": "east",
+      "previous": "createnuclear:block/lead_block",
+      "material": "minecraft:block/cut_copper",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        201,
+        19,
+        203,
+        26
+      ]
+    },
+    {
+      "cube": "front_window_jamb_-1",
+      "face": "west",
+      "previous": "createnuclear:block/lead_block",
+      "material": "minecraft:block/cut_copper",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        205,
+        19,
+        207,
+        26
+      ]
+    },
+    {
+      "cube": "front_window_jamb_-1",
+      "face": "up",
+      "previous": "createnuclear:block/lead_block",
+      "material": "minecraft:block/cut_copper",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        209,
+        19,
+        211,
+        21
+      ]
+    },
+    {
+      "cube": "front_window_jamb_-1",
+      "face": "down",
+      "previous": "createnuclear:block/lead_block",
+      "material": "minecraft:block/cut_copper",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        213,
+        19,
+        215,
+        21
+      ]
+    },
+    {
+      "cube": "front_window_jamb_1",
+      "face": "north",
+      "previous": "createnuclear:block/lead_block",
+      "material": "minecraft:block/cut_copper",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        217,
+        19,
+        219,
+        26
+      ]
+    },
+    {
+      "cube": "front_window_jamb_1",
+      "face": "south",
+      "previous": "createnuclear:block/lead_block",
+      "material": "minecraft:block/cut_copper",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        221,
+        19,
+        223,
+        26
+      ]
+    },
+    {
+      "cube": "front_window_jamb_1",
+      "face": "east",
+      "previous": "createnuclear:block/lead_block",
+      "material": "minecraft:block/cut_copper",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        225,
+        19,
+        227,
+        26
+      ]
+    },
+    {
+      "cube": "front_window_jamb_1",
+      "face": "west",
+      "previous": "createnuclear:block/lead_block",
+      "material": "minecraft:block/cut_copper",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        229,
+        19,
+        231,
+        26
+      ]
+    },
+    {
+      "cube": "front_window_jamb_1",
+      "face": "up",
+      "previous": "createnuclear:block/lead_block",
+      "material": "minecraft:block/cut_copper",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        233,
+        19,
+        235,
+        21
+      ]
+    },
+    {
+      "cube": "front_window_jamb_1",
+      "face": "down",
+      "previous": "createnuclear:block/lead_block",
+      "material": "minecraft:block/cut_copper",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        237,
+        19,
+        239,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_0_1.1",
+      "face": "north",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        241,
+        19,
+        245,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_0_1.1",
+      "face": "south",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        247,
+        19,
+        251,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_0_1.1",
+      "face": "east",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        253,
+        19,
+        257,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_0_1.1",
+      "face": "west",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        259,
+        19,
+        263,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_0_1.1",
+      "face": "up",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        265,
+        19,
+        269,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_0_1.1",
+      "face": "down",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        271,
+        19,
+        275,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_0_13.9",
+      "face": "north",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        277,
+        19,
+        281,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_0_13.9",
+      "face": "south",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        283,
+        19,
+        287,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_0_13.9",
+      "face": "east",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        289,
+        19,
+        293,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_0_13.9",
+      "face": "west",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        295,
+        19,
+        299,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_0_13.9",
+      "face": "up",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        301,
+        19,
+        305,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_0_13.9",
+      "face": "down",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        307,
+        19,
+        311,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_1_1.1",
+      "face": "north",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        313,
+        19,
+        317,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_1_1.1",
+      "face": "south",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        319,
+        19,
+        323,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_1_1.1",
+      "face": "east",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        325,
+        19,
+        329,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_1_1.1",
+      "face": "west",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        331,
+        19,
+        335,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_1_1.1",
+      "face": "up",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        337,
+        19,
+        341,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_1_1.1",
+      "face": "down",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        343,
+        19,
+        347,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_1_13.9",
+      "face": "north",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        349,
+        19,
+        353,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_1_13.9",
+      "face": "south",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        355,
+        19,
+        359,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_1_13.9",
+      "face": "east",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        361,
+        19,
+        365,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_1_13.9",
+      "face": "west",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        367,
+        19,
+        371,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_1_13.9",
+      "face": "up",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        373,
+        19,
+        377,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_0_1_13.9",
+      "face": "down",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        379,
+        19,
+        383,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_0_1.1",
+      "face": "north",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        385,
+        19,
+        389,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_0_1.1",
+      "face": "south",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        391,
+        19,
+        395,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_0_1.1",
+      "face": "east",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        397,
+        19,
+        401,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_0_1.1",
+      "face": "west",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        403,
+        19,
+        407,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_0_1.1",
+      "face": "up",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        409,
+        19,
+        413,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_0_1.1",
+      "face": "down",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        415,
+        19,
+        419,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_0_13.9",
+      "face": "north",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        421,
+        19,
+        425,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_0_13.9",
+      "face": "south",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        427,
+        19,
+        431,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_0_13.9",
+      "face": "east",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        433,
+        19,
+        437,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_0_13.9",
+      "face": "west",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        439,
+        19,
+        443,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_0_13.9",
+      "face": "up",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        445,
+        19,
+        449,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_0_13.9",
+      "face": "down",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        451,
+        19,
+        455,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_1_1.1",
+      "face": "north",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        457,
+        19,
+        461,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_1_1.1",
+      "face": "south",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        463,
+        19,
+        467,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_1_1.1",
+      "face": "east",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        469,
+        19,
+        473,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_1_1.1",
+      "face": "west",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        475,
+        19,
+        479,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_1_1.1",
+      "face": "up",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        481,
+        19,
+        485,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_1_1.1",
+      "face": "down",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        487,
+        19,
+        491,
+        23
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_1_13.9",
+      "face": "north",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        493,
+        19,
+        497,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_1_13.9",
+      "face": "south",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        499,
+        19,
+        503,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_1_13.9",
+      "face": "east",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        505,
+        19,
+        509,
+        21
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_1_13.9",
+      "face": "west",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/fluid_tank",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        1,
+        33,
+        5,
+        35
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_1_13.9",
+      "face": "up",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        7,
+        33,
+        11,
+        37
+      ]
+    },
+    {
+      "cube": "corner_steel_cuff_1_1_13.9",
+      "face": "down",
+      "previous": "create:block/railway_casing",
+      "material": "create:block/copper_casing",
+      "atlas": "metal_atlas.png",
+      "uv": [
+        13,
+        33,
+        17,
+        37
+      ]
+    },
+    {
+      "cube": "copper_input_manifold",
+      "face": "north",
+      "previous": "minecraft:block/cut_copper",
+      "material": "minecraft:block/copper_block",
+      "atlas": "copper_atlas.png",
+      "uv": [
+        39,
+        30,
+        47,
+        32
+      ]
+    },
+    {
+      "cube": "copper_input_manifold",
+      "face": "south",
+      "previous": "minecraft:block/cut_copper",
+      "material": "minecraft:block/copper_block",
+      "atlas": "copper_atlas.png",
+      "uv": [
+        49,
+        30,
+        57,
+        32
+      ]
+    },
+    {
+      "cube": "copper_input_manifold",
+      "face": "east",
+      "previous": "minecraft:block/cut_copper",
+      "material": "minecraft:block/copper_block",
+      "atlas": "copper_atlas.png",
+      "uv": [
+        59,
+        30,
+        67,
+        32
+      ]
+    },
+    {
+      "cube": "copper_input_manifold",
+      "face": "west",
+      "previous": "minecraft:block/cut_copper",
+      "material": "minecraft:block/copper_block",
+      "atlas": "copper_atlas.png",
+      "uv": [
+        69,
+        30,
+        77,
+        32
+      ]
+    },
+    {
+      "cube": "copper_input_manifold",
+      "face": "up",
+      "previous": "minecraft:block/cut_copper",
+      "material": "create:block/fluid_tank_top",
+      "atlas": "copper_atlas.png",
+      "uv": [
+        79,
+        30,
+        87,
+        38
+      ]
+    },
+    {
+      "cube": "copper_input_manifold",
+      "face": "down",
+      "previous": "minecraft:block/cut_copper",
+      "material": "minecraft:block/copper_block",
+      "atlas": "copper_atlas.png",
+      "uv": [
+        89,
+        30,
+        97,
+        38
+      ]
+    }
+  ]
+}

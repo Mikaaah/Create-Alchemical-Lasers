@@ -1,0 +1,58 @@
+[
+  {
+    "id": "createnuclear:block/steel_block",
+    "source": "https://raw.githubusercontent.com/Create-Nuclear-Team/CreateNuclearNeoForge/20a0aa7a90efd332b9a733b0483dee9bfc95780e/src/main/resources/assets/createnuclear/textures/block/steel_block.png",
+    "sha256": "c56b7f91c51976f27a7091977bf7b814fd7a68a0af61b3d2fff20c9966fd5bbc",
+    "commit": "20a0aa7a90efd332b9a733b0483dee9bfc95780e",
+    "license": "GPL-3.0"
+  },
+  {
+    "id": "createnuclear:block/lead_block",
+    "source": "https://raw.githubusercontent.com/Create-Nuclear-Team/CreateNuclearNeoForge/20a0aa7a90efd332b9a733b0483dee9bfc95780e/src/main/resources/assets/createnuclear/textures/block/lead_block.png",
+    "sha256": "53db89c27e7f0d02ec7172da3a999e95b9d4b70e1377e7266218b7c3be55fb7e",
+    "commit": "20a0aa7a90efd332b9a733b0483dee9bfc95780e",
+    "license": "GPL-3.0"
+  },
+  {
+    "id": "createnuclear:block/reactor/casing/reactor_casing",
+    "source": "https://raw.githubusercontent.com/Create-Nuclear-Team/CreateNuclearNeoForge/20a0aa7a90efd332b9a733b0483dee9bfc95780e/src/main/resources/assets/createnuclear/textures/block/reactor/casing/reactor_casing.png",
+    "sha256": "8f0a6af08ba2012289082c943f960a90f54178d2e3954c79659090ca2f900a41",
+    "commit": "20a0aa7a90efd332b9a733b0483dee9bfc95780e",
+    "license": "GPL-3.0"
+  },
+  {
+    "id": "createnuclear:block/reactor/core/reactor_core_casing",
+    "source": "https://raw.githubusercontent.com/Create-Nuclear-Team/CreateNuclearNeoForge/20a0aa7a90efd332b9a733b0483dee9bfc95780e/src/main/resources/assets/createnuclear/textures/block/reactor/core/reactor_core_casing.png",
+    "sha256": "704b0420c0b6a488feb3ecab5b2e16a0653b80a46bf5f53d50b91514e27ef05a",
+    "commit": "20a0aa7a90efd332b9a733b0483dee9bfc95780e",
+    "license": "GPL-3.0"
+  },
+  {
+    "id": "aeronautics:block/metal_bearing_plate",
+    "source": "https://raw.githubusercontent.com/Creators-of-Aeronautics/Simulated-Project/5cc7aa333688a84603a4b0316e6d92a1efda653a/aeronautics/common/src/main/resources/assets/aeronautics/textures/block/metal_bearing_plate.png",
+    "sha256": "262829594905e3110a4948139f495ee3223214a9123b691b86cead87cc6c1f7e",
+    "commit": "5cc7aa333688a84603a4b0316e6d92a1efda653a",
+    "license": "All Rights Reserved (assets)"
+  },
+  {
+    "id": "aeronautics:block/propeller_bearing_side",
+    "source": "https://raw.githubusercontent.com/Creators-of-Aeronautics/Simulated-Project/5cc7aa333688a84603a4b0316e6d92a1efda653a/aeronautics/common/src/main/resources/assets/aeronautics/textures/block/propeller_bearing_side.png",
+    "sha256": "44dd1f04db1a2f4aed76f3740086f82b451bd81d85f79166b79a36168b1f439e",
+    "commit": "5cc7aa333688a84603a4b0316e6d92a1efda653a",
+    "license": "All Rights Reserved (assets)"
+  },
+  {
+    "id": "aeronautics:block/gyroscopic_propeller_bearing_side",
+    "source": "https://raw.githubusercontent.com/Creators-of-Aeronautics/Simulated-Project/5cc7aa333688a84603a4b0316e6d92a1efda653a/aeronautics/common/src/main/resources/assets/aeronautics/textures/block/gyroscopic_propeller_bearing_side.png",
+    "sha256": "2d8673fdc5aa63511145a40ef24a9f0280e3e76c61602e1fc7ff6a6e166de5dc",
+    "commit": "5cc7aa333688a84603a4b0316e6d92a1efda653a",
+    "license": "All Rights Reserved (assets)"
+  },
+  {
+    "id": "aeronautics:block/steam_vent/steam_vent_head_brass",
+    "source": "https://raw.githubusercontent.com/Creators-of-Aeronautics/Simulated-Project/5cc7aa333688a84603a4b0316e6d92a1efda653a/aeronautics/common/src/main/resources/assets/aeronautics/textures/block/steam_vent/steam_vent_head_brass.png",
+    "sha256": "fa5b6d9f0122839ddd3105755b9cce4326b1ffc3bf81a66e9051aed5503599fe",
+    "commit": "5cc7aa333688a84603a4b0316e6d92a1efda653a",
+    "license": "All Rights Reserved (assets)"
+  }
+]

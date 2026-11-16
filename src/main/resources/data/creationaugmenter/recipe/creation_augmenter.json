@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SNS",
+    "GCG",
+    "ENE"
+  ],
+  "key": {
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "G": {
+      "item": "minecraft:tinted_glass"
+    },
+    "C": {
+      "item": "minecraft:netherite_block"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "result": {
+    "id": "creationaugmenter:creation_augmenter",
+    "count": 1
+  }
+}

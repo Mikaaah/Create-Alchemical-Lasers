@@ -59,8 +59,8 @@
     "subtitle": "subtitles.alchemicallaser.shutdown",
     "sounds": [
       {
-        "name": "alchemicallaser:shutdown",
-        "attenuation_distance": 12
+        "name": "minecraft:block.lava.extinguish",
+        "type": "event"
       }
     ]
   },

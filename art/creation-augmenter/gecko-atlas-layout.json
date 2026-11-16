@@ -1,0 +1,56 @@
+{
+  "width": 1024,
+  "height": 1024,
+  "sheets": {
+    "creationaugmenter:textures/block/creative_atlas.png": {
+      "offset": [
+        0,
+        0
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    "creationaugmenter:textures/block/detail_atlas.png": {
+      "offset": [
+        512,
+        0
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    "creationaugmenter:textures/block/lens_atlas.png": {
+      "offset": [
+        0,
+        512
+      ],
+      "size": [
+        256,
+        256
+      ]
+    },
+    "creationaugmenter:textures/block/steel_atlas.png": {
+      "offset": [
+        512,
+        512
+      ],
+      "size": [
+        512,
+        512
+      ]
+    }
+  },
+  "core": {
+    "geometry": "geo/creation_core.geo.json",
+    "live_texture": "creationaugmenter:core_live",
+    "logical_size": [
+      16,
+      16
+    ],
+    "source": "textures/block/creation_core.png",
+    "excluded_from_static_atlas": true
+  }
+}

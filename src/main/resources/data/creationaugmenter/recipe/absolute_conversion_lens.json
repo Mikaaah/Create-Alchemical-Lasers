@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SGS",
+    "ANA",
+    "SES"
+  ],
+  "key": {
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "A": {
+      "item": "minecraft:amethyst_block"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "result": {
+    "id": "creationaugmenter:absolute_conversion_lens",
+    "count": 1
+  }
+}

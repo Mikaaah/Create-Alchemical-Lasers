@@ -1,0 +1,14 @@
+{
+  "type": "creationaugmenter:creation_augmenting",
+  "lens": "creationaugmenter:transmutation_lens",
+  "ingredient": {
+    "item": "minecraft:diamond"
+  },
+  "result": {
+    "id": "minecraft:emerald",
+    "count": 2
+  },
+  "processing_time": 100,
+  "min_rpm": 128,
+  "copy_components": false
+}

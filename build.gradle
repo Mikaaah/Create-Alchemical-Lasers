@@ -34,7 +34,7 @@ neoForge {
         client { client() }
         server { server(); programArgument '--nogui' }
         configTestServer { sourceSet = sourceSets.gameTest; type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', 'alchemicallaser_config' }
-        gameTestServer { sourceSet = sourceSets.gameTest; type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', 'alchemicallaser' }
+        gameTestServer { sourceSet = sourceSets.gameTest; type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', 'alchemicallaser,creationaugmenter' }
     }
     mods { alchemicallaser { sourceSet sourceSets.main; sourceSet sourceSets.gameTest } }
 }
@@ -73,4 +73,5 @@ tasks.named('jar') {
     archiveFileName = 'alchemical-lasers-1.1.0-neoforge-1.21.1.jar'
     from('licenses') { into 'META-INF/licenses' }
     from('docs/MATERIAL_PROVENANCE.md') { into 'META-INF' }
+    from('docs/creation-augmenter/MATERIAL_PROVENANCE.md') { into 'META-INF/creationaugmenter' }
 }

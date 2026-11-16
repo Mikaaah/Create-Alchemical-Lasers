@@ -1,0 +1,175 @@
+{
+  "source": "User-supplied creative_core(1).png",
+  "source_sha256": "5477e4157c098e89d714678e27c02a4c359a5d6b37b723e08891c068e9434356",
+  "source_size": [
+    16,
+    384
+  ],
+  "source_frames": 24,
+  "output_size": [
+    16,
+    400
+  ],
+  "output_frames": 25,
+  "normalization": "Preserve all 24 frames; append the first frame as frame 25",
+  "original_rgba_texels_preserved": true,
+  "frametime_ticks": 2,
+  "interpolate": true,
+  "full_cycle_ticks": 50,
+  "palette_algorithm": "Chroma/value/alpha-weighted RGB, excluding dark or nearly grey metal",
+  "frame_colors_rgb": [
+    [
+      213,
+      49,
+      44
+    ],
+    [
+      197,
+      70,
+      90
+    ],
+    [
+      213,
+      129,
+      88
+    ],
+    [
+      214,
+      88,
+      3
+    ],
+    [
+      214,
+      103,
+      8
+    ],
+    [
+      222,
+      155,
+      20
+    ],
+    [
+      204,
+      140,
+      45
+    ],
+    [
+      78,
+      182,
+      36
+    ],
+    [
+      41,
+      209,
+      99
+    ],
+    [
+      45,
+      134,
+      89
+    ],
+    [
+      67,
+      174,
+      156
+    ],
+    [
+      59,
+      192,
+      180
+    ],
+    [
+      90,
+      152,
+      225
+    ],
+    [
+      86,
+      139,
+      216
+    ],
+    [
+      87,
+      125,
+      191
+    ],
+    [
+      46,
+      113,
+      153
+    ],
+    [
+      48,
+      89,
+      173
+    ],
+    [
+      67,
+      44,
+      169
+    ],
+    [
+      145,
+      94,
+      189
+    ],
+    [
+      179,
+      136,
+      218
+    ],
+    [
+      190,
+      97,
+      182
+    ],
+    [
+      199,
+      102,
+      186
+    ],
+    [
+      206,
+      67,
+      125
+    ],
+    [
+      209,
+      69,
+      108
+    ],
+    [
+      213,
+      49,
+      44
+    ]
+  ],
+  "frame_colors_hex": [
+    "#D5312C",
+    "#C5465A",
+    "#D58158",
+    "#D65803",
+    "#D66708",
+    "#DE9B14",
+    "#CC8C2D",
+    "#4EB624",
+    "#29D163",
+    "#2D8659",
+    "#43AE9C",
+    "#3BC0B4",
+    "#5A98E1",
+    "#568BD8",
+    "#577DBF",
+    "#2E7199",
+    "#3059AD",
+    "#432CA9",
+    "#915EBD",
+    "#B388DA",
+    "#BE61B6",
+    "#C766BA",
+    "#CE437D",
+    "#D1456C",
+    "#D5312C"
+  ],
+  "runtime": "CoreSpectrum manually interpolates the 16x16 live texture and palette on the same world-time clock; mcmeta alone does not animate standalone BER textures"
+}

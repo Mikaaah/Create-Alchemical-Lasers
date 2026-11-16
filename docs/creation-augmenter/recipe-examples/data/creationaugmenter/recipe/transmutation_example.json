@@ -1,0 +1,7 @@
+{
+  "type": "creationaugmenter:augmentation",
+  "lens": "transmutation",
+  "ingredient": {"item": "minecraft:amethyst_shard"},
+  "result": {"id": "minecraft:echo_shard", "count": 1},
+  "copy_components": false
+}

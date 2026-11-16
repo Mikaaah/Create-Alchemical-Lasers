@@ -1,0 +1,61 @@
+{
+  "source": "Canonical runtime geometry + machine.authoring.json",
+  "blockbench_projects": {
+    "art/Creation-Augmenter.bbmodel": {
+      "cuboids": 156,
+      "bones": 15,
+      "animation_clips": 10,
+      "embedded_textures": 5,
+      "uv_bounds_valid": true
+    },
+    "art/lens-variants/Creation-Augmenter-Unbreaking.bbmodel": {
+      "cuboids": 156,
+      "bones": 15,
+      "animation_clips": 10,
+      "embedded_textures": 5,
+      "uv_bounds_valid": true
+    },
+    "art/lens-variants/Creation-Augmenter-Absolute-Conversion.bbmodel": {
+      "cuboids": 158,
+      "bones": 15,
+      "animation_clips": 10,
+      "embedded_textures": 5,
+      "uv_bounds_valid": true
+    },
+    "art/lens-variants/Creation-Augmenter-Transmutation.bbmodel": {
+      "cuboids": 158,
+      "bones": 15,
+      "animation_clips": 10,
+      "embedded_textures": 5,
+      "uv_bounds_valid": true
+    }
+  },
+  "static_uv_islands": 1050,
+  "static_uv_nonoverlap": true,
+  "animated_core_faces": 18,
+  "animated_core_uv_reuse": "Intentional reuse of the same supplied 16x16 flipbook frame across crystal faces.",
+  "core_source_dimensions": [
+    16,
+    400
+  ],
+  "core_logical_uv_dimensions": [
+    16,
+    16
+  ],
+  "core_frame_time": 2,
+  "core_interpolate": true,
+  "gecko_static_atlas_size": [
+    1024,
+    1024
+  ],
+  "gecko_core_is_separate_layer": true,
+  "gecko_geometry_files": [
+    "src/main/resources/assets/creationaugmenter/geo/creation_augmenter.geo.json",
+    "src/main/resources/assets/creationaugmenter/geo/lens_unbreaking.geo.json",
+    "src/main/resources/assets/creationaugmenter/geo/lens_absolute_conversion.geo.json",
+    "src/main/resources/assets/creationaugmenter/geo/lens_transmutation.geo.json",
+    "src/main/resources/assets/creationaugmenter/geo/creation_core.geo.json"
+  ],
+  "authoring_tracks_sha256": "cb849731e465128f8ecd4366a630ff6bc48d93ab6f924b88477c0799736ff8bd",
+  "rest_height_pixels": 31
+}

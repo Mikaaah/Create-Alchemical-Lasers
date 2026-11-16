@@ -1,0 +1,389 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.creation_core",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 4,
+        "visible_bounds_offset": [
+          0,
+          0.03125,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "gearbox",
+          "pivot": [
+            0,
+            8,
+            0
+          ]
+        },
+        {
+          "name": "side_shaft",
+          "pivot": [
+            0,
+            8,
+            0
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "arcane_flywheel",
+          "pivot": [
+            0,
+            8,
+            0
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "creation_core",
+          "pivot": [
+            0,
+            -3.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3,
+                -5.5,
+                -3
+              ],
+              "size": [
+                6,
+                4.0,
+                6
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    5,
+                    6
+                  ],
+                  "uv_size": [
+                    6,
+                    4
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    5,
+                    6
+                  ],
+                  "uv_size": [
+                    6,
+                    4
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    5,
+                    6
+                  ],
+                  "uv_size": [
+                    6,
+                    4
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    5,
+                    6
+                  ],
+                  "uv_size": [
+                    6,
+                    4
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    11,
+                    10
+                  ],
+                  "uv_size": [
+                    -6,
+                    -4
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    11,
+                    10
+                  ],
+                  "uv_size": [
+                    -6,
+                    -4
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                -2,
+                -1.5,
+                -2
+              ],
+              "size": [
+                4,
+                2.0,
+                4
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    7,
+                    5
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    7,
+                    5
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    7,
+                    5
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    7,
+                    5
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    11,
+                    7
+                  ],
+                  "uv_size": [
+                    -4,
+                    -2
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    11,
+                    7
+                  ],
+                  "uv_size": [
+                    -4,
+                    -2
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                -2,
+                -7.5,
+                -2
+              ],
+              "size": [
+                4,
+                2.0,
+                4
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    5,
+                    9
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    5,
+                    9
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    5,
+                    9
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    5,
+                    9
+                  ],
+                  "uv_size": [
+                    4,
+                    2
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    9,
+                    11
+                  ],
+                  "uv_size": [
+                    -4,
+                    -2
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    9,
+                    11
+                  ],
+                  "uv_size": [
+                    -4,
+                    -2
+                  ]
+                }
+              }
+            }
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "gyro_ring_outer",
+          "pivot": [
+            0,
+            -3.5,
+            0
+          ],
+          "parent": "gearbox",
+          "rotation": [
+            -22.5,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "gyro_ring_inner",
+          "pivot": [
+            0,
+            -3.5,
+            0
+          ],
+          "parent": "gearbox",
+          "rotation": [
+            22.5,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "lower_nozzle",
+          "pivot": [
+            0,
+            -7,
+            0
+          ],
+          "parent": "gearbox"
+        },
+        {
+          "name": "socketed_lens",
+          "pivot": [
+            0,
+            -14,
+            0
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "clamp_1",
+          "pivot": [
+            0,
+            -12,
+            -4
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "clamp_2",
+          "pivot": [
+            3.6,
+            -12,
+            2.8
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "clamp_3",
+          "pivot": [
+            -3.6,
+            -12,
+            2.8
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "stabilizer_fin_1",
+          "pivot": [
+            0,
+            -8,
+            -4.8
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "stabilizer_fin_2",
+          "pivot": [
+            -4.8,
+            -8,
+            0
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "stabilizer_fin_3",
+          "pivot": [
+            0,
+            -8,
+            4.8
+          ],
+          "parent": "lower_nozzle"
+        },
+        {
+          "name": "stabilizer_fin_4",
+          "pivot": [
+            4.8,
+            -8,
+            0
+          ],
+          "parent": "lower_nozzle"
+        }
+      ]
+    }
+  ]
+}

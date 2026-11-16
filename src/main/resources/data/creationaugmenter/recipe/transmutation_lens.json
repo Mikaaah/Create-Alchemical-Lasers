@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SES",
+    "ANA",
+    "STS"
+  ],
+  "key": {
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "E": {
+      "item": "minecraft:emerald_block"
+    },
+    "A": {
+      "item": "minecraft:amethyst_block"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "T": {
+      "item": "minecraft:tinted_glass"
+    }
+  },
+  "result": {
+    "id": "creationaugmenter:transmutation_lens",
+    "count": 1
+  }
+}

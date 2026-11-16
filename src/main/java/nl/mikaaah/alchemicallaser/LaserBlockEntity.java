@@ -13,6 +13,7 @@ import java.util.*;
 import net.minecraft.core.*;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
@@ -167,17 +168,13 @@ public class LaserBlockEntity extends KineticBlockEntity {
 
   private void setPhase(Phase state) {
     if (phase == state) return;
-    if (phase == Phase.PROCESSING && state != Phase.PROCESSING)
-      sound("shutdown", .35f, lensPitch());
+    if (phase == Phase.PROCESSING && state != Phase.PROCESSING) shutoffSound();
     phase = state;
     sendData();
   }
 
   public void resetCycle() {
-    if (level != null
-        && !level.isClientSide
-        && (phase == Phase.CHARGING || phase == Phase.PROCESSING))
-      sound("shutdown", .25f, lensPitch());
+    if (phase == Phase.PROCESSING) shutoffSound();
     target = null;
     cycleInput = ItemStack.EMPTY;
     progress = 0;
@@ -325,6 +322,20 @@ public class LaserBlockEntity extends KineticBlockEntity {
           SoundSource.BLOCKS,
           volume * LaserConfig.SOUND_VOLUME.get().floatValue(),
           pitch);
+  }
+
+  /** One server-broadcast cooling hiss when a firing cycle ends, including cancellation. */
+  private void shutoffSound() {
+    if (level != null && !level.isClientSide)
+      level.playSound(
+          null,
+          worldPosition.getX() + .5,
+          worldPosition.getY() - 15.0 / 16.0,
+          worldPosition.getZ() + .5,
+          SoundEvents.LAVA_EXTINGUISH,
+          SoundSource.BLOCKS,
+          .5F * LaserConfig.SOUND_VOLUME.get().floatValue(),
+          1.15F);
   }
 
   @Override

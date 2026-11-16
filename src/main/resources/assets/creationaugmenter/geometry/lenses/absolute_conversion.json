@@ -1,0 +1,1044 @@
+{
+  "format_version": 1,
+  "units": "pixels",
+  "coordinate_system": "x/z centred on block; y0 block floor; emission strictly -Y",
+  "bounds": [
+    -3,
+    -15,
+    -3,
+    3,
+    -13.4,
+    3
+  ],
+  "bones": [
+    {
+      "name": "socketed_lens",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -14,
+        0
+      ]
+    }
+  ],
+  "textures": {
+    "creationaugmenter:textures/block/lens_atlas.png": [
+      256,
+      256
+    ]
+  },
+  "cubes": [
+    {
+      "name": "absolute_conversion_bezel_front",
+      "group": "socketed_lens",
+      "from": [
+        -1.5,
+        -14.7,
+        -2.8
+      ],
+      "to": [
+        1.5,
+        -13.8,
+        -2.2
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            11,
+            7,
+            14,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            16,
+            7,
+            19,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            21,
+            7,
+            23,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            25,
+            7,
+            27,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            29,
+            7,
+            32,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            34,
+            7,
+            37,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "absolute_conversion_bezel_back",
+      "group": "socketed_lens",
+      "from": [
+        -1.5,
+        -14.7,
+        2.2
+      ],
+      "to": [
+        1.5,
+        -13.8,
+        2.8
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            39,
+            7,
+            42,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            44,
+            7,
+            47,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            49,
+            7,
+            51,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            53,
+            7,
+            55,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            57,
+            7,
+            60,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            62,
+            7,
+            65,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "absolute_conversion_bezel_diagonal_2",
+      "group": "socketed_lens",
+      "from": [
+        -2.35,
+        -14.7,
+        -2.25
+      ],
+      "to": [
+        -1.65,
+        -13.8,
+        -0.1499999999999999
+      ],
+      "origin": [
+        -2.0,
+        -14,
+        -1.2
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            67,
+            7,
+            69,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            71,
+            7,
+            73,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            75,
+            7,
+            78,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            80,
+            7,
+            83,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            85,
+            7,
+            87,
+            10
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            89,
+            7,
+            91,
+            10
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "absolute_conversion_bezel_diagonal_3",
+      "group": "socketed_lens",
+      "from": [
+        1.65,
+        -14.7,
+        -2.25
+      ],
+      "to": [
+        2.35,
+        -13.8,
+        -0.1499999999999999
+      ],
+      "origin": [
+        2.0,
+        -14,
+        -1.2
+      ],
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            93,
+            7,
+            95,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            97,
+            7,
+            99,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            101,
+            7,
+            104,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            106,
+            7,
+            109,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            111,
+            7,
+            113,
+            10
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            115,
+            7,
+            117,
+            10
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "absolute_conversion_bezel_diagonal_4",
+      "group": "socketed_lens",
+      "from": [
+        -2.35,
+        -14.7,
+        0.1499999999999999
+      ],
+      "to": [
+        -1.65,
+        -13.8,
+        2.25
+      ],
+      "origin": [
+        -2.0,
+        -14,
+        1.2
+      ],
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            119,
+            7,
+            121,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            123,
+            7,
+            125,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            127,
+            7,
+            130,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            132,
+            7,
+            135,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            137,
+            7,
+            139,
+            10
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            141,
+            7,
+            143,
+            10
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "absolute_conversion_bezel_diagonal_5",
+      "group": "socketed_lens",
+      "from": [
+        1.65,
+        -14.7,
+        0.1499999999999999
+      ],
+      "to": [
+        2.35,
+        -13.8,
+        2.25
+      ],
+      "origin": [
+        2.0,
+        -14,
+        1.2
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            145,
+            7,
+            147,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            149,
+            7,
+            151,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            153,
+            7,
+            156,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            158,
+            7,
+            161,
+            9
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            163,
+            7,
+            165,
+            10
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            167,
+            7,
+            169,
+            10
+          ],
+          "material": "create:block/brass_casing",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "absolute_conversion_crystal_body",
+      "group": "socketed_lens",
+      "from": [
+        -1.9,
+        -14.7,
+        -1.9
+      ],
+      "to": [
+        1.9,
+        -13.85,
+        1.9
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            171,
+            7,
+            175,
+            9
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            177,
+            7,
+            181,
+            9
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            183,
+            7,
+            187,
+            9
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            189,
+            7,
+            193,
+            9
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            195,
+            7,
+            199,
+            11
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            201,
+            7,
+            205,
+            11
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "absolute_conversion_crystal_crown",
+      "group": "socketed_lens",
+      "from": [
+        -1.55,
+        -13.85,
+        -1.55
+      ],
+      "to": [
+        1.55,
+        -13.45,
+        1.55
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            207,
+            7,
+            211,
+            9
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            213,
+            7,
+            217,
+            9
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            219,
+            7,
+            223,
+            9
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            225,
+            7,
+            229,
+            9
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            231,
+            7,
+            235,
+            11
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            237,
+            7,
+            241,
+            11
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "absolute_conversion_crystal_downward_facet",
+      "group": "socketed_lens",
+      "from": [
+        -1.35,
+        -15,
+        -1.35
+      ],
+      "to": [
+        1.35,
+        -14.7,
+        1.35
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            243,
+            7,
+            246,
+            9
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            248,
+            7,
+            251,
+            9
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            1,
+            13,
+            4,
+            15
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            6,
+            13,
+            9,
+            15
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            11,
+            13,
+            14,
+            16
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            16,
+            13,
+            19,
+            16
+          ],
+          "material": "creationaugmenter:lens/absolute_conversion/faceted_crystal",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "absolute_conversion_creative_aperture_front",
+      "group": "socketed_lens",
+      "from": [
+        -0.75,
+        -14.85,
+        -2.95
+      ],
+      "to": [
+        0.75,
+        -14.35,
+        -2.75
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            21,
+            13,
+            23,
+            15
+          ],
+          "material": "create:block/creative_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            25,
+            13,
+            27,
+            15
+          ],
+          "material": "create:block/creative_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            29,
+            13,
+            31,
+            15
+          ],
+          "material": "create:block/creative_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            33,
+            13,
+            35,
+            15
+          ],
+          "material": "create:block/creative_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            37,
+            13,
+            39,
+            15
+          ],
+          "material": "create:block/creative_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            41,
+            13,
+            43,
+            15
+          ],
+          "material": "create:block/creative_casing",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "absolute_conversion_creative_aperture_back",
+      "group": "socketed_lens",
+      "from": [
+        -0.75,
+        -14.85,
+        2.75
+      ],
+      "to": [
+        0.75,
+        -14.35,
+        2.95
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            45,
+            13,
+            47,
+            15
+          ],
+          "material": "create:block/creative_casing",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            49,
+            13,
+            51,
+            15
+          ],
+          "material": "create:block/creative_casing",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            53,
+            13,
+            55,
+            15
+          ],
+          "material": "create:block/creative_casing",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            57,
+            13,
+            59,
+            15
+          ],
+          "material": "create:block/creative_casing",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            61,
+            13,
+            63,
+            15
+          ],
+          "material": "create:block/creative_casing",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            65,
+            13,
+            67,
+            15
+          ],
+          "material": "create:block/creative_casing",
+          "emissive": false
+        }
+      }
+    }
+  ]
+}

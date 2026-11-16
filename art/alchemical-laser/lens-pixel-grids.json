@@ -1,0 +1,190 @@
+{
+  "quartz": {
+    "installed_item": "Convergence",
+    "size": [
+      16,
+      16
+    ],
+    "palette": {
+      "M": "#602F24",
+      "S": "#76462D",
+      "I": "#D3A155",
+      "H": "#FBCC68",
+      "P": "#FAD64A",
+      "A": "#C9ECEF",
+      "B": "#91CCD7",
+      "C": "#75AFBF",
+      "D": "#6095AD",
+      "E": "#6095AD",
+      "F": "#EAF4E7"
+    },
+    "grid": [
+      "................",
+      ".....MMMMMM.....",
+      "...MMPPPPHHMM...",
+      "..MPPPAAABHHHM..",
+      "..MPPAAABBCHIM..",
+      ".MPPAFABBBCCIIM.",
+      ".MPAAFBBBBCCCSM.",
+      ".MPAABBBBCCCCSM.",
+      ".MPABBBBBCCCDSM.",
+      ".MHBBBBBBCCDDSM.",
+      ".MHHCCCCCCDDSSM.",
+      "..MHHCCCCDDSSM..",
+      "..MHIIDDDDSSSM..",
+      "...MMISSSSSMM...",
+      ".....MMMMMM.....",
+      "................"
+    ]
+  },
+  "ignis": {
+    "installed_item": "Power",
+    "size": [
+      16,
+      16
+    ],
+    "palette": {
+      "M": "#333034",
+      "S": "#484147",
+      "I": "#686062",
+      "H": "#918783",
+      "A": "#FFE696",
+      "B": "#EBA851",
+      "C": "#DF7D3D",
+      "D": "#B95038",
+      "E": "#83333C",
+      "F": "#F1D294"
+    },
+    "grid": [
+      ".......MM.......",
+      "......MHHM......",
+      ".....MHHHHM.....",
+      "....MHIACSSM....",
+      "...MHIACCCSSM...",
+      "..MHHAAACCCMSM..",
+      ".MHHABACCCEEMSM.",
+      "MHHABBBCCDEEESSM",
+      "MHHBBBBCDDEEESSM",
+      ".MHIBBBDDEEESSM.",
+      "..MIICDDDEESSM..",
+      "...MIIDDEDSSM...",
+      "....MIIDDMMM....",
+      ".....MIMMMM.....",
+      "......MMMM......",
+      ".......MM......."
+    ]
+  },
+  "glacies": {
+    "installed_item": "Splitting",
+    "size": [
+      16,
+      16
+    ],
+    "palette": {
+      "M": "#262626",
+      "S": "#3B393B",
+      "I": "#5C5C5C",
+      "H": "#7C7C7C",
+      "P": "#989898",
+      "A": "#C7DFFA",
+      "B": "#86AEE7",
+      "C": "#5C84C4",
+      "D": "#456BA7",
+      "E": "#355081",
+      "F": "#EEF5FF"
+    },
+    "grid": [
+      "................",
+      ".....MMMMMM.....",
+      "...MMPPPPHHMM...",
+      "..MPPPAAABHHHM..",
+      "..MPPFAABBBHIM..",
+      ".MPPAFABBBBBIIM.",
+      ".MPAAABBBBBBBSM.",
+      ".MPAABBBCCCCCSM.",
+      ".MPABBBBCCDDDSM.",
+      ".MHBBBBBCCDDDSM.",
+      ".MHHBBBBCCDDSSM.",
+      "..MHHBBBCCDSSM..",
+      "..MHIIDDDDSSSM..",
+      "...MMISSSSSMM...",
+      ".....MMMMMM.....",
+      "................"
+    ]
+  },
+  "aether": {
+    "installed_item": "Eclipse",
+    "size": [
+      16,
+      16
+    ],
+    "palette": {
+      "M": "#602F24",
+      "S": "#76462D",
+      "I": "#D3A155",
+      "H": "#FBCC68",
+      "P": "#FFEB94",
+      "A": "#CFA0F3",
+      "B": "#B38EF3",
+      "C": "#8D6ACC",
+      "D": "#6F4FAB",
+      "E": "#54398A",
+      "F": "#FFF9F0"
+    },
+    "grid": [
+      "................",
+      ".....MMMMMM.....",
+      "...MMPPPPHHMM...",
+      "..MPPPAAABHHHM..",
+      "..MPPAAABBBHIM..",
+      ".MPPAFFBBBCCIIM.",
+      ".MPAAFBBBCCCDSM.",
+      ".MPAABBBCCCDDSM.",
+      ".MPABBBCCCFDESM.",
+      ".MHBBBCCCDDEESM.",
+      ".MHHBCCCDDEESSM.",
+      "..MHHCCDDEESSM..",
+      "..MHIIDDEESSSM..",
+      "...MMISSSSSMM...",
+      ".....MMMMMM.....",
+      "................"
+    ]
+  },
+  "void": {
+    "installed_item": "Growth",
+    "size": [
+      16,
+      16
+    ],
+    "palette": {
+      "M": "#21352E",
+      "S": "#365449",
+      "I": "#648378",
+      "H": "#99B2A2",
+      "A": "#8ACEA5",
+      "B": "#57C997",
+      "C": "#2FA877",
+      "D": "#1D8058",
+      "E": "#14573F",
+      "F": "#D5EFD6"
+    },
+    "grid": [
+      "................",
+      "....MIIIIM......",
+      ".....MSSSSM.....",
+      "...HHMMMSSSM....",
+      "..ISSMBBMSSM.M..",
+      ".ISSSMBBBMMMIM..",
+      ".ISSMBFFCDDISM..",
+      ".ISMBBACCCDISM..",
+      ".ISMBBCCCCISSM..",
+      ".IMIIMCCCISSSM..",
+      ".M.ISSMDEIMSM...",
+      "...MSSSIMMMM....",
+      "....MSSSSM......",
+      ".....MMMMMM.....",
+      "................",
+      "................"
+    ]
+  }
+}

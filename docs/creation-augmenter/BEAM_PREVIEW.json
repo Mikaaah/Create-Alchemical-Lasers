@@ -1,0 +1,24 @@
+{
+  "fps": 12,
+  "frames": 60,
+  "seconds": 5.0,
+  "beam_length_blocks": 1.0625,
+  "method": "Offline software rasterization of current CreationBeamRenderer formulas, exact PNG masks and source-core colors. Not an in-game recording. No particles.",
+  "themes": [
+    {
+      "lens": "UNBREAKING",
+      "color": "#BCEFFF",
+      "secondary_color": "#7DE4EE"
+    },
+    {
+      "lens": "ABSOLUTE CONVERSION",
+      "color": "#DEB655",
+      "secondary_color": "#B574FF"
+    },
+    {
+      "lens": "TRANSMUTATION",
+      "color": "#47D5A0",
+      "secondary_color": "#A998FF"
+    }
+  ]
+}

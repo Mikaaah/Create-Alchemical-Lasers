@@ -1,0 +1,14 @@
+{
+  "type": "creationaugmenter:creation_augmenting",
+  "lens": "creationaugmenter:absolute_conversion_lens",
+  "ingredient": {
+    "item": "minecraft:netherite_scrap"
+  },
+  "result": {
+    "id": "minecraft:netherite_ingot",
+    "count": 1
+  },
+  "processing_time": 200,
+  "min_rpm": 256,
+  "copy_components": false
+}

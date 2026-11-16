@@ -2,6 +2,12 @@
 
 ## 1.1.0
 
+- Integrated the revised 31px copper/fluid-tank laser and dark-steel Creation Augmenter with editable models, atlases, emissive masks and animated rainbow core.
+- Added Creation Lenses with 10/100/100 uses, atomic wear/shattering, built-in Unbreakable equipment infusion and one-item processing on Depots or grounded stacks.
+- Added `creationaugmenter:creation_augmenting` datapack/network codecs, time/RPM requirements, native KubeJS schema, optional JEI/EMI displays, standalone endgame crafts and four example recipes.
+- Required 128 RPM and 64 SU/RPM for Creation; preserved existing alchemical IDs, automation and scripts. Both machines use horizontal instanced shaft visuals, delicate smoke and the vanilla lava-extinguish hiss.
+- Passed the build, 65 dedicated-server GameTests and asset validators. See [Creation guide](docs/CREATION_AUGMENTER.md) for scope and remaining optional-client checks.
+
 - Imported the updated bordered lens artwork and matching default beam/particle colors.
 - Added respawn-anchor charging, a custom heavy beam loop, ignition and smoke-discharge hiss, plus separate lens insertion/removal sounds. Charge and beam audio are state-controlled with short fades and stop when the machine unloads.
 

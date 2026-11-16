@@ -48,98 +48,76 @@ public final class LaserEffects {
       be.setSoundInstance(sound);
       mc.getSoundManager().play(sound);
     }
-    boolean completing = be.phase == LaserBlockEntity.Phase.COMPLETING;
-    if (!be.isBeamActive() && !charging && !completing) return;
-    if (be.isBeamActive()) return;
-    if (level.getGameTime() % (completing ? 2 : 3) != 0) return;
+    if (!charging || level.getGameTime() % 3 != 0) return;
     int rgb = be.beamColor();
     var dust =
         new DustParticleOptions(
             new Vector3f((rgb >> 16 & 255) / 255f, (rgb >> 8 & 255) / 255f, (rgb & 255) / 255f),
             .65f);
     double x = pos.getX() + .5, y = pos.getY(), z = pos.getZ() + .5;
-    if (charging) {
-      y -= .70;
-      for (int i = 0; i < 2; i++) {
-        double a = level.random.nextDouble() * Math.PI * 2,
-            dx = Math.cos(a) * .35,
-            dz = Math.sin(a) * .35;
-        level.addParticle(ParticleTypes.ENCHANT, x + dx, y + .15, z + dz, -dx * .8, 0, -dz * .8);
-        level.addParticle(dust, x + dx * .5, y + .18, z + dz * .5, 0, .01, 0);
-      }
-    } else {
-      for (int i = 0; i < (completing ? 5 : 2); i++)
-        level.addParticle(
-            dust,
-            x + (level.random.nextDouble() - .5) * .2,
-            y - 1.02,
-            z + (level.random.nextDouble() - .5) * .2,
-            0,
-            .025,
-            0);
-      level.addParticle(
-          ParticleTypes.ELECTRIC_SPARK,
-          x,
-          y - 1.02,
-          z,
-          (level.random.nextDouble() - .5) * .06,
-          .04,
-          (level.random.nextDouble() - .5) * .06);
+    y -= .70;
+    for (int i = 0; i < 2; i++) {
+      double a = level.random.nextDouble() * Math.PI * 2,
+          dx = Math.cos(a) * .35,
+          dz = Math.sin(a) * .35;
+      level.addParticle(ParticleTypes.ENCHANT, x + dx, y + .15, z + dz, -dx * .8, 0, -dz * .8);
+      level.addParticle(dust, x + dx * .5, y + .18, z + dz * .5, 0, .01, 0);
     }
   }
 
   public static void complete(LaserBlockEntity be) {
     var level = be.getLevel();
-    var p = be.getBlockPos();
     int rgb = be.beamColor();
     var dust =
         new DustParticleOptions(
             new Vector3f((rgb >> 16 & 255) / 255f, (rgb >> 8 & 255) / 255f, (rgb & 255) / 255f),
-            .9f);
-    for (int i = 0; i < 8; i++) {
-      double a = i * Math.PI / 4, dx = Math.cos(a), dz = Math.sin(a);
+            .35f);
+    var impact = MachineAnimation.impact(be);
+    for (int i = 0; i < 4; i++) {
+      double a = i * Math.PI / 2, dx = Math.cos(a), dz = Math.sin(a);
       level.addParticle(
           dust,
-          p.getX() + .5 + dx * .12,
-          p.getY() - 1.02,
-          p.getZ() + .5 + dz * .12,
-          dx * .04,
-          .04,
-          dz * .04);
+          impact.x + dx * .07,
+          impact.y + .025,
+          impact.z + dz * .07,
+          dx * .015,
+          .02,
+          dz * .015);
     }
-    level.addParticle(
-        ParticleTypes.END_ROD, p.getX() + .5, p.getY() - 1, p.getZ() + .5, 0, .025, 0);
   }
 
-  /** One local vent puff on the firing-to-stopped edge, never per render frame. */
+  /** Tiny cooling plumes at both ends, once on the firing-to-stopped edge. */
   private static void discharge(LaserBlockEntity be) {
     var level = be.getLevel();
     var mc = Minecraft.getInstance();
     if (level == null || mc.player == null) return;
     var muzzle = MachineAnimation.muzzle(be, 1);
     if (mc.player.distanceToSqr(muzzle.x, muzzle.y, muzzle.z) > 48 * 48) return;
-    for (int i = 0; i < 12; i++) {
-      double angle = i * Math.PI / 6 + level.random.nextDouble() * .18;
-      double radius = .14 + level.random.nextDouble() * .07;
-      double dx = Math.cos(angle), dz = Math.sin(angle);
-      level.addParticle(
-          ParticleTypes.SMOKE,
-          muzzle.x + dx * radius,
-          muzzle.y + .20,
-          muzzle.z + dz * radius,
-          dx * .025,
-          .018 + level.random.nextDouble() * .015,
-          dz * .025);
-    }
-    for (int i = 0; i < 2; i++)
-      level.addParticle(
-          ParticleTypes.LARGE_SMOKE,
-          muzzle.x + (level.random.nextDouble() - .5) * .12,
-          muzzle.y + .17,
-          muzzle.z + (level.random.nextDouble() - .5) * .12,
-          0,
-          .025,
-          0);
+    int count = Math.max(0, 2 - mc.options.particles().get().getId());
+    for (var point :
+        new net.minecraft.world.phys.Vec3[] {
+          muzzle.add(0, -.01, 0), MachineAnimation.impact(be).add(0, .025, 0)
+        })
+      for (int i = 0; i < count; i++) {
+        double dx = (level.random.nextDouble() - .5) * .002;
+        double dz = (level.random.nextDouble() - .5) * .002;
+        double dy = .02 + level.random.nextDouble() * .02;
+        var particle =
+            mc.particleEngine.createParticle(
+                ParticleTypes.SMOKE,
+                point.x + (level.random.nextDouble() - .5) * .04,
+                point.y,
+                point.z + (level.random.nextDouble() - .5) * .04,
+                dx,
+                dy,
+                dz);
+        if (particle != null) {
+          particle.scale(.28f);
+          particle.setLifetime(10 + level.random.nextInt(6));
+          // Vanilla smoke randomizes its initial velocity; restore the requested gentle rise.
+          particle.setParticleSpeed(dx, dy, dz);
+        }
+      }
   }
 
   /** A stoppable vanilla-anchor charge; the long reverb cannot pile up between cycles. */

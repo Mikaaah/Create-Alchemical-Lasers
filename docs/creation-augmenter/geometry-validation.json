@@ -1,0 +1,16 @@
+{
+  "cuboids": 147,
+  "bones": 15,
+  "rest_bounds": [
+    -10.0,
+    -15.0,
+    -8.28,
+    10.0,
+    16.0,
+    8.28
+  ],
+  "height_pixels": 31,
+  "unique_static_uvs": 864,
+  "static_uv_overlaps": 0,
+  "all_rune_faces_have_live_emission": true
+}

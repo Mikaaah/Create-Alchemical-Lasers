@@ -4,7 +4,7 @@
   "coordinate_system": "x/z centred on block; y0 block floor; emission strictly -Y",
   "bounds": [
     -10,
-    -12,
+    -15,
     -8.3,
     10,
     16,
@@ -124,7 +124,7 @@
       "parent": "lower_nozzle",
       "origin": [
         0,
-        -9,
+        -10.5,
         -4.5
       ]
     },
@@ -133,7 +133,7 @@
       "parent": "lower_nozzle",
       "origin": [
         0,
-        -7.1,
+        -7.18333333,
         -4.5
       ]
     },
@@ -142,7 +142,7 @@
       "parent": "lower_nozzle",
       "origin": [
         4.5,
-        -9,
+        -10.5,
         0
       ]
     },
@@ -151,7 +151,7 @@
       "parent": "lower_nozzle",
       "origin": [
         4.5,
-        -7.1,
+        -7.18333333,
         0
       ]
     },
@@ -160,7 +160,7 @@
       "parent": "lower_nozzle",
       "origin": [
         0,
-        -9,
+        -10.5,
         4.5
       ]
     },
@@ -169,7 +169,7 @@
       "parent": "lower_nozzle",
       "origin": [
         0,
-        -7.1,
+        -7.18333333,
         4.5
       ]
     },
@@ -178,7 +178,7 @@
       "parent": "lower_nozzle",
       "origin": [
         -4.5,
-        -9,
+        -10.5,
         0
       ]
     },
@@ -187,7 +187,7 @@
       "parent": "lower_nozzle",
       "origin": [
         -4.5,
-        -7.1,
+        -7.18333333,
         0
       ]
     },
@@ -196,7 +196,7 @@
       "parent": "lower_nozzle",
       "origin": [
         0,
-        -11,
+        -14,
         0
       ]
     }
@@ -252,7 +252,7 @@
             3
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -262,7 +262,7 @@
             3
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -272,7 +272,7 @@
             3
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -282,7 +282,7 @@
             3
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -292,7 +292,7 @@
             17
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank_top"
         },
         "down": {
           "uv": [
@@ -302,7 +302,7 @@
             17
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank_top"
         }
       }
     },
@@ -338,7 +338,7 @@
             3
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/industrial_iron_block"
+          "material": "minecraft:block/copper_block"
         },
         "south": {
           "uv": [
@@ -348,7 +348,7 @@
             3
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/industrial_iron_block"
+          "material": "minecraft:block/copper_block"
         },
         "east": {
           "uv": [
@@ -358,7 +358,7 @@
             3
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/industrial_iron_block"
+          "material": "minecraft:block/copper_block"
         },
         "west": {
           "uv": [
@@ -368,7 +368,7 @@
             3
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/industrial_iron_block"
+          "material": "minecraft:block/copper_block"
         },
         "up": {
           "uv": [
@@ -378,7 +378,7 @@
             17
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/industrial_iron_block"
+          "material": "create:block/fluid_tank_top"
         },
         "down": {
           "uv": [
@@ -388,7 +388,7 @@
             17
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/industrial_iron_block"
+          "material": "create:block/fluid_tank_top"
         }
       }
     },
@@ -424,7 +424,7 @@
             14
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -434,7 +434,7 @@
             14
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -444,7 +444,7 @@
             14
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -454,7 +454,7 @@
             14
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -464,7 +464,7 @@
             3
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "down": {
           "uv": [
@@ -474,7 +474,7 @@
             3
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         }
       }
     },
@@ -510,7 +510,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -520,7 +520,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -530,7 +530,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -540,7 +540,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -550,7 +550,7 @@
             13
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "down": {
           "uv": [
@@ -560,7 +560,7 @@
             13
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         }
       }
     },
@@ -596,7 +596,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -606,7 +606,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -616,7 +616,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -626,7 +626,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -636,7 +636,7 @@
             13
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "down": {
           "uv": [
@@ -646,7 +646,7 @@
             13
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         }
       }
     },
@@ -854,7 +854,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -864,7 +864,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -874,7 +874,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -884,7 +884,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -894,7 +894,7 @@
             13
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "down": {
           "uv": [
@@ -904,7 +904,7 @@
             13
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         }
       }
     },
@@ -940,7 +940,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -950,7 +950,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -960,7 +960,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -970,7 +970,7 @@
             5
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -980,7 +980,7 @@
             31
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         },
         "down": {
           "uv": [
@@ -990,7 +990,7 @@
             31
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/steel_block"
+          "material": "create:block/fluid_tank"
         }
       }
     },
@@ -1198,7 +1198,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/reactor/casing/reactor_casing"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -1208,7 +1208,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/reactor/casing/reactor_casing"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -1218,7 +1218,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/reactor/casing/reactor_casing"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -1228,7 +1228,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/reactor/casing/reactor_casing"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -1238,7 +1238,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/reactor/casing/reactor_casing"
+          "material": "create:block/fluid_tank"
         },
         "down": {
           "uv": [
@@ -1248,7 +1248,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/reactor/casing/reactor_casing"
+          "material": "create:block/fluid_tank"
         }
       }
     },
@@ -1284,7 +1284,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/reactor/casing/reactor_casing"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -1294,7 +1294,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/reactor/casing/reactor_casing"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -1304,7 +1304,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/reactor/casing/reactor_casing"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -1314,7 +1314,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/reactor/casing/reactor_casing"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -1324,7 +1324,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/reactor/casing/reactor_casing"
+          "material": "create:block/fluid_tank"
         },
         "down": {
           "uv": [
@@ -1334,7 +1334,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/reactor/casing/reactor_casing"
+          "material": "create:block/fluid_tank"
         }
       }
     },
@@ -1370,7 +1370,7 @@
             26
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/lead_block"
+          "material": "minecraft:block/cut_copper"
         },
         "south": {
           "uv": [
@@ -1380,7 +1380,7 @@
             26
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/lead_block"
+          "material": "minecraft:block/cut_copper"
         },
         "east": {
           "uv": [
@@ -1390,7 +1390,7 @@
             26
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/lead_block"
+          "material": "minecraft:block/cut_copper"
         },
         "west": {
           "uv": [
@@ -1400,7 +1400,7 @@
             26
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/lead_block"
+          "material": "minecraft:block/cut_copper"
         },
         "up": {
           "uv": [
@@ -1410,7 +1410,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/lead_block"
+          "material": "minecraft:block/cut_copper"
         },
         "down": {
           "uv": [
@@ -1420,7 +1420,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/lead_block"
+          "material": "minecraft:block/cut_copper"
         }
       }
     },
@@ -1456,7 +1456,7 @@
             26
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/lead_block"
+          "material": "minecraft:block/cut_copper"
         },
         "south": {
           "uv": [
@@ -1466,7 +1466,7 @@
             26
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/lead_block"
+          "material": "minecraft:block/cut_copper"
         },
         "east": {
           "uv": [
@@ -1476,7 +1476,7 @@
             26
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/lead_block"
+          "material": "minecraft:block/cut_copper"
         },
         "west": {
           "uv": [
@@ -1486,7 +1486,7 @@
             26
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/lead_block"
+          "material": "minecraft:block/cut_copper"
         },
         "up": {
           "uv": [
@@ -1496,7 +1496,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/lead_block"
+          "material": "minecraft:block/cut_copper"
         },
         "down": {
           "uv": [
@@ -1506,7 +1506,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "createnuclear:block/lead_block"
+          "material": "minecraft:block/cut_copper"
         }
       }
     },
@@ -1714,7 +1714,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -1724,7 +1724,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -1734,7 +1734,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -1744,7 +1744,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -1754,7 +1754,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         },
         "down": {
           "uv": [
@@ -1764,7 +1764,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         }
       }
     },
@@ -1800,7 +1800,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -1810,7 +1810,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -1820,7 +1820,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -1830,7 +1830,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -1840,7 +1840,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         },
         "down": {
           "uv": [
@@ -1850,7 +1850,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         }
       }
     },
@@ -2058,7 +2058,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -2068,7 +2068,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -2078,7 +2078,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -2088,7 +2088,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -2098,7 +2098,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         },
         "down": {
           "uv": [
@@ -2108,7 +2108,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         }
       }
     },
@@ -2144,7 +2144,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -2154,7 +2154,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -2164,7 +2164,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -2174,7 +2174,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -2184,7 +2184,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         },
         "down": {
           "uv": [
@@ -2194,7 +2194,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         }
       }
     },
@@ -2402,7 +2402,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -2412,7 +2412,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -2422,7 +2422,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -2432,7 +2432,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -2442,7 +2442,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         },
         "down": {
           "uv": [
@@ -2452,7 +2452,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         }
       }
     },
@@ -2488,7 +2488,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -2498,7 +2498,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -2508,7 +2508,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -2518,7 +2518,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -2528,7 +2528,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         },
         "down": {
           "uv": [
@@ -2538,7 +2538,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         }
       }
     },
@@ -2746,7 +2746,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -2756,7 +2756,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -2766,7 +2766,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -2776,7 +2776,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -2786,7 +2786,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         },
         "down": {
           "uv": [
@@ -2796,7 +2796,7 @@
             23
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         }
       }
     },
@@ -2832,7 +2832,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "south": {
           "uv": [
@@ -2842,7 +2842,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "east": {
           "uv": [
@@ -2852,7 +2852,7 @@
             21
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "west": {
           "uv": [
@@ -2862,7 +2862,7 @@
             35
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/fluid_tank"
         },
         "up": {
           "uv": [
@@ -2872,7 +2872,7 @@
             37
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         },
         "down": {
           "uv": [
@@ -2882,7 +2882,7 @@
             37
           ],
           "texture": "alchemicallaser:textures/block/metal_atlas.png",
-          "material": "create:block/railway_casing"
+          "material": "create:block/copper_casing"
         }
       }
     },
@@ -9822,7 +9822,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "minecraft:block/cut_copper"
+          "material": "minecraft:block/copper_block"
         },
         "south": {
           "uv": [
@@ -9832,7 +9832,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "minecraft:block/cut_copper"
+          "material": "minecraft:block/copper_block"
         },
         "east": {
           "uv": [
@@ -9842,7 +9842,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "minecraft:block/cut_copper"
+          "material": "minecraft:block/copper_block"
         },
         "west": {
           "uv": [
@@ -9852,7 +9852,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "minecraft:block/cut_copper"
+          "material": "minecraft:block/copper_block"
         },
         "up": {
           "uv": [
@@ -9862,7 +9862,7 @@
             38
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "minecraft:block/cut_copper"
+          "material": "create:block/fluid_tank_top"
         },
         "down": {
           "uv": [
@@ -9872,7 +9872,7 @@
             38
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "minecraft:block/cut_copper"
+          "material": "minecraft:block/copper_block"
         }
       }
     },
@@ -17708,7 +17708,7 @@
       "name": "nozzle_copper_shell_north",
       "from": [
         -5.6,
-        -8.8,
+        -10.3,
         -5.6
       ],
       "to": [
@@ -17718,7 +17718,7 @@
       ],
       "origin": [
         0.0,
-        -7.9,
+        -8.65,
         -4.35
       ],
       "rotation": [
@@ -17794,7 +17794,7 @@
       "name": "nozzle_copper_shell_south",
       "from": [
         -5.6,
-        -8.8,
+        -10.3,
         3.1
       ],
       "to": [
@@ -17804,7 +17804,7 @@
       ],
       "origin": [
         0.0,
-        -7.9,
+        -8.65,
         4.35
       ],
       "rotation": [
@@ -17880,7 +17880,7 @@
       "name": "nozzle_copper_shell_west",
       "from": [
         -5.6,
-        -8.8,
+        -10.3,
         -3.1
       ],
       "to": [
@@ -17890,7 +17890,7 @@
       ],
       "origin": [
         -4.35,
-        -7.9,
+        -8.65,
         0.0
       ],
       "rotation": [
@@ -17966,7 +17966,7 @@
       "name": "nozzle_copper_shell_east",
       "from": [
         3.1,
-        -8.8,
+        -10.3,
         -3.1
       ],
       "to": [
@@ -17976,7 +17976,7 @@
       ],
       "origin": [
         4.35,
-        -7.9,
+        -8.65,
         0.0
       ],
       "rotation": [
@@ -18052,17 +18052,17 @@
       "name": "nozzle_hazard_band_north",
       "from": [
         -6.0,
-        -9.65,
+        -11.15,
         -6.0
       ],
       "to": [
         6.0,
-        -8.8,
+        -10.3,
         -3.0
       ],
       "origin": [
         0.0,
-        -9.225000000000001,
+        -10.725,
         -4.5
       ],
       "rotation": [
@@ -18138,17 +18138,17 @@
       "name": "nozzle_hazard_band_south",
       "from": [
         -6.0,
-        -9.65,
+        -11.15,
         3.0
       ],
       "to": [
         6.0,
-        -8.8,
+        -10.3,
         6.0
       ],
       "origin": [
         0.0,
-        -9.225000000000001,
+        -10.725,
         4.5
       ],
       "rotation": [
@@ -18224,17 +18224,17 @@
       "name": "nozzle_hazard_band_west",
       "from": [
         -6.0,
-        -9.65,
+        -11.15,
         -3.0
       ],
       "to": [
         -3.0,
-        -8.8,
+        -10.3,
         3.0
       ],
       "origin": [
         -4.5,
-        -9.225000000000001,
+        -10.725,
         0.0
       ],
       "rotation": [
@@ -18310,17 +18310,17 @@
       "name": "nozzle_hazard_band_east",
       "from": [
         3.0,
-        -9.65,
+        -11.15,
         -3.0
       ],
       "to": [
         6.0,
-        -8.8,
+        -10.3,
         3.0
       ],
       "origin": [
         4.5,
-        -9.225000000000001,
+        -10.725,
         0.0
       ],
       "rotation": [
@@ -18396,17 +18396,17 @@
       "name": "nozzle_lower_steel_north",
       "from": [
         -5.25,
-        -10.8,
+        -13.8,
         -5.25
       ],
       "to": [
         5.25,
-        -9.65,
+        -11.15,
         -2.9
       ],
       "origin": [
         0.0,
-        -10.225000000000001,
+        -12.475,
         -4.075
       ],
       "rotation": [
@@ -18482,17 +18482,17 @@
       "name": "nozzle_lower_steel_south",
       "from": [
         -5.25,
-        -10.8,
+        -13.8,
         2.9
       ],
       "to": [
         5.25,
-        -9.65,
+        -11.15,
         5.25
       ],
       "origin": [
         0.0,
-        -10.225000000000001,
+        -12.475,
         4.075
       ],
       "rotation": [
@@ -18568,17 +18568,17 @@
       "name": "nozzle_lower_steel_west",
       "from": [
         -5.25,
-        -10.8,
+        -13.8,
         -2.9
       ],
       "to": [
         -2.9,
-        -9.65,
+        -11.15,
         2.9
       ],
       "origin": [
         -4.075,
-        -10.225000000000001,
+        -12.475,
         0.0
       ],
       "rotation": [
@@ -18654,17 +18654,17 @@
       "name": "nozzle_lower_steel_east",
       "from": [
         2.9,
-        -10.8,
+        -13.8,
         -2.9
       ],
       "to": [
         5.25,
-        -9.65,
+        -11.15,
         2.9
       ],
       "origin": [
         4.075,
-        -10.225000000000001,
+        -12.475,
         0.0
       ],
       "rotation": [
@@ -18740,17 +18740,17 @@
       "name": "muzzle_brass_notched_seat_north",
       "from": [
         -4.4,
-        -11.35,
+        -14.35,
         -4.4
       ],
       "to": [
         4.4,
-        -10.6,
+        -13.33913043,
         -2.75
       ],
       "origin": [
         0.0,
-        -10.975,
+        -13.975,
         -3.575
       ],
       "rotation": [
@@ -18892,17 +18892,17 @@
       "name": "muzzle_brass_notched_seat_south",
       "from": [
         -4.4,
-        -11.35,
+        -14.35,
         2.75
       ],
       "to": [
         4.4,
-        -10.6,
+        -13.33913043,
         4.4
       ],
       "origin": [
         0.0,
-        -10.975,
+        -13.975,
         3.575
       ],
       "rotation": [
@@ -19044,17 +19044,17 @@
       "name": "muzzle_brass_notched_seat_west",
       "from": [
         -4.4,
-        -11.35,
+        -14.35,
         -2.75
       ],
       "to": [
         -2.75,
-        -10.6,
+        -13.33913043,
         2.75
       ],
       "origin": [
         -3.575,
-        -10.975,
+        -13.975,
         0.0
       ],
       "rotation": [
@@ -19196,17 +19196,17 @@
       "name": "muzzle_brass_notched_seat_east",
       "from": [
         2.75,
-        -11.35,
+        -14.35,
         -2.75
       ],
       "to": [
         4.4,
-        -10.6,
+        -13.33913043,
         2.75
       ],
       "origin": [
         3.575,
-        -10.975,
+        -13.975,
         0.0
       ],
       "rotation": [
@@ -19348,17 +19348,17 @@
       "name": "radial_cooling_vent_1",
       "from": [
         -3,
-        -8.7,
+        -10.11666667,
         -5.65
       ],
       "to": [
         3,
-        -7.05,
+        -7.09166667,
         -4.75
       ],
       "origin": [
         0,
-        -7.05,
+        -7.09166667,
         -5.2
       ],
       "rotation": [
@@ -19434,17 +19434,17 @@
       "name": "cooling_fin_(1, -8.2)",
       "from": [
         -3.06,
-        -8.2,
+        -9.2,
         -5.9
       ],
       "to": [
         3.06,
-        -7.999999999999999,
+        -8.83333333,
         -4.5
       ],
       "origin": [
         0.0,
-        -8.1,
+        -9.01666667,
         -5.2
       ],
       "rotation": [
@@ -19520,17 +19520,17 @@
       "name": "cooling_fin_(1, -7.6)",
       "from": [
         -3.06,
-        -7.6,
+        -8.1,
         -5.9
       ],
       "to": [
         3.06,
-        -7.3999999999999995,
+        -7.73333333,
         -4.5
       ],
       "origin": [
         0.0,
-        -7.5,
+        -7.91666667,
         -5.2
       ],
       "rotation": [
@@ -19606,17 +19606,17 @@
       "name": "radial_cooling_vent_2",
       "from": [
         4.75,
-        -8.7,
+        -10.11666667,
         -3
       ],
       "to": [
         5.65,
-        -7.05,
+        -7.09166667,
         3
       ],
       "origin": [
         5.2,
-        -7.05,
+        -7.09166667,
         0
       ],
       "rotation": [
@@ -19692,17 +19692,17 @@
       "name": "cooling_fin_(2, -8.2)",
       "from": [
         4.5,
-        -8.2,
+        -9.2,
         -3.06
       ],
       "to": [
         5.9,
-        -7.999999999999999,
+        -8.83333333,
         3.06
       ],
       "origin": [
         5.2,
-        -8.1,
+        -9.01666667,
         0.0
       ],
       "rotation": [
@@ -19778,17 +19778,17 @@
       "name": "cooling_fin_(2, -7.6)",
       "from": [
         4.5,
-        -7.6,
+        -8.1,
         -3.06
       ],
       "to": [
         5.9,
-        -7.3999999999999995,
+        -7.73333333,
         3.06
       ],
       "origin": [
         5.2,
-        -7.5,
+        -7.91666667,
         0.0
       ],
       "rotation": [
@@ -19864,17 +19864,17 @@
       "name": "radial_cooling_vent_3",
       "from": [
         -3,
-        -8.7,
+        -10.11666667,
         4.75
       ],
       "to": [
         3,
-        -7.05,
+        -7.09166667,
         5.65
       ],
       "origin": [
         0,
-        -7.05,
+        -7.09166667,
         5.2
       ],
       "rotation": [
@@ -19950,17 +19950,17 @@
       "name": "cooling_fin_(3, -8.2)",
       "from": [
         -3.06,
-        -8.2,
+        -9.2,
         4.5
       ],
       "to": [
         3.06,
-        -7.999999999999999,
+        -8.83333333,
         5.9
       ],
       "origin": [
         0.0,
-        -8.1,
+        -9.01666667,
         5.2
       ],
       "rotation": [
@@ -20036,17 +20036,17 @@
       "name": "cooling_fin_(3, -7.6)",
       "from": [
         -3.06,
-        -7.6,
+        -8.1,
         4.5
       ],
       "to": [
         3.06,
-        -7.3999999999999995,
+        -7.73333333,
         5.9
       ],
       "origin": [
         0.0,
-        -7.5,
+        -7.91666667,
         5.2
       ],
       "rotation": [
@@ -20122,17 +20122,17 @@
       "name": "radial_cooling_vent_4",
       "from": [
         -5.65,
-        -8.7,
+        -10.11666667,
         -3
       ],
       "to": [
         -4.75,
-        -7.05,
+        -7.09166667,
         3
       ],
       "origin": [
         -5.2,
-        -7.05,
+        -7.09166667,
         0
       ],
       "rotation": [
@@ -20208,17 +20208,17 @@
       "name": "cooling_fin_(4, -8.2)",
       "from": [
         -5.9,
-        -8.2,
+        -9.2,
         -3.06
       ],
       "to": [
         -4.5,
-        -7.999999999999999,
+        -8.83333333,
         3.06
       ],
       "origin": [
         -5.2,
-        -8.1,
+        -9.01666667,
         0.0
       ],
       "rotation": [
@@ -20294,17 +20294,17 @@
       "name": "cooling_fin_(4, -7.6)",
       "from": [
         -5.9,
-        -7.6,
+        -8.1,
         -3.06
       ],
       "to": [
         -4.5,
-        -7.3999999999999995,
+        -7.73333333,
         3.06
       ],
       "origin": [
         -5.2,
-        -7.5,
+        -7.91666667,
         0.0
       ],
       "rotation": [
@@ -20380,17 +20380,17 @@
       "name": "clamp_arm_1",
       "from": [
         -1.05,
-        -11.5,
+        -14.5,
         -5.15
       ],
       "to": [
         1.05,
-        -9,
+        -10.5,
         -3.85
       ],
       "origin": [
         0.0,
-        -10.25,
+        -12.5326087,
         -4.5
       ],
       "rotation": [
@@ -20466,17 +20466,17 @@
       "name": "clamp_brass_toe_1",
       "from": [
         -1.35,
-        -12,
+        -15,
         -5.4
       ],
       "to": [
         1.35,
-        -11.1,
+        -14.1,
         -3.6
       ],
       "origin": [
         0.0,
-        -11.55,
+        -14.55,
         -4.5
       ],
       "rotation": [
@@ -20618,17 +20618,17 @@
       "name": "clamp_pivot_pin_1",
       "from": [
         -1.55,
-        -9.65,
+        -11.15,
         -4.85
       ],
       "to": [
         1.55,
-        -8.95,
+        -10.45,
         -4.15
       ],
       "origin": [
         0.0,
-        -9.3,
+        -10.8,
         -4.5
       ],
       "rotation": [
@@ -20704,17 +20704,17 @@
       "name": "clamp_arm_2",
       "from": [
         3.85,
-        -11.5,
+        -14.5,
         -1.05
       ],
       "to": [
         5.15,
-        -9,
+        -10.5,
         1.05
       ],
       "origin": [
         4.5,
-        -10.25,
+        -12.5326087,
         0.0
       ],
       "rotation": [
@@ -20790,17 +20790,17 @@
       "name": "clamp_brass_toe_2",
       "from": [
         3.6,
-        -12,
+        -15,
         -1.35
       ],
       "to": [
         5.4,
-        -11.1,
+        -14.1,
         1.35
       ],
       "origin": [
         4.5,
-        -11.55,
+        -14.55,
         0.0
       ],
       "rotation": [
@@ -20942,17 +20942,17 @@
       "name": "clamp_pivot_pin_2",
       "from": [
         4.15,
-        -9.65,
+        -11.15,
         -1.55
       ],
       "to": [
         4.85,
-        -8.95,
+        -10.45,
         1.55
       ],
       "origin": [
         4.5,
-        -9.3,
+        -10.8,
         0.0
       ],
       "rotation": [
@@ -21028,17 +21028,17 @@
       "name": "clamp_arm_3",
       "from": [
         -1.05,
-        -11.5,
+        -14.5,
         3.85
       ],
       "to": [
         1.05,
-        -9,
+        -10.5,
         5.15
       ],
       "origin": [
         0.0,
-        -10.25,
+        -12.5326087,
         4.5
       ],
       "rotation": [
@@ -21114,17 +21114,17 @@
       "name": "clamp_brass_toe_3",
       "from": [
         -1.35,
-        -12,
+        -15,
         3.6
       ],
       "to": [
         1.35,
-        -11.1,
+        -14.1,
         5.4
       ],
       "origin": [
         0.0,
-        -11.55,
+        -14.55,
         4.5
       ],
       "rotation": [
@@ -21266,17 +21266,17 @@
       "name": "clamp_pivot_pin_3",
       "from": [
         -1.55,
-        -9.65,
+        -11.15,
         4.15
       ],
       "to": [
         1.55,
-        -8.95,
+        -10.45,
         4.85
       ],
       "origin": [
         0.0,
-        -9.3,
+        -10.8,
         4.5
       ],
       "rotation": [
@@ -21352,17 +21352,17 @@
       "name": "clamp_arm_4",
       "from": [
         -5.15,
-        -11.5,
+        -14.5,
         -1.05
       ],
       "to": [
         -3.85,
-        -9,
+        -10.5,
         1.05
       ],
       "origin": [
         -4.5,
-        -10.25,
+        -12.5326087,
         0.0
       ],
       "rotation": [
@@ -21438,17 +21438,17 @@
       "name": "clamp_brass_toe_4",
       "from": [
         -5.4,
-        -12,
+        -15,
         -1.35
       ],
       "to": [
         -3.6,
-        -11.1,
+        -14.1,
         1.35
       ],
       "origin": [
         -4.5,
-        -11.55,
+        -14.55,
         0.0
       ],
       "rotation": [
@@ -21590,17 +21590,17 @@
       "name": "clamp_pivot_pin_4",
       "from": [
         -4.85,
-        -9.65,
+        -11.15,
         -1.55
       ],
       "to": [
         -4.15,
-        -8.95,
+        -10.45,
         1.55
       ],
       "origin": [
         -4.5,
-        -9.3,
+        -10.8,
         0.0
       ],
       "rotation": [

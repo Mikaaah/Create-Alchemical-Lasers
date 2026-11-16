@@ -1,0 +1,860 @@
+{
+  "format_version": 1,
+  "units": "pixels",
+  "coordinate_system": "x/z centred on block; y0 block floor; emission strictly -Y",
+  "bounds": [
+    -3,
+    -15,
+    -3,
+    3,
+    -13.4,
+    3
+  ],
+  "bones": [
+    {
+      "name": "socketed_lens",
+      "parent": "lower_nozzle",
+      "origin": [
+        0,
+        -14,
+        0
+      ]
+    }
+  ],
+  "textures": {
+    "creationaugmenter:textures/block/lens_atlas.png": [
+      256,
+      256
+    ]
+  },
+  "cubes": [
+    {
+      "name": "unbreaking_bezel_front",
+      "group": "socketed_lens",
+      "from": [
+        -1.5,
+        -14.7,
+        -2.8
+      ],
+      "to": [
+        1.5,
+        -13.8,
+        -2.2
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            1,
+            1,
+            4,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            6,
+            1,
+            9,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            11,
+            1,
+            13,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            15,
+            1,
+            17,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            19,
+            1,
+            22,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            24,
+            1,
+            27,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "unbreaking_bezel_back",
+      "group": "socketed_lens",
+      "from": [
+        -1.5,
+        -14.7,
+        2.2
+      ],
+      "to": [
+        1.5,
+        -13.8,
+        2.8
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            29,
+            1,
+            32,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            34,
+            1,
+            37,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            39,
+            1,
+            41,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            43,
+            1,
+            45,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            47,
+            1,
+            50,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            52,
+            1,
+            55,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "unbreaking_bezel_diagonal_2",
+      "group": "socketed_lens",
+      "from": [
+        -2.35,
+        -14.7,
+        -2.25
+      ],
+      "to": [
+        -1.65,
+        -13.8,
+        -0.1499999999999999
+      ],
+      "origin": [
+        -2.0,
+        -14,
+        -1.2
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            57,
+            1,
+            59,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            61,
+            1,
+            63,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            65,
+            1,
+            68,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            70,
+            1,
+            73,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            75,
+            1,
+            77,
+            4
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            79,
+            1,
+            81,
+            4
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "unbreaking_bezel_diagonal_3",
+      "group": "socketed_lens",
+      "from": [
+        1.65,
+        -14.7,
+        -2.25
+      ],
+      "to": [
+        2.35,
+        -13.8,
+        -0.1499999999999999
+      ],
+      "origin": [
+        2.0,
+        -14,
+        -1.2
+      ],
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            83,
+            1,
+            85,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            87,
+            1,
+            89,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            91,
+            1,
+            94,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            96,
+            1,
+            99,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            101,
+            1,
+            103,
+            4
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            105,
+            1,
+            107,
+            4
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "unbreaking_bezel_diagonal_4",
+      "group": "socketed_lens",
+      "from": [
+        -2.35,
+        -14.7,
+        0.1499999999999999
+      ],
+      "to": [
+        -1.65,
+        -13.8,
+        2.25
+      ],
+      "origin": [
+        -2.0,
+        -14,
+        1.2
+      ],
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            109,
+            1,
+            111,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            113,
+            1,
+            115,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            117,
+            1,
+            120,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            122,
+            1,
+            125,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            127,
+            1,
+            129,
+            4
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            131,
+            1,
+            133,
+            4
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "unbreaking_bezel_diagonal_5",
+      "group": "socketed_lens",
+      "from": [
+        1.65,
+        -14.7,
+        0.1499999999999999
+      ],
+      "to": [
+        2.35,
+        -13.8,
+        2.25
+      ],
+      "origin": [
+        2.0,
+        -14,
+        1.2
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            135,
+            1,
+            137,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            139,
+            1,
+            141,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            143,
+            1,
+            146,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            148,
+            1,
+            151,
+            3
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            153,
+            1,
+            155,
+            4
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            157,
+            1,
+            159,
+            4
+          ],
+          "material": "minecraft:block/netherite_block",
+          "emissive": false
+        }
+      }
+    },
+    {
+      "name": "unbreaking_crystal_body",
+      "group": "socketed_lens",
+      "from": [
+        -1.9,
+        -14.7,
+        -1.9
+      ],
+      "to": [
+        1.9,
+        -13.85,
+        1.9
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            161,
+            1,
+            165,
+            3
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            167,
+            1,
+            171,
+            3
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            173,
+            1,
+            177,
+            3
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            179,
+            1,
+            183,
+            3
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            185,
+            1,
+            189,
+            5
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            191,
+            1,
+            195,
+            5
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "unbreaking_crystal_crown",
+      "group": "socketed_lens",
+      "from": [
+        -1.55,
+        -13.85,
+        -1.55
+      ],
+      "to": [
+        1.55,
+        -13.45,
+        1.55
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            197,
+            1,
+            201,
+            3
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            203,
+            1,
+            207,
+            3
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            209,
+            1,
+            213,
+            3
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            215,
+            1,
+            219,
+            3
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            221,
+            1,
+            225,
+            5
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            227,
+            1,
+            231,
+            5
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        }
+      }
+    },
+    {
+      "name": "unbreaking_crystal_downward_facet",
+      "group": "socketed_lens",
+      "from": [
+        -1.35,
+        -15,
+        -1.35
+      ],
+      "to": [
+        1.35,
+        -14.7,
+        1.35
+      ],
+      "origin": [
+        0,
+        -14,
+        0
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "faces": {
+        "north": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            233,
+            1,
+            236,
+            3
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "south": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            238,
+            1,
+            241,
+            3
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "east": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            243,
+            1,
+            246,
+            3
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "west": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            248,
+            1,
+            251,
+            3
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "up": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            1,
+            7,
+            4,
+            10
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        },
+        "down": {
+          "texture": "creationaugmenter:textures/block/lens_atlas.png",
+          "uv": [
+            6,
+            7,
+            9,
+            10
+          ],
+          "material": "creationaugmenter:lens/unbreaking/faceted_crystal",
+          "emissive": true
+        }
+      }
+    }
+  ]
+}

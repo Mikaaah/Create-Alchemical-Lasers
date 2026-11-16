@@ -15,8 +15,11 @@ import org.joml.Quaternionf;
 
 /** Evaluates the supplied authoring-space keyframes, with independent per-machine clocks. */
 public final class MachineAnimation {
-  public static final float MUZZLE_Y = -.75f;
-  public static final float BEAM_LENGTH = .29f;
+  /** The extended 31px model ends at y=-15px; the processing surface remains fixed. */
+  public static final float MUZZLE_Y = -15f / 16f;
+
+  public static final float IMPACT_Y = -1.04f;
+  public static final float BEAM_LENGTH = MUZZLE_Y - IMPACT_Y;
   private static final Map<LaserBlockEntity, MachineAnimation> STATES = new WeakHashMap<>();
   private static Map<String, Clip> clips;
   private ItemStack lens = ItemStack.EMPTY;
@@ -134,6 +137,10 @@ public final class MachineAnimation {
   public static Vec3 muzzle(LaserBlockEntity be, float partial) {
     return Vec3.atLowerCornerOf(be.getBlockPos())
         .add(.5, MUZZLE_Y + state(be).nozzleOffset(partial) / 16, .5);
+  }
+
+  public static Vec3 impact(LaserBlockEntity be) {
+    return Vec3.atLowerCornerOf(be.getBlockPos()).add(.5, IMPACT_Y, .5);
   }
 
   public MachineGeometry.BoneAnimator animator(float partial, float shaftDegrees) {

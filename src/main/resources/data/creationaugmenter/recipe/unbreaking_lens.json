@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SAS",
+    "ENE",
+    "SAS"
+  ],
+  "key": {
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "A": {
+      "item": "minecraft:amethyst_block"
+    },
+    "E": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "id": "creationaugmenter:unbreaking_lens",
+    "count": 1
+  }
+}

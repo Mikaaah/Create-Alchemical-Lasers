@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "creationaugmenter:block/creation_augmenter"
+    }
+  }
+}

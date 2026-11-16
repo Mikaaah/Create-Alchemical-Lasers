@@ -1,0 +1,66 @@
+{
+  "keys": [
+    {
+      "name": "lens",
+      "role": "input",
+      "type": "string",
+      "function_names": [
+        "LENS",
+        "lens"
+      ]
+    },
+    {
+      "name": "ingredient",
+      "role": "input",
+      "type": "ingredient",
+      "function_names": [
+        "INPUT",
+        "input"
+      ]
+    },
+    {
+      "name": "result",
+      "role": "output",
+      "type": "item_stack",
+      "function_names": [
+        "OUTPUT",
+        "output"
+      ]
+    },
+    {
+      "name": "processing_time",
+      "role": "other",
+      "type": "int",
+      "optional": 60,
+      "function_names": [
+        "TIME",
+        "processingTime"
+      ]
+    },
+    {
+      "name": "min_rpm",
+      "role": "other",
+      "type": "int",
+      "optional": 128,
+      "function_names": [
+        "RPM",
+        "minRpm"
+      ]
+    },
+    {
+      "name": "copy_components",
+      "role": "other",
+      "type": "boolean",
+      "optional": false
+    }
+  ],
+  "constructors": [
+    {
+      "keys": [
+        "lens",
+        "ingredient",
+        "result"
+      ]
+    }
+  ]
+}

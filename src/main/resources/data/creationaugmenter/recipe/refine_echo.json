@@ -1,0 +1,14 @@
+{
+  "type": "creationaugmenter:creation_augmenting",
+  "lens": "creationaugmenter:absolute_conversion_lens",
+  "ingredient": {
+    "item": "minecraft:echo_shard"
+  },
+  "result": {
+    "id": "minecraft:amethyst_shard",
+    "count": 16
+  },
+  "processing_time": 120,
+  "min_rpm": 128,
+  "copy_components": false
+}

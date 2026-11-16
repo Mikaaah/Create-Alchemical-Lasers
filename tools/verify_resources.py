@@ -16,7 +16,7 @@ for name,entry in sound_events.items():
     assert entry['subtitle'] in json.loads((a/'lang/en_us.json').read_text()),name
     for sound in entry['sounds']:
         if isinstance(sound,dict) and sound.get('type')=='event':
-            assert sound['name']=='minecraft:block.respawn_anchor.charge',(name,sound)
+            assert sound['name'] in {'minecraft:block.respawn_anchor.charge','minecraft:block.lava.extinguish'},(name,sound)
             continue
         resource=sound['name'] if isinstance(sound,dict) else sound
         namespace,path=resource.split(':',1)
@@ -34,7 +34,8 @@ assert plugin.count('.addStoryBoard(')==6
 for name in re.findall(r'addStoryBoard\(\s*"([^"]+)"',plugin):assert (a/'ponder'/f'{name}.nbt').is_file()
 print('Resource validation passed: JSON, owned textures, models, sound files/event references, structures, recipes and six storyboard registrations.')
 
-lang=json.loads((a/'lang/en_us.json').read_text())
+lang={}
+for language in (r/'assets').glob('*/lang/en_us.json'):lang.update(json.loads(language.read_text()))
 for file in (root/'src/main/java').rglob('*.java'):
     for key in re.findall(r'Component.translatable\(\s*"([^"\n]+)"',file.read_text()):
         if not key.endswith('.') and key.startswith(('goggles.alchemicallaser.','recipe.alchemicallaser.','itemGroup.')):assert key in lang,(file,key)

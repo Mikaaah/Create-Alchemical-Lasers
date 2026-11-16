@@ -1,0 +1,45 @@
+{
+  "source_jar_sha256": "4864eccb7508a1484cf8c0887bab213bc04822a276aa937030342a46be247ed5",
+  "namespace": "alchemicallaser",
+  "data_changes": [
+    {
+      "item": "alchemicallaser:convergence_lens",
+      "before": "#F0B65D",
+      "after": "#91CCD7",
+      "field": "color"
+    },
+    {
+      "item": "alchemicallaser:power_lens",
+      "before": "#E77E47",
+      "after": "#DF7D3D",
+      "field": "color"
+    },
+    {
+      "item": "alchemicallaser:splitting_lens",
+      "before": "#65D6D1",
+      "after": "#86AEE7",
+      "field": "color"
+    },
+    {
+      "item": "alchemicallaser:eclipse_lens",
+      "before": "#A286DC",
+      "after": "#8D6ACC",
+      "field": "color"
+    },
+    {
+      "item": "alchemicallaser:growth_lens",
+      "before": "#86C65B",
+      "after": "#2FA877",
+      "field": "color"
+    }
+  ],
+  "recipe_jsons_changed": 0,
+  "pitch_values_unchanged": true,
+  "geometry_identical_to_current_runtime": true,
+  "machine_cubes": 214,
+  "animation_clips": 9,
+  "lens_variants": 5,
+  "sound_assets_included": true,
+  "java_palette_fallbacks_aligned": true,
+  "client_particle_tints_aligned": true
+}

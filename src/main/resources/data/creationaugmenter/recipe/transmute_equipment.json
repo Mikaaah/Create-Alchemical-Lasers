@@ -1,0 +1,14 @@
+{
+  "type": "creationaugmenter:creation_augmenting",
+  "lens": "creationaugmenter:transmutation_lens",
+  "ingredient": {
+    "item": "minecraft:iron_pickaxe"
+  },
+  "result": {
+    "id": "minecraft:diamond_pickaxe",
+    "count": 1
+  },
+  "processing_time": 160,
+  "min_rpm": 256,
+  "copy_components": true
+}

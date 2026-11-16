@@ -9,7 +9,7 @@
 <p align="center"><img src="https://img.shields.io/badge/Minecraft-1.21.1-5b8731?style=flat-square" alt="Minecraft 1.21.1"> <img src="https://img.shields.io/badge/NeoForge-d77828?style=flat-square" alt="NeoForge"> <a href="https://mikaaah.github.io/TownsAndKingdoms/projects/"><img src="https://img.shields.io/badge/Towns_%26_Kingdoms-Modding_Hub-7f384a?style=flat-square" alt="Towns & Kingdoms Modding Hub"></a></p>
 
 
-**Version 1.1.0 · Minecraft 1.21.1 · NeoForge · Java 21.** New industrial model, animated focusing chamber, lens clamps and layered beams. [Model integration and validation](docs/MODEL_1.1.0.md).
+**Version 1.1.0 · Minecraft 1.21.1 · NeoForge · Java 21.** Copper industrial laser overhaul plus the new endgame Creation Augmenter, finite lenses and prismatic beams. [Model integration and validation](docs/MODEL_1.1.0.md).
 
 ## How it works
 
@@ -30,20 +30,30 @@ Speed scales processing time, up to the configured cap. A powered redstone signa
 - Optional JEI and EMI recipe categories showing the lens, input, outputs, duration and minimum RPM.
 - Six Ponder scenes: setup, kinetic power, belt processing, lens changes, sequential automation and redstone.
 
+## Creation Augmenter
+
+The Creation Augmenter requires at least **128 RPM** and **64 SU/RPM** (8192 SU at minimum speed). Connect a horizontal side shaft and place a Depot three blocks below its housing, leaving two clear air blocks. Grounded item stacks directly below also work; this machine does not process belts. Each completed operation transforms one input item and spends one lens use. Redstone, obstructions and lost power cancel unfinished work without spending durability.
+
+- Lens of Unbreaking: 10 uses; adds the vanilla Unbreakable component to damageable equipment while retaining its components.
+- Lens of Absolute Conversion: 100 uses; selects configurable refining recipes.
+- Lens of Transmutation: 100 uses; selects configurable transmutation recipes.
+
+The final use completes its output and shatters the lens with crystal particles and glass/amethyst sounds. No extra fuel is required. Standalone endgame crafting recipes and four example conversions are included. [Recipe fields, KubeJS and implementation notes](docs/CREATION_AUGMENTER.md).
+
 ## Starter recipes
 
 | Lens | Input | Output |
 |---|---|---|
-| Power | Sand | Glass |
-| Power | Clay ball | Brick |
-| Convergence | Magma block | Obsidian |
-| Splitting | Amethyst shard | Quartz |
-| Eclipse | Quartz | Prismarine crystals |
-| Growth | Wheat seeds | Wheat |
-| Convergence | 4 amethyst shards | Amethyst block |
-| Splitting | Amethyst block | 4 amethyst shards |
-| Power | Obsidian | Crying obsidian |
-| Eclipse | Sculk | Echo shard |
+| Ignis Thermal | Sand | Glass |
+| Ignis Thermal | Clay ball | Brick |
+| Quartz Focus | Magma block | Obsidian |
+| Glacies Cryo | Amethyst shard | Quartz |
+| Aether Transmutation | Quartz | Prismarine crystals |
+| Void Disintegration | Wheat seeds | Wheat |
+| Quartz Focus | 4 amethyst shards | Amethyst block |
+| Glacies Cryo | Amethyst block | 4 amethyst shards |
+| Ignis Thermal | Obsidian | Crying obsidian |
+| Aether Transmutation | Sculk | Echo shard |
 
 These are standalone examples. Modpacks can replace them with their own progression. Towns & Kingdoms is not required.
 

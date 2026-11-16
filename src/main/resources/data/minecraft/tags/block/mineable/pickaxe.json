@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "alchemicallaser:laser_emitter"
+    "alchemicallaser:laser_emitter",
+    "creationaugmenter:creation_augmenter"
   ]
 }

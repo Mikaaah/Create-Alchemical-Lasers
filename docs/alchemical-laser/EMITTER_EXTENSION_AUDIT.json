@@ -1,0 +1,139 @@
+{
+  "model_height_pixels_before": 28,
+  "model_height_pixels_after": 31,
+  "rest_bounds": [
+    -10,
+    -15,
+    -8.3,
+    10,
+    16,
+    8.3
+  ],
+  "attachment_y_unchanged": -6,
+  "copper_sleeve_extra_length_pixels": 1.5,
+  "steel_sleeve_extra_length_pixels": 1.5,
+  "jaw_arm_length_pixels_before": 2.5,
+  "jaw_arm_length_pixels_after": 4,
+  "fixed_non_emitter_cube_count": 170,
+  "fixed_non_emitter_cubes_sha256_before": "f082baefa6b9fa9a2fe180d725220a18174f9f75ba03fb76977eebc52b683bfa",
+  "fixed_non_emitter_cubes_sha256_after": "f082baefa6b9fa9a2fe180d725220a18174f9f75ba03fb76977eebc52b683bfa",
+  "fixed_bones_sha256_before": "e381b57d7983af542f60622ba314aed62278cc96e9d0d301faaae77f4a620423",
+  "fixed_bones_sha256_after": "e381b57d7983af542f60622ba314aed62278cc96e9d0d301faaae77f4a620423",
+  "amethyst_animation_tracks_sha256_before": "e93352de7c9345f08fd36b24ff7e0711a3a65cbcc300a9772917c7fd3ebdaf03",
+  "amethyst_animation_tracks_sha256_after": "e93352de7c9345f08fd36b24ff7e0711a3a65cbcc300a9772917c7fd3ebdaf03",
+  "firing_recoil_up_pixels_before": 1.5,
+  "firing_recoil_up_pixels_after": 2.25,
+  "swap_nozzle_retract_pixels": 0.6,
+  "insert_recoil_up_pixels": 0.8,
+  "lens_overlays": [
+    {
+      "lens": "aether",
+      "translated_pixels": [
+        0,
+        -3,
+        0
+      ],
+      "bounds": [
+        -10,
+        -15,
+        -8.3,
+        10,
+        16,
+        8.3
+      ],
+      "socket_pivot": [
+        0,
+        -14,
+        0
+      ]
+    },
+    {
+      "lens": "glacies",
+      "translated_pixels": [
+        0,
+        -3,
+        0
+      ],
+      "bounds": [
+        -10,
+        -15,
+        -8.3,
+        10,
+        16,
+        8.3
+      ],
+      "socket_pivot": [
+        0,
+        -14,
+        0
+      ]
+    },
+    {
+      "lens": "ignis",
+      "translated_pixels": [
+        0,
+        -3,
+        0
+      ],
+      "bounds": [
+        -10,
+        -15,
+        -8.3,
+        10,
+        16,
+        8.3
+      ],
+      "socket_pivot": [
+        0,
+        -14,
+        0
+      ]
+    },
+    {
+      "lens": "quartz",
+      "translated_pixels": [
+        0,
+        -3,
+        0
+      ],
+      "bounds": [
+        -10,
+        -15,
+        -8.3,
+        10,
+        16,
+        8.3
+      ],
+      "socket_pivot": [
+        0,
+        -14,
+        0
+      ]
+    },
+    {
+      "lens": "void",
+      "translated_pixels": [
+        0,
+        -3,
+        0
+      ],
+      "bounds": [
+        -10,
+        -15,
+        -8.3,
+        10,
+        16,
+        8.3
+      ],
+      "socket_pivot": [
+        0,
+        -14,
+        0
+      ]
+    }
+  ],
+  "uv_coordinates_unchanged": true,
+  "amethyst_geometry_and_animation_unchanged": true,
+  "notes": "Geometry proof compares full non-emitter cube records before the separately requested copper material refinement. Material refinement may intentionally change face material metadata/texels on structural parts while preserving their geometry.",
+  "lens_overlay_bounds_convention": "Full machine aggregate bounds; all lens files share the full skeleton."
+}

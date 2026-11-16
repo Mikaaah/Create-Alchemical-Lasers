@@ -1,0 +1,57 @@
+{
+  "source": "Canonical runtime geometry + machine.authoring.json",
+  "blockbench_projects": {
+    "art/Alchemical-Laser.bbmodel": {
+      "cuboids": 220,
+      "bones": 21,
+      "animation_clips": 9,
+      "embedded_texture_pages": 4,
+      "uv_bounds_valid": true
+    },
+    "art/lens-variants/Alchemical-Laser-Convergence.bbmodel": {
+      "cuboids": 220,
+      "bones": 21,
+      "animation_clips": 9,
+      "embedded_texture_pages": 4,
+      "uv_bounds_valid": true
+    },
+    "art/lens-variants/Alchemical-Laser-Power.bbmodel": {
+      "cuboids": 220,
+      "bones": 21,
+      "animation_clips": 9,
+      "embedded_texture_pages": 4,
+      "uv_bounds_valid": true
+    },
+    "art/lens-variants/Alchemical-Laser-Splitting.bbmodel": {
+      "cuboids": 220,
+      "bones": 21,
+      "animation_clips": 9,
+      "embedded_texture_pages": 4,
+      "uv_bounds_valid": true
+    },
+    "art/lens-variants/Alchemical-Laser-Eclipse.bbmodel": {
+      "cuboids": 222,
+      "bones": 21,
+      "animation_clips": 9,
+      "embedded_texture_pages": 4,
+      "uv_bounds_valid": true
+    },
+    "art/lens-variants/Alchemical-Laser-Growth.bbmodel": {
+      "cuboids": 224,
+      "bones": 21,
+      "animation_clips": 9,
+      "embedded_texture_pages": 4,
+      "uv_bounds_valid": true
+    }
+  },
+  "atlas_size": [
+    1024,
+    1024
+  ],
+  "atlas_source_pages": 4,
+  "source_texels_preserved_exactly": true,
+  "gecko_geometries": 6,
+  "gecko_animation_clips": 9,
+  "authoring_tracks_sha256": "64ab675f191de4aa58c0588ad50c3dbe0fe209e1f7bbbc45c64ac6537e2371e4",
+  "machine_height_pixels": 31
+}

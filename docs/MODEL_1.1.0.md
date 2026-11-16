@@ -1,3 +1,7 @@
+# Final combined import
+
+See [the current combined implementation and validation guide](CREATION_AUGMENTER.md). The notes below describe the earlier industrial integration; the combined guide supersedes its visual names, sound inventory and asset details.
+
 # Industrial model integration — 1.1.0
 
 Minecraft 1.21.1 · NeoForge 21.1.219+ · Java 21 · Create 6.0.10.
