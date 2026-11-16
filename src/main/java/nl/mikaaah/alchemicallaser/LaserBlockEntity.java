@@ -150,7 +150,9 @@ public class LaserBlockEntity extends KineticBlockEntity {
     ItemStack previous = lens().copy();
     if (!replacement.isEmpty()) activeColor = AlchemicalLaser.lensColor(replacement);
     lensInventory.setStackInSlot(0, replacement.copy());
-    sound("lens_install", .55f, 1f);
+    if (replacement.isEmpty()) {
+      if (!previous.isEmpty()) sound("lens_remove", .45f, 1f);
+    } else sound("lens_install", .55f, 1f);
     return previous;
   }
 
@@ -165,6 +167,8 @@ public class LaserBlockEntity extends KineticBlockEntity {
 
   private void setPhase(Phase state) {
     if (phase == state) return;
+    if (phase == Phase.PROCESSING && state != Phase.PROCESSING)
+      sound("shutdown", .35f, lensPitch());
     phase = state;
     sendData();
   }
@@ -255,7 +259,6 @@ public class LaserBlockEntity extends KineticBlockEntity {
     if (charge < LaserConfig.CHARGE_TICKS.get()) {
       if (charge == 0) {
         sound("activation", .35f, .9f);
-        sound("charge", .45f, lensPitch());
       }
       setPhase(Phase.CHARGING);
       charge++;
@@ -428,7 +431,6 @@ public class LaserBlockEntity extends KineticBlockEntity {
     } else if (charging) {
       if (phase != Phase.CHARGING) {
         sound("activation", .35f, .9f);
-        sound("charge", .45f, lensPitch());
       }
       setPhase(Phase.CHARGING);
     } else if (completed) setPhase(Phase.COMPLETING);

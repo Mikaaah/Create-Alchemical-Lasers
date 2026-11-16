@@ -92,7 +92,15 @@ public final class AlchemicalLaser {
 
   static {
     for (String name :
-        List.of("lens_install", "activation", "charge", "fire", "beam", "complete", "shutdown"))
+        List.of(
+            "lens_install",
+            "lens_remove",
+            "activation",
+            "charge",
+            "fire",
+            "beam",
+            "complete",
+            "shutdown"))
       AUDIO.put(name, SOUNDS.register(name, () -> SoundEvent.createVariableRangeEvent(id(name))));
   }
 
@@ -143,11 +151,11 @@ public final class AlchemicalLaser {
     LensDefinition definition = stack.getItemHolder().getData(LensDefinition.TYPE);
     if (definition != null) return definition.color();
     return switch (lensName(stack)) {
-      case "growth" -> 0x86c65b;
-      case "convergence" -> 0xf0b65d;
-      case "splitting" -> 0x65d6d1;
-      case "power" -> 0xe77e47;
-      case "eclipse" -> 0xa286dc;
+      case "growth" -> 0x2fa877;
+      case "convergence" -> 0x91ccd7;
+      case "splitting" -> 0x86aee7;
+      case "power" -> 0xdf7d3d;
+      case "eclipse" -> 0x8d6acc;
       default -> 0x666b70;
     };
   }

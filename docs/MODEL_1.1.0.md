@@ -25,6 +25,14 @@ The kit's standalone mod (`alchemical_laser`) is a visual reference rather than
 the processing implementation. Do not install that reference JAR alongside this
 update in place of the existing addon.
 
+## Sound and color update
+
+The updated import supplies final lens item textures and masks, matching beam and
+particle palettes, and eight sound events. Charge references Minecraft’s respawn-
+anchor charge event. Custom ignition, heavy beam, vent hiss and separate lens
+insertion/removal audio are shipped as mono OGG assets. Client lifecycle handling
+limits overlapping charge tails and fades the beam loop. See [sound design](SOUND_DESIGN.md).
+
 ## Changing a lens
 
 Sneak-right-click with an empty main hand to remove the installed lens or catalyst.

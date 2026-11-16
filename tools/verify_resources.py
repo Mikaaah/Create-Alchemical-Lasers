@@ -11,8 +11,16 @@ for p in (a/'models').rglob('*.json'):
             assert (a/'textures'/f'{texture.split(":",1)[1]}.png').is_file(),(p,texture)
     for element in model.get('elements',[]):
         assert all(lo<hi for lo,hi in zip(element['from'],element['to'])),p
-for name,entry in json.loads((a/'sounds.json').read_text()).items():
-    assert (a/'sounds'/f'{name}.ogg').stat().st_size>1000,name
+sound_events=json.loads((a/'sounds.json').read_text())
+for name,entry in sound_events.items():
+    assert entry['subtitle'] in json.loads((a/'lang/en_us.json').read_text()),name
+    for sound in entry['sounds']:
+        if isinstance(sound,dict) and sound.get('type')=='event':
+            assert sound['name']=='minecraft:block.respawn_anchor.charge',(name,sound)
+            continue
+        resource=sound['name'] if isinstance(sound,dict) else sound
+        namespace,path=resource.split(':',1)
+        assert namespace=='alchemicallaser' and (a/'sounds'/f'{path}.ogg').stat().st_size>1000,(name,resource)
 for p in list(r.rglob('*.nbt')) + list((root/'src/gameTest/resources').rglob('*.nbt')):
     n=nbtlib.load(p);assert 'size' in n and 'palette' in n and 'blocks' in n,p
     for b in n['blocks']:assert 0<=b['state']<len(n['palette']),p
@@ -24,7 +32,7 @@ for p in (r/'data/alchemicallaser/recipe').glob('*.json'):
 plugin=(root/'src/main/java/nl/mikaaah/alchemicallaser/ponder/LaserPonderPlugin.java').read_text()
 assert plugin.count('.addStoryBoard(')==6
 for name in re.findall(r'addStoryBoard\(\s*"([^"]+)"',plugin):assert (a/'ponder'/f'{name}.nbt').is_file()
-print('Resource validation passed: JSON, owned textures, models, seven OGG assets, structures, recipes and six storyboard registrations.')
+print('Resource validation passed: JSON, owned textures, models, sound files/event references, structures, recipes and six storyboard registrations.')
 
 lang=json.loads((a/'lang/en_us.json').read_text())
 for file in (root/'src/main/java').rglob('*.java'):

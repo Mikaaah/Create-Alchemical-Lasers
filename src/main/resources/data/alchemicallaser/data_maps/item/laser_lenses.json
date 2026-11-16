@@ -1,23 +1,23 @@
 {
   "values": {
     "alchemicallaser:growth_lens": {
-      "color": 8832603,
+      "color": 3123319,
       "pitch": 1.15
     },
     "alchemicallaser:convergence_lens": {
-      "color": 15775325,
+      "color": 9555159,
       "pitch": 0.9
     },
     "alchemicallaser:splitting_lens": {
-      "color": 6674129,
+      "color": 8826599,
       "pitch": 1.3
     },
     "alchemicallaser:power_lens": {
-      "color": 15171143,
+      "color": 14646589,
       "pitch": 0.7
     },
     "alchemicallaser:eclipse_lens": {
-      "color": 10651356,
+      "color": 9267916,
       "pitch": 0.6
     }
   }

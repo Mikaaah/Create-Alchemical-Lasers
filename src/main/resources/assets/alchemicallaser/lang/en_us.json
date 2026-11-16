@@ -13,13 +13,13 @@
   "state.alchemicallaser.charging": "Charging",
   "state.alchemicallaser.processing": "Processing",
   "state.alchemicallaser.completing": "Completing",
-  "subtitles.alchemicallaser.lens_install": "Laser lens install",
+  "subtitles.alchemicallaser.lens_install": "Lens seats in socket",
   "subtitles.alchemicallaser.activation": "Laser activation",
-  "subtitles.alchemicallaser.charge": "Laser charge",
-  "subtitles.alchemicallaser.fire": "Laser fire",
-  "subtitles.alchemicallaser.beam": "Laser beam",
+  "subtitles.alchemicallaser.charge": "Laser energy charges",
+  "subtitles.alchemicallaser.fire": "Heavy laser ignites",
+  "subtitles.alchemicallaser.beam": "Heavy laser hums",
   "subtitles.alchemicallaser.complete": "Laser complete",
-  "subtitles.alchemicallaser.shutdown": "Laser shutdown",
+  "subtitles.alchemicallaser.shutdown": "Laser vents pressure",
   "alchemicallaser.ponder.laser_setup.header": "Setting up an Alchemical Laser",
   "alchemicallaser.ponder.laser_setup.text_1": "Place the emitter above a horizontal belt, leaving one air block between them, just like a Mechanical Press.",
   "alchemicallaser.ponder.laser_setup.text_2": "A Depot works at the same height. Funnels and hoppers can supply and extract items.",
@@ -57,5 +57,6 @@
   "recipe.alchemicallaser.assembly": "Laser processing with %s",
   "recipe.alchemicallaser.consumed": "Consumed once per operation",
   "recipe.alchemicallaser.reusable": "Reusable catalyst",
-  "message.alchemicallaser.remove_lens_first": "Remove the installed lens or catalyst first: sneak-right-click with an empty hand."
+  "message.alchemicallaser.remove_lens_first": "Remove the installed lens or catalyst first: sneak-right-click with an empty hand.",
+  "subtitles.alchemicallaser.lens_remove": "Lens latch releases"
 }

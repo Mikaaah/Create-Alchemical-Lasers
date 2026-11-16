@@ -2,11 +2,11 @@ package nl.mikaaah.alchemicallaser.client;
 
 /** Shared stable IDs for items, model overlays, beam tints and particle styles. */
 public enum VisualLens {
-  QUARTZ("quartz", 0xA8F8FA),
-  IGNIS("ignis", 0xFF641F),
-  GLACIES("glacies", 0x65DCF4),
-  AETHER("aether", 0xC05AF2),
-  VOID("void", 0x26D8A8);
+  QUARTZ("quartz", 0x91CCD7),
+  IGNIS("ignis", 0xDF7D3D),
+  GLACIES("glacies", 0x86AEE7),
+  AETHER("aether", 0x8D6ACC),
+  VOID("void", 0x2FA877);
 
   public static VisualLens of(net.minecraft.world.item.ItemStack stack) {
     return switch (nl.mikaaah.alchemicallaser.AlchemicalLaser.lensName(stack)) {

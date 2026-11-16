@@ -2,6 +2,9 @@
 
 ## 1.1.0
 
+- Imported the updated bordered lens artwork and matching default beam/particle colors.
+- Added respawn-anchor charging, a custom heavy beam loop, ignition and smoke-discharge hiss, plus separate lens insertion/removal sounds. Charge and beam audio are state-controlled with short fades and stop when the machine unloads.
+
 - Lens replacement is now two-step: sneak-right-click with an empty hand to remove it and open the claws, then insert a new lens to close them. Direct right-click swapping is blocked; automated catalyst refills remain supported.
 
 - Replaced the laser body and all five lens sprites/socket models with the supplied industrial artwork.
