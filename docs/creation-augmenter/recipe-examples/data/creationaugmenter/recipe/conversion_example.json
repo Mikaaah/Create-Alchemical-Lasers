@@ -1,5 +1,5 @@
 {
-  "type": "creationaugmenter:augmentation",
+  "type": "creationaugmenter:creation_augmenting",
   "lens": "absolute_conversion",
   "ingredient": {"item": "minecraft:iron_sword"},
   "result": {"id": "minecraft:diamond_sword", "count": 1},
