@@ -20,7 +20,7 @@ metadata = {
     'changelog': (root / 'Create-Alchemical-Lasers-1.1.0-Changelog.html').read_text(),
     'changelogType': 'html',
     'releaseType': 'release',
-    'gameVersionNames': ['1.21.1', 'NeoForge', 'Java 21'],
+    'gameVersionNames': ['1.21.1', 'NeoForge', 'Java 21', 'Client', 'Server'],
     'relations': {'projects': [{'slug': 'create', 'projectID': 328085, 'type': 'requiredDependency'}]},
 }
 boundary = '----AlchemyUpload' + uuid.uuid4().hex
