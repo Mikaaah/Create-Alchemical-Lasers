@@ -5940,18 +5940,7 @@
             24
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -5961,18 +5950,7 @@
             24
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -5982,18 +5960,7 @@
             24
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -6003,18 +5970,7 @@
             24
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -6024,18 +5980,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -6045,18 +5990,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -6092,18 +6026,7 @@
             24
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -6113,18 +6036,7 @@
             24
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -6134,18 +6046,7 @@
             24
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -6155,18 +6056,7 @@
             24
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -6176,18 +6066,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -6197,18 +6076,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -6244,18 +6112,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -6265,18 +6122,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -6286,18 +6132,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -6307,18 +6142,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -6328,18 +6152,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -6349,18 +6162,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -6396,18 +6198,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -6417,18 +6208,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -6438,18 +6218,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -6459,18 +6228,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -6480,18 +6238,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -6501,18 +6248,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -6806,18 +6542,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -6827,18 +6552,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -6848,18 +6562,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -6869,18 +6572,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -6890,18 +6582,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -6911,18 +6592,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -6958,18 +6628,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -6979,18 +6638,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -7000,18 +6648,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -7021,18 +6658,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -7042,18 +6668,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -7063,18 +6678,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -7626,18 +7230,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -7647,18 +7240,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -7668,18 +7250,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -7689,18 +7260,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -7710,18 +7270,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -7731,18 +7280,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -7778,18 +7316,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -7799,18 +7326,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -7820,18 +7336,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -7841,18 +7346,7 @@
             20
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -7862,18 +7356,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -7883,18 +7366,7 @@
             18
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -9908,18 +9380,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -9929,18 +9390,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -9950,18 +9400,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -9971,18 +9410,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -9992,18 +9420,7 @@
             35
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -10013,18 +9430,7 @@
             35
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -10404,18 +9810,7 @@
             40
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -10425,18 +9820,7 @@
             40
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -10446,18 +9830,7 @@
             40
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -10467,18 +9840,7 @@
             40
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -10488,18 +9850,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -10509,18 +9860,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -10556,18 +9896,7 @@
             40
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -10577,18 +9906,7 @@
             40
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -10598,18 +9916,7 @@
             40
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -10619,18 +9926,7 @@
             40
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -10640,18 +9936,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -10661,18 +9946,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -11138,18 +10412,7 @@
             33
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -11159,18 +10422,7 @@
             33
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -11180,18 +10432,7 @@
             33
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -11201,18 +10442,7 @@
             33
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -11222,18 +10452,7 @@
             33
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -11243,18 +10462,7 @@
             33
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -11376,18 +10584,7 @@
             35
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -11397,18 +10594,7 @@
             35
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -11418,18 +10604,7 @@
             35
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -11439,18 +10614,7 @@
             35
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -11460,18 +10624,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -11481,18 +10634,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -11700,18 +10842,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -11721,18 +10852,7 @@
             32
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -11742,18 +10862,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -11763,18 +10872,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -11784,18 +10882,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -11805,18 +10892,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -11852,18 +10928,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -11873,18 +10938,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -11894,18 +10948,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -11915,18 +10958,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -11936,18 +10968,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -11957,18 +10978,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -12090,18 +11100,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -12111,18 +11110,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -12132,18 +11120,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -12153,18 +11130,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -12174,18 +11140,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -12195,18 +11150,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -12328,18 +11272,7 @@
             47
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -12349,18 +11282,7 @@
             47
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -12370,18 +11292,7 @@
             47
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -12391,18 +11302,7 @@
             47
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -12412,18 +11312,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -12433,18 +11322,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -12652,18 +11530,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -12673,18 +11540,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -12694,18 +11550,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -12715,18 +11560,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -12736,18 +11570,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -12757,18 +11580,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -12804,18 +11616,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -12825,18 +11626,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -12846,18 +11636,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -12867,18 +11646,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -12888,18 +11656,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -12909,18 +11666,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -13042,18 +11788,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -13063,18 +11798,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -13084,18 +11808,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -13105,18 +11818,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -13126,18 +11828,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -13147,18 +11838,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -13280,18 +11960,7 @@
             47
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -13301,18 +11970,7 @@
             47
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -13322,18 +11980,7 @@
             47
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -13343,18 +11990,7 @@
             47
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -13364,18 +12000,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -13385,18 +12010,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -13604,18 +12218,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -13625,18 +12228,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -13646,18 +12238,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -13667,18 +12248,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -13688,18 +12258,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -13709,18 +12268,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -13756,18 +12304,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -13777,18 +12314,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -13798,18 +12324,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -13819,18 +12334,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -13840,18 +12344,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -13861,18 +12354,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -13994,18 +12476,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -14015,18 +12486,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -14036,18 +12496,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -14057,18 +12506,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -14078,18 +12516,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -14099,18 +12526,7 @@
             45
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -14232,18 +12648,7 @@
             47
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -14253,18 +12658,7 @@
             47
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -14274,18 +12668,7 @@
             47
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -14295,18 +12678,7 @@
             47
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -14316,18 +12688,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -14337,18 +12698,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -14556,18 +12906,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -14577,18 +12916,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -14598,18 +12926,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -14619,18 +12936,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -14640,18 +12946,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -14661,18 +12956,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -14708,18 +12992,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -14729,18 +13002,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -14750,18 +13012,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -14771,18 +13022,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -14792,18 +13032,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -14813,18 +13042,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -15516,18 +13734,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -15537,18 +13744,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -15558,18 +13754,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -15579,18 +13764,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -15600,18 +13774,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -15621,18 +13784,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -15668,18 +13820,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -15689,18 +13830,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -15710,18 +13840,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -15731,18 +13850,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -15752,18 +13860,7 @@
             44
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -15773,18 +13870,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -15820,18 +13906,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -15841,18 +13916,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -15862,18 +13926,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -15883,18 +13936,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -15904,18 +13946,7 @@
             56
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -15925,18 +13956,7 @@
             56
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -15972,18 +13992,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -15993,18 +14002,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -16014,18 +14012,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -16035,18 +14022,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -16056,18 +14032,7 @@
             56
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -16077,18 +14042,7 @@
             56
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -16124,18 +14078,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -16145,18 +14088,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -16166,18 +14098,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -16187,18 +14108,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -16208,18 +14118,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -16229,18 +14128,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -16276,18 +14164,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -16297,18 +14174,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -16318,18 +14184,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -16339,18 +14194,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -16360,18 +14204,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -16381,18 +14214,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -16428,18 +14250,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -16449,18 +14260,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -16470,18 +14270,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -16491,18 +14280,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -16512,18 +14290,7 @@
             56
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -16533,18 +14300,7 @@
             56
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -16580,18 +14336,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -16601,18 +14346,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -16622,18 +14356,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -16643,18 +14366,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -16664,18 +14376,7 @@
             56
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -16685,18 +14386,7 @@
             56
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -16904,18 +14594,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -16925,18 +14604,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -16946,18 +14614,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -16967,18 +14624,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -16988,18 +14634,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -17009,18 +14644,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -17148,18 +14772,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "south": {
           "uv": [
@@ -17169,18 +14782,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "east": {
           "uv": [
@@ -17190,18 +14792,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "west": {
           "uv": [
@@ -17211,18 +14802,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "up": {
           "uv": [
@@ -17232,18 +14812,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         },
         "down": {
           "uv": [
@@ -17253,18 +14822,7 @@
             51
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_copper",
-          "preferred_texture": "aeronautics:textures/block/metal_bearing_plate.png",
-          "preferred_size": [
-            32,
-            32
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            32,
-            32
-          ]
+          "material": "alchemicallaser:block/aerospace_copper"
         }
       }
     },
@@ -18768,18 +16326,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -18789,18 +16336,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -18810,18 +16346,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -18831,18 +16356,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -18852,18 +16366,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -18873,18 +16376,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -18920,18 +16412,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -18941,18 +16422,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -18962,18 +16432,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -18983,18 +16442,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -19004,18 +16452,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -19025,18 +16462,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -19072,18 +16498,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -19093,18 +16508,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -19114,18 +16518,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -19135,18 +16528,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -19156,18 +16538,7 @@
             64
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -19177,18 +16548,7 @@
             64
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -19224,18 +16584,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -19245,18 +16594,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -19266,18 +16604,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -19287,18 +16614,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -19308,18 +16624,7 @@
             64
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -19329,18 +16634,7 @@
             64
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -20494,18 +17788,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -20515,18 +17798,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -20536,18 +17808,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -20557,18 +17818,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -20578,18 +17828,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -20599,18 +17838,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -20818,18 +18046,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -20839,18 +18056,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -20860,18 +18066,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -20881,18 +18076,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -20902,18 +18086,7 @@
             61
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -20923,18 +18096,7 @@
             61
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -21142,18 +18304,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -21163,18 +18314,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -21184,18 +18324,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -21205,18 +18334,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -21226,18 +18344,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -21247,18 +18354,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },
@@ -21466,18 +18562,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "south": {
           "uv": [
@@ -21487,18 +18572,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "east": {
           "uv": [
@@ -21508,18 +18582,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "west": {
           "uv": [
@@ -21529,18 +18592,7 @@
             60
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "up": {
           "uv": [
@@ -21550,18 +18602,7 @@
             61
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         },
         "down": {
           "uv": [
@@ -21571,18 +18612,7 @@
             61
           ],
           "texture": "alchemicallaser:textures/block/copper_atlas.png",
-          "material": "alchemicallaser:block/aerospace_brass",
-          "preferred_texture": "aeronautics:textures/block/steam_vent/steam_vent_head_brass.png",
-          "preferred_size": [
-            16,
-            16
-          ],
-          "preferred_uv": [
-            0,
-            0,
-            16,
-            16
-          ]
+          "material": "alchemicallaser:block/aerospace_brass"
         }
       }
     },

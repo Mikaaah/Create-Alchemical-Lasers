@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.5
+
+- Imported the supplied simplified metal and fitting artwork for the Alchemical Laser, with coherent shading on the claws, bearings and trim.
+- Refreshed the four atlas pages and all six editable Alchemical Blockbench projects; removed obsolete external-texture override metadata from repainted fittings.
+- Preserved both machine shapes, animations, all eight lenses, native Create shafts, processing clearance and the 1.1.4 rendering fixes.
+
 ## 1.1.4
 
 - Removed overlapping opaque face regions and hidden internal joins from both machine renderers while retaining the original UV mapping, transparent cutouts and independent animated parts.
