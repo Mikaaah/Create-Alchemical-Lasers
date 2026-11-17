@@ -1,74 +1,79 @@
 {
   "textures": {
     "shaft": "create:block/axis",
-    "particle": "create:block/axis"
+    "particle": "create:block/axis",
+    "shaft_end": "create:block/axis_top"
   },
   "elements": [
     {
       "from": [
-        -2,
+        0,
         6,
         6
       ],
       "to": [
-        18,
+        16,
         10,
         10
       ],
       "faces": {
         "north": {
           "uv": [
+            6,
             0,
-            0,
-            16,
-            4
+            10,
+            16
           ],
-          "texture": "#shaft"
+          "texture": "#shaft",
+          "rotation": 90
         },
         "south": {
           "uv": [
+            6,
             0,
-            0,
-            16,
-            4
+            10,
+            16
           ],
-          "texture": "#shaft"
+          "texture": "#shaft",
+          "rotation": 90
         },
         "east": {
           "uv": [
-            0,
-            0,
-            16,
-            4
+            6,
+            6,
+            10,
+            10
           ],
-          "texture": "#shaft"
+          "texture": "#shaft_end"
         },
         "west": {
           "uv": [
-            0,
-            0,
-            16,
-            4
+            6,
+            6,
+            10,
+            10
           ],
-          "texture": "#shaft"
+          "texture": "#shaft_end"
         },
         "up": {
           "uv": [
+            6,
             0,
-            0,
-            16,
-            4
+            10,
+            16
           ],
-          "texture": "#shaft"
+          "texture": "#shaft",
+          "rotation": 90
         },
         "down": {
           "uv": [
+            6,
             0,
-            0,
-            16,
-            4
+            10,
+            16
           ],
-          "texture": "#shaft"
+          "texture": "#shaft",
+          "rotation": 90
         }
       }
     }

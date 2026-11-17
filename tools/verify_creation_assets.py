@@ -5,6 +5,7 @@ import json, math
 root=Path(__file__).resolve().parents[1]; assets=root/'src/main/resources/assets';totals=[]
 for ns,expected_lenses,clips in [('alchemicallaser',5,9),('creationaugmenter',3,10)]:
  a=assets/ns; model=json.loads((a/'geometry/machine.json').read_text());base={b['name'] for b in model['bones']}
+ assert len(model['cubes'])=={'alchemicallaser':31,'creationaugmenter':34}[ns], (ns,'Expected simplified 31/34-cuboid machine',len(model['cubes']))
  assert model['bounds'][1]==-15 and model['bounds'][4]==16,(ns,model['bounds'])
  files=list((a/'geometry/lenses').glob('*.json'));assert len(files)==expected_lenses
  for file in [a/'geometry/machine.json']+files:

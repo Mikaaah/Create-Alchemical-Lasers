@@ -57,12 +57,7 @@
             -3.5,
             0
           ],
-          "parent": "gearbox",
-          "rotation": [
-            -22.5,
-            0,
-            0
-          ]
+          "parent": "gearbox"
         },
         {
           "name": "gyro_ring_inner",

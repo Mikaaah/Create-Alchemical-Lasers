@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.6
+
+- Replaced both detailed machine bodies with the actual simplified Create models: Alchemical Laser 214 to 31 cuboids; Creation Augmenter 147 to 34.
+- Imported matching casing textures, compact chamber/nozzle parts, calmer core/gimbal animation and all ten editable Blockbench projects.
+- Preserved native Create shafts, the 31px machine height, lens positions, all eight lens sets, animated Creation Core, processing clearance and the 1.1.4 rendering fixes.
+- Retargeted lens opening for the shorter single-piece jaws so they stay attached to the nozzle.
+- Added explicit 31/34-cuboid acceptance checks to prevent a texture-only package from passing as the simplified model revision.
+
 ## 1.1.5
 
 - Imported the supplied simplified metal and fitting artwork for the Alchemical Laser, with coherent shading on the claws, bearings and trim.

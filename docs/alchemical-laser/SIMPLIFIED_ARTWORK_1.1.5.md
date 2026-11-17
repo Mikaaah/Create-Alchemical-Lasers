@@ -1,5 +1,7 @@
 # Simplified Alchemical Laser artwork — 1.1.5
 
+Historical texture-only revision; superseded by the actual 31/34-cuboid models in [1.1.6](../SIMPLIFIED_MODELS_1.1.6.md).
+
 The supplied `Alchemical-Lasers-Full-Import-1.1.0 (2).zip` updates metal and fitting artwork. The simplification is in the textures: cuboid counts, dimensions, bones, pivots, animations and UV rectangles are unchanged. Creation Augmenter artwork and all eight lens sets are unchanged.
 
 The import uses only the five files listed in the package’s `docs/RESOURCE_UPDATE_FILES.json`, plus the main Alchemical Blockbench project and its five lens variants. The four atlas pages are metal, copper, detail and the Gecko companion. The machine JSON removes `preferred_texture`, `preferred_uv` and `preferred_size` metadata from 270 faces on 45 cubes. Java renderers already use the supplied atlas consistently.
